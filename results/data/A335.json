@@ -1,0 +1,81 @@
+{
+  "section": "A335",
+  "gap": "G7",
+  "variants": [
+    {
+      "attach": [
+        0,
+        1,
+        2
+      ],
+      "nV": 30,
+      "nE": 90,
+      "H1": 61,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 3
+    },
+    {
+      "attach": [
+        0,
+        1,
+        2,
+        15
+      ],
+      "nV": 30,
+      "nE": 91,
+      "H1": 62,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 4
+    },
+    {
+      "attach": [
+        0,
+        1,
+        2,
+        15,
+        22
+      ],
+      "nV": 30,
+      "nE": 92,
+      "H1": 63,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 5
+    },
+    {
+      "attach": [
+        15,
+        22
+      ],
+      "nV": 30,
+      "nE": 89,
+      "H1": 60,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 2
+    }
+  ],
+  "two_throat": {
+    "nV": 31,
+    "nE": 91,
+    "H1": 61,
+    "open_flux_dim": 2,
+    "note": "two open vertices => dim 2; excluded by single open class axiom"
+  },
+  "theorem": "Any residual open Kirchhoff completion of S29 with a single open residual class has open-flux dimension 1 (up to residual automorphism of the closed core).",
+  "claim": "C under H_cont",
+  "claim_DE_ID": "X",
+  "test_id": "T-A335-open-flux-dim1",
+  "checks": {
+    "S29_H1_59": true,
+    "canonical_thr_H1_63": true,
+    "all_single_throat_dim1": true,
+    "two_throat_dim2": true,
+    "n_variants_ge3": true,
+    "DE_ID_X": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

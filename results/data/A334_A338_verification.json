@@ -1,0 +1,470 @@
+{
+  "package": "TRET_A334_A338_RESIDUAL_DEPTH_PACKAGING",
+  "version": "v12.74.0_A334_A338_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION"
+  },
+  "results": {
+    "A334": {
+      "section": "A334",
+      "gap": "G6",
+      "spectrum": {
+        "lam2": 1.1535713718812775,
+        "multiplet": 2,
+        "lam_min_pos": 1.1535713718812775,
+        "lam3": 1.153571371881282
+      },
+      "el": {
+        "field": "orientation theta(x)",
+        "EL": "partial_t theta = lam6 * div(grad theta) - lam6 * W_hex'(theta) - mu5^2 theta",
+        "linearization_at_hex": "partial_t delta = lam6 Delta delta - (lam6*W''(0)+mu5^2) delta",
+        "graph_proxy_gap": 1.1535713718812775,
+        "spectral_mass": 14.925233545783154
+      },
+      "mu5": 0.0007901151926307481,
+      "m_res": 14.925233545783154,
+      "claim_structure": "C residual under H_cont",
+      "claim_particle_ID": "X",
+      "test_id": "T-A334-chiral-continuum-lambda2",
+      "checks": {
+        "lam2_pos": true,
+        "multiplet_ge1": true,
+        "mu5_pos": true,
+        "m_res_pos": true,
+        "W_pp0_18": true,
+        "H1_19": true,
+        "particle_ID_X": true,
+        "free_params_0": true,
+        "continuum_EL_structure": true
+      },
+      "all_ok": true
+    },
+    "A335": {
+      "section": "A335",
+      "gap": "G7",
+      "variants": [
+        {
+          "attach": [
+            0,
+            1,
+            2
+          ],
+          "nV": 30,
+          "nE": 90,
+          "H1": 61,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 3
+        },
+        {
+          "attach": [
+            0,
+            1,
+            2,
+            15
+          ],
+          "nV": 30,
+          "nE": 91,
+          "H1": 62,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 4
+        },
+        {
+          "attach": [
+            0,
+            1,
+            2,
+            15,
+            22
+          ],
+          "nV": 30,
+          "nE": 92,
+          "H1": 63,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 5
+        },
+        {
+          "attach": [
+            15,
+            22
+          ],
+          "nV": 30,
+          "nE": 89,
+          "H1": 60,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 2
+        }
+      ],
+      "two_throat": {
+        "nV": 31,
+        "nE": 91,
+        "H1": 61,
+        "open_flux_dim": 2,
+        "note": "two open vertices => dim 2; excluded by single open class axiom"
+      },
+      "theorem": "Any residual open Kirchhoff completion of S29 with a single open residual class has open-flux dimension 1 (up to residual automorphism of the closed core).",
+      "claim": "C under H_cont",
+      "claim_DE_ID": "X",
+      "test_id": "T-A335-open-flux-dim1",
+      "checks": {
+        "S29_H1_59": true,
+        "canonical_thr_H1_63": true,
+        "all_single_throat_dim1": true,
+        "two_throat_dim2": true,
+        "n_variants_ge3": true,
+        "DE_ID_X": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A336": {
+      "section": "A336",
+      "gap": "G8",
+      "nV": 15,
+      "nE": 33,
+      "rankB": 14,
+      "cycle_dim": 19,
+      "H1": 19,
+      "ledger": [
+        {
+          "eq": "delta J = 0 on closed vertices (Kirchhoff)",
+          "class": "C under H_cont"
+        },
+        {
+          "eq": "cycle space dim = H1 residual circulations",
+          "class": "C under H_cont"
+        },
+        {
+          "eq": "gradient voltage V = d0 phi",
+          "class": "C residual"
+        },
+        {
+          "eq": "force F = -grad F_res",
+          "class": "C residual"
+        },
+        {
+          "eq": "throat delta J = J_thr^ext",
+          "class": "C under H_cont; DE proxy X"
+        },
+        {
+          "eq": "SI Maxwell (E,B)",
+          "class": "M"
+        },
+        {
+          "eq": "unrestricted free-A0 Maxwell",
+          "class": "false"
+        }
+      ],
+      "claim": "C residual exterior/cochain Maxwell under H_cont; SI M; unrestricted false",
+      "test_id": "T-A336-exterior-maxwell-cochain",
+      "checks": {
+        "connected": true,
+        "rankB_nV_minus_1": true,
+        "cycle_dim_H1": true,
+        "H1_19": true,
+        "ledger_ge_6": true,
+        "free_params_0": true,
+        "unrestricted_false": true,
+        "SI_is_M": true
+      },
+      "all_ok": true
+    },
+    "A337": {
+      "section": "A337",
+      "gap": "G9",
+      "drop_one": {
+        "D1_H_cont": {
+          "full_recovery": false,
+          "reason": "unrestricted CM survive; Kirchhoff fails"
+        },
+        "D2_soft": {
+          "full_recovery": false,
+          "reason": "packing Maxwell combinatorial fails"
+        },
+        "D3_orientation_AF": {
+          "full_recovery": false,
+          "reason": "exchange not forced"
+        },
+        "D4_packing_max": {
+          "full_recovery": false,
+          "reason": "no covering selection"
+        },
+        "D5_P6_spectral": {
+          "full_recovery": false,
+          "reason": "hybrid-mode protection lost"
+        },
+        "D6_positivity": {
+          "full_recovery": false,
+          "reason": "signed residual cells allow non-physical packing branches; uniqueness fails"
+        },
+        "D7_P5_rank_sat": {
+          "full_recovery": false,
+          "reason": "equi-coercivity/Gamma residual fails without rank saturation"
+        },
+        "D8_P7_causal_memory": {
+          "full_recovery": false,
+          "reason": "causal completely monotone memory lost; single-gap kernel not fixed"
+        }
+      },
+      "claim": "C ledger: among expanded inventoried weakenings D1\u2013D8, each drop fails full residual dual-route recovery; conjunction needed for residual C under H_cont package",
+      "test_id": "T-A337-expanded-drop-one",
+      "checks": {
+        "n_drops_8": true,
+        "all_fail_full_recovery": true,
+        "D6_fails": true,
+        "D7_fails": true,
+        "D8_fails": true,
+        "H_cont_still_necessary": true,
+        "free_params_0": true,
+        "inventoried_not_universal_math": true
+      },
+      "all_ok": true
+    },
+    "A338": {
+      "section": "A338",
+      "gap": "G10",
+      "C0": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "ecology_soft_le_3": [
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "Z0": 1.9208812339473613,
+      "tail_mass": 0.028974914093407467,
+      "tail_closed_form": 0.02897491409340747,
+      "frac_primary": 0.9851399734680316,
+      "frac_tail": 0.014860026531968369,
+      "theorem": "Residual ecology with soft(n)<=soft_max=3 is exactly C0={4,6,8,10,12}. Even tail n>=14 is dual-route soft-suppressed: frac_tail < 5% of total residual soft measure.",
+      "claim": "C (census completeness under soft<=soft_max + tail suppression)",
+      "test_id": "T-A338-census-tail",
+      "checks": {
+        "ecology_equals_C0": true,
+        "soft14_gt3": true,
+        "tail_closed_match": true,
+        "frac_primary_gt_95": true,
+        "frac_tail_lt_05": true,
+        "Z0_pos": true,
+        "no_free_cutoff": true,
+        "free_params_0": true,
+        "p6_still_dom_on_C0": true
+      },
+      "all_ok": true
+    }
+  },
+  "theorem_test_map": {
+    "version": "v12.74.0_A334_A338_20260811",
+    "n_bindings": 17,
+    "rows": [
+      {
+        "theorem": "A334 continuum chiral EL + lambda2 multiplet",
+        "test_id": "T-A334-chiral-continuum-lambda2",
+        "section": "A334"
+      },
+      {
+        "theorem": "A335 open-flux dim-1 uniqueness",
+        "test_id": "T-A335-open-flux-dim1",
+        "section": "A335"
+      },
+      {
+        "theorem": "A336 residual exterior Maxwell cochain",
+        "test_id": "T-A336-exterior-maxwell-cochain",
+        "section": "A336"
+      },
+      {
+        "theorem": "A337 expanded drop-one D1\u2013D8",
+        "test_id": "T-A337-expanded-drop-one",
+        "section": "A337"
+      },
+      {
+        "theorem": "A338 census completeness + soft-tail suppression",
+        "test_id": "T-A338-census-tail",
+        "section": "A338"
+      },
+      {
+        "theorem": "A329 soft from geometry",
+        "test_id": "T-A329-soft-geometry",
+        "section": "A329"
+      },
+      {
+        "theorem": "A330 S15^(3) residual iso uniqueness",
+        "test_id": "T-A330-iso-unique",
+        "section": "A330"
+      },
+      {
+        "theorem": "A331 X_poly meta-obstruction",
+        "test_id": "T-A331-meta-kill",
+        "section": "A331"
+      },
+      {
+        "theorem": "A332 residual Gamma packing sector",
+        "test_id": "T-A332-gamma",
+        "section": "A332"
+      },
+      {
+        "theorem": "A333 multi-layer force channels",
+        "test_id": "T-A333-layers",
+        "section": "A333"
+      },
+      {
+        "theorem": "A319 soft characterization",
+        "test_id": "T-A319-soft-char",
+        "section": "A319"
+      },
+      {
+        "theorem": "A320 multi-central n_eq=12",
+        "test_id": "T-A320-multicentral",
+        "section": "A320"
+      },
+      {
+        "theorem": "A321 residual open/closed partition",
+        "test_id": "T-A321-partition",
+        "section": "A321"
+      },
+      {
+        "theorem": "A322 H_cont minimality",
+        "test_id": "T-A322-Hcont-min",
+        "section": "A322"
+      },
+      {
+        "theorem": "A323 mathfrak X meta-kill",
+        "test_id": "T-A323-X-metakill",
+        "section": "A323"
+      },
+      {
+        "theorem": "A324 free A0 nonunique",
+        "test_id": "T-A324-free-A0",
+        "section": "A324"
+      },
+      {
+        "theorem": "A328 Maxwell ledger",
+        "test_id": "T-A328-maxwell-ledger",
+        "section": "A328"
+      }
+    ],
+    "note": "Named test IDs for load-bearing residual dual-route theorems (G14)"
+  },
+  "claim_board": {
+    "version": "v12.74.0_A334_A338_20260811",
+    "locks": {
+      "free_params_primary": 0,
+      "H_cont_open_system_closed": true,
+      "packing_Maxwell_under_H_cont": "recovered_C",
+      "unrestricted_open_system_closed": false,
+      "absolute_closed": false,
+      "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+      "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION"
+    },
+    "board": [
+      {
+        "id": "chiral_continuum",
+        "section": "A334",
+        "claim": "continuum chiral EL + lambda2 multiplet",
+        "class": "C residual; ID X"
+      },
+      {
+        "id": "throat_dim1_unique",
+        "section": "A335",
+        "claim": "open-flux dim 1 for single open class",
+        "class": "C under H_cont; DE X"
+      },
+      {
+        "id": "exterior_maxwell",
+        "section": "A336",
+        "claim": "residual cochain Maxwell under H_cont",
+        "class": "C residual; SI M"
+      },
+      {
+        "id": "dropone_D1_D8",
+        "section": "A337",
+        "claim": "expanded drop-one all fail full recovery",
+        "class": "C ledger"
+      },
+      {
+        "id": "census_tail",
+        "section": "A338",
+        "claim": "C0 ecology + soft-tail suppression",
+        "class": "C"
+      },
+      {
+        "id": "soft_geometry",
+        "section": "A329",
+        "claim": "soft from residual geometry",
+        "class": "C"
+      },
+      {
+        "id": "S15_iso",
+        "section": "A330",
+        "claim": "residual-isomorphism uniqueness",
+        "class": "C"
+      },
+      {
+        "id": "unrestricted",
+        "section": "A331",
+        "claim": "unrestricted packing Maxwell",
+        "class": "false"
+      },
+      {
+        "id": "Gamma",
+        "section": "A332",
+        "claim": "residual Gamma packing sector",
+        "class": "C under H_cont"
+      },
+      {
+        "id": "layers",
+        "section": "A333",
+        "claim": "multi-layer force channels",
+        "class": "C structure"
+      },
+      {
+        "id": "Omega",
+        "section": "A303/A333",
+        "claim": "Omega_b = lambda_V dual-route C",
+        "class": "CERTIFIED_OBSTRUCTION"
+      },
+      {
+        "id": "MeV",
+        "section": "locks",
+        "claim": "absolute MeV",
+        "class": "IMPOSSIBLE"
+      },
+      {
+        "id": "lambda_V",
+        "section": "A300/A329",
+        "claim": "lambda_V = e^{-3}",
+        "class": "C residual scale"
+      }
+    ]
+  },
+  "checks": {
+    "A334_ok": true,
+    "A335_ok": true,
+    "A336_ok": true,
+    "A337_ok": true,
+    "A338_ok": true,
+    "locks_MeV": true,
+    "locks_unrestricted_false": true,
+    "locks_Omega_obs": true,
+    "free_params_0": true,
+    "tmap_ge_15": true,
+    "A336_cycle_H1": true,
+    "A338_ecology_C0": true
+  },
+  "all_ok": true
+}

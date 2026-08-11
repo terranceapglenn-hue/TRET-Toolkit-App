@@ -1,0 +1,52 @@
+{
+  "section": "A336",
+  "gap": "G8",
+  "nV": 15,
+  "nE": 33,
+  "rankB": 14,
+  "cycle_dim": 19,
+  "H1": 19,
+  "ledger": [
+    {
+      "eq": "delta J = 0 on closed vertices (Kirchhoff)",
+      "class": "C under H_cont"
+    },
+    {
+      "eq": "cycle space dim = H1 residual circulations",
+      "class": "C under H_cont"
+    },
+    {
+      "eq": "gradient voltage V = d0 phi",
+      "class": "C residual"
+    },
+    {
+      "eq": "force F = -grad F_res",
+      "class": "C residual"
+    },
+    {
+      "eq": "throat delta J = J_thr^ext",
+      "class": "C under H_cont; DE proxy X"
+    },
+    {
+      "eq": "SI Maxwell (E,B)",
+      "class": "M"
+    },
+    {
+      "eq": "unrestricted free-A0 Maxwell",
+      "class": "false"
+    }
+  ],
+  "claim": "C residual exterior/cochain Maxwell under H_cont; SI M; unrestricted false",
+  "test_id": "T-A336-exterior-maxwell-cochain",
+  "checks": {
+    "connected": true,
+    "rankB_nV_minus_1": true,
+    "cycle_dim_H1": true,
+    "H1_19": true,
+    "ledger_ge_6": true,
+    "free_params_0": true,
+    "unrestricted_false": true,
+    "SI_is_M": true
+  },
+  "all_ok": true
+}

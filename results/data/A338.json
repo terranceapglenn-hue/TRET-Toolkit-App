@@ -1,0 +1,38 @@
+{
+  "section": "A338",
+  "gap": "G10",
+  "C0": [
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "ecology_soft_le_3": [
+    4,
+    6,
+    8,
+    10,
+    12
+  ],
+  "Z0": 1.9208812339473613,
+  "tail_mass": 0.028974914093407467,
+  "tail_closed_form": 0.02897491409340747,
+  "frac_primary": 0.9851399734680316,
+  "frac_tail": 0.014860026531968369,
+  "theorem": "Residual ecology with soft(n)<=soft_max=3 is exactly C0={4,6,8,10,12}. Even tail n>=14 is dual-route soft-suppressed: frac_tail < 5% of total residual soft measure.",
+  "claim": "C (census completeness under soft<=soft_max + tail suppression)",
+  "test_id": "T-A338-census-tail",
+  "checks": {
+    "ecology_equals_C0": true,
+    "soft14_gt3": true,
+    "tail_closed_match": true,
+    "frac_primary_gt_95": true,
+    "frac_tail_lt_05": true,
+    "Z0_pos": true,
+    "no_free_cutoff": true,
+    "free_params_0": true,
+    "p6_still_dom_on_C0": true
+  },
+  "all_ok": true
+}

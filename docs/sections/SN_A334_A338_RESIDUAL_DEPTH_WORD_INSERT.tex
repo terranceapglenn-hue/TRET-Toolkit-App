@@ -1,0 +1,217 @@
+%==============================================================================
+% SN-A334 -- SN-A338 --- Residual Depth Closures (G6--G10)
+% Continuum chiral EL; throat open-flux uniqueness; exterior Maxwell;
+% expanded drop-one; census completeness + soft-tail suppression
+% Package: TRET_A334_A338 v12.74.0_A334_A338_20260811
+% free_params_primary=0; absolute_MeV=IMPOSSIBLE; unrestricted=false
+% Certificate: all_ok; lambda2 multiplet size 2; frac_tail ~1.49%
+%==============================================================================
+
+\section*{Master Honesty Register (SN-A334--A338)}
+\begin{center}
+\begin{tabular}{@{}p{7.6cm}p{5.0cm}@{}}
+\toprule
+\textbf{Item} & \textbf{Status} \\
+\midrule
+\texttt{free\_params\_primary} & $0$ \\
+\texttt{absolute\_MeV\_zero\_anchor} & IMPOSSIBLE \\
+\texttt{unrestricted\_open\_system\_closed} & \textbf{false} \\
+Continuum chiral EL + $\lambda_2$ multiplet & \textbf{C residual}; ID \textbf{X} (A334) \\
+Open-flux dim-1 uniqueness (single open class) & \textbf{C under $H_{\rm cont}$}; DE \textbf{X} (A335) \\
+Residual exterior / cochain Maxwell & \textbf{C residual}; SI \textbf{M} (A336) \\
+Expanded drop-one D1--D8 & \textbf{C ledger} (A337) \\
+Census $C_0$ + soft-tail suppression & \textbf{C} (A338) \\
+$\Omega_b\equiv\lambda_V$ dual-route C & \textbf{obstruction retained} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%==============================================================================
+\section{SN-A334 --- Continuum Chiral EL and $\lambda_2$ Multiplet (G6)}
+\label{sec:SN-A334}
+
+\begin{definition}[Residual continuum orientation field]
+\label{def:A334-theta}
+Under $H_{\rm cont}$, the residual orientation field $\theta(x,t)$ obeys
+\begin{equation}
+\partial_t\theta
+=
+\lambda_6\Delta\theta
+-
+\lambda_6 W_{\mathrm{hex}}'(\theta)
+-
+\mu_5^2\theta,
+\qquad
+\lambda_6\propto\kappa_R,
+\quad
+\mu_5=R_{\rm nat}\gamma^\star,
+\quad
+W_{\mathrm{hex}}(\theta)=\tfrac12(1-\cos 6\theta).
+\end{equation}
+\end{definition}
+
+\begin{lemma}[Linearization mass at hex well]
+\label{lem:A334-mass}
+At a hex well, $W_{\mathrm{hex}}''(0)=18$. Residual spectral mass
+$m_{\mathrm{res}}=\lambda_6\cdot 18+\mu_5^2>0$.
+\end{lemma}
+
+\begin{proof}
+$W''=18\cos 6\theta$, hence $W''(0)=18$. Dual-route $\mu_5=R_{\rm nat}\gamma^\star>0$ and $\lambda_6\propto\kappa_R>0$.
+\end{proof}
+
+\begin{theorem}[Graph $\lambda_2$ multiplet on $\mathrm{S}_{15}^{(3)}$]
+\label{thm:A334}
+The residual Laplacian of $G_{15}^{(3)}$ has algebraic connectivity $\lambda_2>0$ with multiplet size $2$ (certificate). Continuum linearization about hex wells has positive residual mass $m_{\mathrm{res}}$, providing residual continuum--graph spectral contact under $H_{\rm cont}$. Particle ID as $\nu$/ALP/PQ remains \textbf{X}.
+\end{theorem}
+
+\begin{proof}
+Graph certificate: spectrum of $L(G_{15}^{(3)})$ yields $\lambda_2\approx 1.15357$ with multiplicity $2$ within numerical tolerance; $H_1=19$ unchanged. Continuum linearization: Lemma~\ref{lem:A334-mass}. Identification of residual modes with Standard Model particles is dictionary only. Certificate: \texttt{T-A334-chiral-continuum-lambda2}.
+\end{proof}
+
+\subsection*{Status (A334)}
+Continuum chiral EL + $\lambda_2$ multiplet: \textbf{C residual}. Particle ID: \textbf{X}.
+
+%==============================================================================
+\section{SN-A335 --- Open-Flux Dimension-1 Uniqueness (G7)}
+\label{sec:SN-A335}
+
+\begin{definition}[Residual open Kirchhoff completion]
+\label{def:A335-comp}
+A residual open completion of $\mathrm{S}_{29}$ adjoins open throat vertices with residual edges into the closed core/apices. Kirchhoff holds at every closed vertex. The open flux dimension is the dimension of residual external source space on open vertices.
+\end{definition}
+
+\begin{theorem}[Single open class $\Rightarrow$ open-flux dimension $1$]
+\label{thm:A335}
+Any residual open Kirchhoff completion of $\mathrm{S}_{29}$ with a \emph{single open residual class} (one throat vertex, or one residual open orbit) has open-flux dimension $1$, up to residual automorphism of the closed core. Completions with two independent open vertices have open-flux dimension $2$ and are excluded by the single-open-class residual axiom. Vacuum/DE identification remains dictionary X.
+\end{theorem}
+
+\begin{proof}
+With $k$ independent open vertices and Kirchhoff on all closed vertices, residual source space dimension equals $k$. Single open class $\Rightarrow k=1$. Certificate variants with distinct attachment sets (core only; core+apex; canonical five-point) all give dimension $1$ and remain connected; a two-throat model gives dimension $2$. Canonical $\mathrm{S}_{29}^{\mathrm{thr}}$: $|V|=30$, $H_1=63$. Certificate: \texttt{T-A335-open-flux-dim1}.
+\end{proof}
+
+\subsection*{Status (A335)}
+Open-flux dim $1$ uniqueness: \textbf{C under $H_{\rm cont}$}. DE ID: \textbf{X}.
+
+%==============================================================================
+\section{SN-A336 --- Residual Exterior Maxwell / Cochain Circulation (G8)}
+\label{sec:SN-A336}
+
+\begin{definition}[Residual cochain complex on $G$]
+\label{def:A336-cochain}
+Let $G=(V,E)$ be a residual incidence graph. Set $C^0=\mathbb{R}^{V}$, $C^1=\mathbb{R}^{E}$ (oriented). The incidence operator $B:C^1\to C^0$ is residual divergence; $B^\top$ is residual gradient. For connected $G$, $\mathrm{rank}(B)=|V|-1$ and
+\begin{equation}
+\dim\ker B = |E|-|V|+1 = \dim H_1(G).
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Residual exterior Maxwell under $H_{\rm cont}$]
+\label{thm:A336}
+On residual graphs under $H_{\rm cont}$:
+\begin{enumerate}[label=(\roman*)]
+\item Kirchhoff: $(BJ)_v=0$ at closed vertices.
+\item Residual circulations span a space of dimension $\dim H_1(G)$ (e.g.\ $19$ on $\mathrm{S}_{15}^{(3)}$).
+\item Residual voltage is a gradient $V=B^\top\phi$ when curl-free in residual sense.
+\item Residual forces remain $-\nabla F_{\mathrm{res}}$.
+\item Throat: $(BJ)_T=J_{\mathrm{thr}}^{\mathrm{ext}}$ at open vertices.
+\item Laboratory SI Maxwell $(E,B)$ is class M; unrestricted free-$\mathcal{A}_0$ Maxwell is false.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Rank-nullity on the incidence matrix of $G_{15}^{(3)}$: $\mathrm{rank}(B)=14=|V|-1$, $\dim\ker B=19=H_1$ (certificate). Residual force recovery SN-A312; packing Maxwell under $H_{\rm cont}$ C; unrestricted false SN-A331. SI-Recover SN-A313. Certificate: \texttt{T-A336-exterior-maxwell-cochain}.
+\end{proof}
+
+\subsection*{Status (A336)}
+Residual cochain Maxwell: \textbf{C under $H_{\rm cont}$}. SI: \textbf{M}. Unrestricted: \textbf{false}.
+
+%==============================================================================
+\section{SN-A337 --- Expanded Drop-One Minimality D1--D8 (G9)}
+\label{sec:SN-A337}
+
+\begin{theorem}[Expanded drop-one ledger]
+\label{thm:A337}
+Among expanded inventoried weakenings of the residual package:
+\begin{center}
+\begin{tabular}{@{}p{3.6cm}p{8.2cm}@{}}
+\toprule
+Drop & Full residual dual-route recovery \\
+\midrule
+D1 $H_{\rm cont}$ & Fails (unrestricted CM; Kirchhoff) \\
+D2 soft & Fails (packing Maxwell combinatorial) \\
+D3 orientation AF & Fails (exchange not forced) \\
+D4 packing maximality & Fails (no covering selection) \\
+D5 P6 spectral floor & Fails (hybrid-mode protection) \\
+D6 positivity & Fails (signed cells; non-unique packing branches) \\
+D7 P5 rank saturation & Fails (equi-coercivity / residual $\Gamma$) \\
+D8 P7 causal memory & Fails (single-gap causal kernel not fixed) \\
+\bottomrule
+\end{tabular}
+\end{center}
+Each drop fails full residual dual-route recovery. The residual C package requires the conjunction. Exhaustiveness is relative to this inventoried basis, not all mathematics.
+\end{theorem}
+
+\begin{proof}
+D1--D5: SN-A322. D6: without positivity, residual cell volumes may change sign and packing maximality loses dual-route uniqueness. D7: P5 is the residual equi-coercivity hypothesis for SN-A332 $\Gamma$-limits. D8: P7 fixes causal completely monotone memory; dropping it removes single-gap kernel selection. Certificate: \texttt{T-A337-expanded-drop-one}.
+\end{proof}
+
+\subsection*{Status (A337)}
+Expanded drop-one D1--D8: \textbf{C ledger}.
+
+%==============================================================================
+\section{SN-A338 --- Census Completeness and Soft-Tail Suppression (G10)}
+\label{sec:SN-A338}
+
+\begin{definition}[Residual soft ecology]
+\label{def:A338-eco}
+Even coverings with soft cost at most soft$_{\max}=3$:
+\begin{equation}
+\mathcal{C}_0:=\{n\in 2\mathbb{Z}_{\ge 4}:\mathrm{soft}(n)\le 3\}=\{4,6,8,10,12\}.
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Census completeness under soft$\le$soft$_{\max}$]
+\label{thm:A338-complete}
+With soft from residual geometry (SN-A329) and soft$_{\max}=3$ from multi-central residual diameter, the residual soft ecology is exactly $\mathcal{C}_0$. In particular $n=14,16,\ldots$ lie outside residual ecology at soft$\le 3$.
+\end{theorem}
+
+\begin{proof}
+$\mathrm{soft}(n)=|n/2-3|$. For even $n\ge 6$, $\mathrm{soft}(n)=n/2-3\le 3\Leftrightarrow n\le 12$. Checking $n=4$: $\mathrm{soft}(4)=1\le 3$. Next even $n=14$: $\mathrm{soft}(14)=4>3$. Free parameters $=0$.
+\end{proof}
+
+\begin{theorem}[Soft-tail suppression]
+\label{thm:A338-tail}
+The residual soft Boltzmann tail
+\begin{equation}
+Z_{\mathrm{tail}}
+=
+\sum_{k=7}^{\infty}e^{-(k-3)}
+=
+e^{3}\frac{e^{-7}}{1-e^{-1}}
+\end{equation}
+satisfies $Z_{\mathrm{tail}}/(Z_{\mathrm{soft}}+Z_{\mathrm{tail}})<0.02$ with
+$Z_{\mathrm{soft}}=\sum_{n\in\mathcal{C}_0}e^{-\mathrm{soft}(n)}$. Primary residual ecology carries $>98\%$ of the residual soft measure without free cutoffs.
+\end{theorem}
+
+\begin{proof}
+Geometric series for $k=n/2\ge 7$. Certificate: $Z_{\mathrm{tail}}/(Z_{\mathrm{soft}}+Z_{\mathrm{tail}})\approx 0.01486$. Soft-only dominance of $n=6$ on $\mathcal{C}_0$ unchanged. Certificate: \texttt{T-A338-census-tail}.
+\end{proof}
+
+\subsection*{Status (A338)}
+Census completeness + soft-tail suppression: \textbf{C}.
+
+%==============================================================================
+\section*{Depth Closure Board (after A334--A338)}
+\begin{center}
+\begin{tabular}{@{}p{2cm}p{5.5cm}p{4.8cm}@{}}
+\toprule
+Gap & Closure & Class \\
+\midrule
+G6 & Continuum chiral EL + $\lambda_2$ multiplet & C residual; ID X \\
+G7 & Open-flux dim-1 uniqueness & C under $H_{\rm cont}$; DE X \\
+G8 & Residual exterior Maxwell & C residual; SI M \\
+G9 & Drop-one D1--D8 & C ledger \\
+G10 & $\mathcal{C}_0$ + soft-tail suppression & C \\
+\bottomrule
+\end{tabular}
+\end{center}

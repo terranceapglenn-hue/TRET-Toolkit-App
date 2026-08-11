@@ -1,0 +1,92 @@
+{
+  "version": "v12.74.0_A334_A338_20260811",
+  "n_bindings": 17,
+  "rows": [
+    {
+      "theorem": "A334 continuum chiral EL + lambda2 multiplet",
+      "test_id": "T-A334-chiral-continuum-lambda2",
+      "section": "A334"
+    },
+    {
+      "theorem": "A335 open-flux dim-1 uniqueness",
+      "test_id": "T-A335-open-flux-dim1",
+      "section": "A335"
+    },
+    {
+      "theorem": "A336 residual exterior Maxwell cochain",
+      "test_id": "T-A336-exterior-maxwell-cochain",
+      "section": "A336"
+    },
+    {
+      "theorem": "A337 expanded drop-one D1\u2013D8",
+      "test_id": "T-A337-expanded-drop-one",
+      "section": "A337"
+    },
+    {
+      "theorem": "A338 census completeness + soft-tail suppression",
+      "test_id": "T-A338-census-tail",
+      "section": "A338"
+    },
+    {
+      "theorem": "A329 soft from geometry",
+      "test_id": "T-A329-soft-geometry",
+      "section": "A329"
+    },
+    {
+      "theorem": "A330 S15^(3) residual iso uniqueness",
+      "test_id": "T-A330-iso-unique",
+      "section": "A330"
+    },
+    {
+      "theorem": "A331 X_poly meta-obstruction",
+      "test_id": "T-A331-meta-kill",
+      "section": "A331"
+    },
+    {
+      "theorem": "A332 residual Gamma packing sector",
+      "test_id": "T-A332-gamma",
+      "section": "A332"
+    },
+    {
+      "theorem": "A333 multi-layer force channels",
+      "test_id": "T-A333-layers",
+      "section": "A333"
+    },
+    {
+      "theorem": "A319 soft characterization",
+      "test_id": "T-A319-soft-char",
+      "section": "A319"
+    },
+    {
+      "theorem": "A320 multi-central n_eq=12",
+      "test_id": "T-A320-multicentral",
+      "section": "A320"
+    },
+    {
+      "theorem": "A321 residual open/closed partition",
+      "test_id": "T-A321-partition",
+      "section": "A321"
+    },
+    {
+      "theorem": "A322 H_cont minimality",
+      "test_id": "T-A322-Hcont-min",
+      "section": "A322"
+    },
+    {
+      "theorem": "A323 mathfrak X meta-kill",
+      "test_id": "T-A323-X-metakill",
+      "section": "A323"
+    },
+    {
+      "theorem": "A324 free A0 nonunique",
+      "test_id": "T-A324-free-A0",
+      "section": "A324"
+    },
+    {
+      "theorem": "A328 Maxwell ledger",
+      "test_id": "T-A328-maxwell-ledger",
+      "section": "A328"
+    }
+  ],
+  "note": "Named test IDs for load-bearing residual dual-route theorems (G14)"
+}

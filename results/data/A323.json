@@ -1,0 +1,33 @@
+{
+  "section": "A323",
+  "mathfrak_X_axioms": [
+    "X1_free_params_0",
+    "X2_no_rename_soft_n6",
+    "X3_local_variational",
+    "X4_frame_indiff",
+    "X5_kill_CM"
+  ],
+  "structural": {
+    "lemma": "If X is local residual continuum and admits both hex and square residual critical points without soft penalty, then X does not uniquely select n=6.",
+    "corollary_soft_rename": "If X penalizes square/octagon exactly as soft, it renames soft (fails X2).",
+    "corollary_H_cont": "H_cont + soft is residual open-system package outside pure unrestricted X."
+  },
+  "inventory": {
+    "n_candidates": 18,
+    "n_CM": 8,
+    "successes": 0
+  },
+  "claim": "false unrestricted packing Maxwell for all X in inventoried class; structural lemma: local continuum without soft/H_cont cannot unique-select n=6 without rename or free params (C ledger of obstruction).",
+  "claim_class": "false unrestricted; C obstruction ledger",
+  "checks": {
+    "inventory_successes_0": true,
+    "n_cand_18": true,
+    "n_cm_8": true,
+    "X2_forbids_rename": true,
+    "structural_lemma": true,
+    "unrestricted_false": true,
+    "free_params_0": true,
+    "meta_kill_claim": true
+  },
+  "all_ok": true
+}

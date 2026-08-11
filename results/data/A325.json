@@ -1,0 +1,24 @@
+{
+  "section": "A325",
+  "F_structure": "\u222b \u03b5|\u2207\u03b8|\u00b2/2 + W_hex/\u03b5 + f_soft(\u03c1) + \u03ba_R|\u2207\u03c1|\u00b2/2 + throat",
+  "coercivity": {
+    "W_hex_nonneg": true,
+    "W_hex_zero_iff_hex": true,
+    "f_soft_min_at_6": true,
+    "kappa_R_pos": true,
+    "rank_saturation_P5": true,
+    "equi_coercive_structure": true
+  },
+  "claim": "C structure under H_cont + P5; unrestricted without W_hex false",
+  "checks": {
+    "c_W_hex_nonneg": true,
+    "c_W_hex_zero_iff_hex": true,
+    "c_f_soft_min_at_6": true,
+    "c_kappa_R_pos": true,
+    "c_rank_saturation_P5": true,
+    "c_equi_coercive_structure": true,
+    "unrestricted_without_W_false": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

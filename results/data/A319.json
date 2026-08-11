@@ -1,0 +1,57 @@
+{
+  "section": "A319",
+  "axioms": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "unique_soft": "abs(n/2-3)",
+  "table": {
+    "4": 1.0,
+    "6": 0.0,
+    "8": 1.0,
+    "10": 2.0,
+    "12": 3.0
+  },
+  "alternatives_killed": {
+    "s_squared": {
+      "formula": "(n/2-3)^2",
+      "kills_S4": true,
+      "note": "slope at 6 is 0, not unit"
+    },
+    "s_abs_scaled": {
+      "formula": "c|n/2-3| c!=1",
+      "kills_S4_or_S5": true,
+      "note": "free continuous scale"
+    },
+    "s_zero_all": {
+      "formula": "0",
+      "kills_S4": true
+    }
+  },
+  "uniqueness": {
+    "g_at_3": 0,
+    "right_slope": 1,
+    "left_slope": 1,
+    "convex_plus_unit_slopes_implies_abs": true,
+    "formula": "s(n)=|n/2-3|"
+  },
+  "claim": "C",
+  "checks": {
+    "ax_S1_zero_at_6": true,
+    "ax_S2_reflection": true,
+    "ax_S2_explicit": true,
+    "ax_S3_convex_g": true,
+    "ax_S4_unit_slope": true,
+    "ax_S5_free_params_0": true,
+    "reflection_ok": true,
+    "unique_formula": true,
+    "soft6_zero": true,
+    "soft12_three": true,
+    "alt_squared_fails_S4": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

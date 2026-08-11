@@ -1,0 +1,20 @@
+{
+  "section": "A327",
+  "nV": 30,
+  "nE": 92,
+  "H1": 63,
+  "deg_T": 5,
+  "open_flux_dim": 1,
+  "claim_structure": "C under H_cont (unique single-throat open flux dim 1)",
+  "claim_DE_ID": "X",
+  "checks": {
+    "nV_30": true,
+    "H1_63": true,
+    "deg_T_5": true,
+    "open_flux_dim_1": true,
+    "connected": true,
+    "free_params_0": true,
+    "DE_dictionary_X": true
+  },
+  "all_ok": true
+}

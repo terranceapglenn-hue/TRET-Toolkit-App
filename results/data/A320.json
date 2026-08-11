@@ -1,0 +1,74 @@
+{
+  "section": "A320",
+  "axioms": [
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+  ],
+  "invariants_S15_3": {
+    "nV": 15,
+    "nE": 33,
+    "H1": 19,
+    "central_degs": [
+      8,
+      8,
+      8
+    ],
+    "eq_deg_min": 3,
+    "eq_deg_max": 4,
+    "n_spokes": 18,
+    "connected": true,
+    "soft_eq": 3.0
+  },
+  "even_m_candidates": [
+    [
+      2,
+      6,
+      3.0
+    ],
+    [
+      4,
+      12,
+      1.5
+    ],
+    [
+      6,
+      18,
+      1.0
+    ]
+  ],
+  "selected": {
+    "m": 4,
+    "n_eq": 12,
+    "avg_spoke_deg": 1.5
+  },
+  "countermodels": {
+    "c2_only": "c=2 duplex is different residual family (K10), not c=3",
+    "n_eq_9": "not free C3 with 6-spokes packing residual",
+    "n_eq_6": "collapses to soft-zero hex, not multi-central soft_max",
+    "no_K3": "violates M1"
+  },
+  "S29": {
+    "nV": 29,
+    "nE": 87,
+    "H1": 59
+  },
+  "claim": "C under residual multi-central axioms M1\u2013M6",
+  "checks": {
+    "central_degs_8": true,
+    "n_spokes_18": true,
+    "nE_33": true,
+    "H1_19": true,
+    "connected": true,
+    "soft_12_3": true,
+    "selected_n_eq_12": true,
+    "S29_nE_87": true,
+    "S29_H1_59": true,
+    "free_params_0": true,
+    "soft_zero_unique_preserved": true
+  },
+  "all_ok": true
+}

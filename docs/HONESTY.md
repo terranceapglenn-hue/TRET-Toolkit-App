@@ -1,13 +1,16 @@
-# Honesty Statement
+# Honesty Register — TRET Toolkit v7.0.0
 
-Residual-native CLOSED (class C): free-energy multipole forms, exact remainder,
-Path-B ·χ ratios, ranks (2,6,8), residual EL structure, spectral gap bound under
-linearized residual EL, unification map, prediction card P1–P15.
+| Flag | Value |
+|------|-------|
+| free_params_primary | 0 |
+| H_cont_open_system_closed | true |
+| packing_Maxwell_under_H_cont | recovered C |
+| unrestricted_open_system_closed | **false** |
+| absolute_closed | **false** |
+| absolute_MeV_zero_anchor | **IMPOSSIBLE** |
+| mapping_sectors_closed | true |
+| absolute_recovery_P1_P7 | OPEN (residual parts C) |
+| Omega identification | X dictionary |
+| continuum Gamma beyond packing | O |
 
-Absolute recovery from pure unrestricted free A0: **OPEN**.
-
-Absolute MeV zero-anchor: **IMPOSSIBLE**.
-
-Unrestricted continuum PDE uniqueness without residual structure: **NOT CLAIMED**.
-
-free_params_primary = 0.
+See `tret/gaps.py` for next solid recovery programs NP1–NP7.

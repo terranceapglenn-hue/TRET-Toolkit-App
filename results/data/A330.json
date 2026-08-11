@@ -1,0 +1,60 @@
+{
+  "section": "A330",
+  "invariants": {
+    "nV": 15,
+    "nE": 33,
+    "H1": 19,
+    "deg_seq": [
+      8,
+      8,
+      8,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "central_degs": [
+      8,
+      8,
+      8
+    ],
+    "n_spokes": 18
+  },
+  "uniqueness": {
+    "n_candidates_deg_correct": 6,
+    "n_iso_to_star_via_dihedral_C3": 6,
+    "n_non_iso_same_deg_H1": 0,
+    "standard_schedule": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "claim": "All M1\u2013M7 C3-equivariant contiguous-arc schedules with residual packing degrees are residual-isomorphic to S15^(3) under dihedral\u00d7C3 residual automorphisms OR are excluded by degree/H1; certificate enumerates fixed-min S0 class."
+  },
+  "non_iso_sample": [],
+  "claim": "C residual-isomorphism uniqueness under M1\u2013M6 (enumerated)",
+  "checks": {
+    "inv_nE_33": true,
+    "inv_H1_19": true,
+    "central_8": true,
+    "n_spokes_18": true,
+    "enumeration_ran": true,
+    "all_same_deg_H1_iso_or_empty_noniso": true,
+    "iso_count_positive": true,
+    "free_params_0": true,
+    "soft_zero_preserved": true,
+    "strict_residual_iso_unique": true
+  },
+  "all_ok": true
+}

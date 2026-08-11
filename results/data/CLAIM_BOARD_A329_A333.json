@@ -1,0 +1,76 @@
+{
+  "version": "v12.73.0_A329_A333_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION"
+  },
+  "board": [
+    {
+      "id": "soft_geometry",
+      "section": "A329",
+      "claim": "soft from AF C6 + residual unit",
+      "class": "C"
+    },
+    {
+      "id": "S15_3_iso",
+      "section": "A330",
+      "claim": "residual isomorphism uniqueness",
+      "class": "C"
+    },
+    {
+      "id": "X_poly_meta",
+      "section": "A331",
+      "claim": "soft-free local continuum nonunique packing Maxwell",
+      "class": "false unrestricted"
+    },
+    {
+      "id": "Gamma_residual",
+      "section": "A332",
+      "claim": "Gamma packing sector under H_cont",
+      "class": "C under H_cont"
+    },
+    {
+      "id": "layer_assignment",
+      "section": "A333",
+      "claim": "multi-layer force channels; no single weight",
+      "class": "C residual structure"
+    },
+    {
+      "id": "Omega_dual_route",
+      "section": "A303/A333",
+      "claim": "Omega_b = lambda_V dual-route C",
+      "class": "CERTIFIED_OBSTRUCTION"
+    },
+    {
+      "id": "MeV",
+      "section": "locks",
+      "claim": "absolute MeV zero-anchor",
+      "class": "IMPOSSIBLE"
+    },
+    {
+      "id": "unrestricted_Maxwell",
+      "section": "A323-A331",
+      "claim": "unrestricted packing Maxwell",
+      "class": "false"
+    },
+    {
+      "id": "lambda_V",
+      "section": "A300/A329",
+      "claim": "lambda_V = e^{-3}",
+      "class": "C residual scale"
+    },
+    {
+      "id": "soft_zero",
+      "section": "A319/A329",
+      "claim": "n_star=6 unique soft zero",
+      "class": "C"
+    }
+  ],
+  "n_C": 7,
+  "n_false_or_blocked": 4
+}

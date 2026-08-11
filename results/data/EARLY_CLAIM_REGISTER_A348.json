@@ -1,0 +1,242 @@
+[
+  {
+    "sn": "A0.1",
+    "claim": "master equation / residual energy functional under selection principles",
+    "path": "R",
+    "class": "C under P1\u2013P7"
+  },
+  {
+    "sn": "A0.1",
+    "claim": "absolute SI zero-anchor of all constants",
+    "path": "R/U",
+    "class": "I / M only via SI-Recover"
+  },
+  {
+    "sn": "A0.2",
+    "claim": "hybrid Hessian spectral floor residual",
+    "path": "R",
+    "class": "C under P6"
+  },
+  {
+    "sn": "A2\u2013A2.2",
+    "claim": "residual positroid / cluster structure under selection principles",
+    "path": "R",
+    "class": "C residual"
+  },
+  {
+    "sn": "A2\u2013A2.2",
+    "claim": "unrestricted cluster uniqueness without soft/H_cont",
+    "path": "U",
+    "class": "false / O"
+  },
+  {
+    "sn": "A3.1\u2013A3.2",
+    "claim": "residue \u03c9, I_W=1/\u221a5 dual-route residual",
+    "path": "R",
+    "class": "C"
+  },
+  {
+    "sn": "A3.2",
+    "claim": "throat leakage = observed DE absolute",
+    "path": "R/U",
+    "class": "X dictionary"
+  },
+  {
+    "sn": "A5.1\u2013A5.4",
+    "claim": "S15 shell residual geometry / MKG local dynamics residual",
+    "path": "R",
+    "class": "C residual"
+  },
+  {
+    "sn": "A5 / A16",
+    "claim": "canonical local dynamics (dedup pointer)",
+    "path": "R",
+    "class": "C; see A349\u2013A350"
+  },
+  {
+    "sn": "A8.x",
+    "claim": "MKG multipole residual coefficients",
+    "path": "R",
+    "class": "C residual structure"
+  },
+  {
+    "sn": "A8.x",
+    "claim": "absolute laboratory multipole MeV",
+    "path": "R/U",
+    "class": "I / M"
+  },
+  {
+    "sn": "A9.1",
+    "claim": "residual graviton self-energy structure",
+    "path": "R",
+    "class": "C residual proxy"
+  },
+  {
+    "sn": "A9.1",
+    "claim": "absolute G_N dual-route",
+    "path": "R/U",
+    "class": "false without M"
+  },
+  {
+    "sn": "A9.2\u2013A9.3",
+    "claim": "SGWB / PTA residual spectral structure",
+    "path": "R",
+    "class": "C residual structure"
+  },
+  {
+    "sn": "A9.2\u2013A9.3",
+    "claim": "PTA detection claim as dual-route C",
+    "path": "R/U",
+    "class": "M / X"
+  },
+  {
+    "sn": "A11",
+    "claim": "hierarchical residual expansion timeline structure",
+    "path": "R",
+    "class": "C residual structure"
+  },
+  {
+    "sn": "A11",
+    "claim": "absolute cosmic timeline / Omega recovery dual-route C",
+    "path": "R/U",
+    "class": "X / obstruction"
+  },
+  {
+    "sn": "A16.1\u2013A16.2",
+    "claim": "memory kernel / Weingarten / healing length residual",
+    "path": "R",
+    "class": "C residual"
+  },
+  {
+    "sn": "A16.3 / A18 / A19",
+    "claim": "residual chiral / ALP-like spectral structure",
+    "path": "R",
+    "class": "C residual structure"
+  },
+  {
+    "sn": "A16.3 / A18 / A19",
+    "claim": "particle ID ALP/\u03bd/PQ as dual-route C",
+    "path": "R/U",
+    "class": "X"
+  },
+  {
+    "sn": "A16.5\u2013A16.8",
+    "claim": "residual shell ranks (2,6,8) structure",
+    "path": "R",
+    "class": "C residual ranks"
+  },
+  {
+    "sn": "A16.5\u2013A16.8",
+    "claim": "spectroscopic n\u2113 absolute dual-route C",
+    "path": "R/U",
+    "class": "false / M"
+  },
+  {
+    "sn": "A17",
+    "claim": "laboratory protocols",
+    "path": "R/U",
+    "class": "M engineering"
+  },
+  {
+    "sn": "A20\u2013A21",
+    "claim": "MKG force propagation / residual continuum dictionary",
+    "path": "R",
+    "class": "C under H_cont"
+  },
+  {
+    "sn": "A20\u2013A21",
+    "claim": "unrestricted continuum uniqueness",
+    "path": "U",
+    "class": "false"
+  },
+  {
+    "sn": "A22\u2013A24",
+    "claim": "plabic / Le-diagram residual programme",
+    "path": "R",
+    "class": "C residual / O enumeration"
+  },
+  {
+    "sn": "A25\u2013A26",
+    "claim": "equi-coercivity / residual UV forcing under rank saturation",
+    "path": "R",
+    "class": "C under P5/H_cont"
+  },
+  {
+    "sn": "A25\u2013A26",
+    "claim": "unrestricted UV completion dual-route C",
+    "path": "U",
+    "class": "false / O"
+  },
+  {
+    "sn": "A27",
+    "claim": "selection principles P1\u2013P7 statement",
+    "path": "R",
+    "class": "C definitional package"
+  },
+  {
+    "sn": "A27",
+    "claim": "absolute recovery of P1\u2013P7 from unrestricted geometry",
+    "path": "U",
+    "class": "O"
+  },
+  {
+    "sn": "A28",
+    "claim": "residual nuclear multipoles structure",
+    "path": "R",
+    "class": "C residual structure"
+  },
+  {
+    "sn": "A28",
+    "claim": "absolute nuclear data dual-route C",
+    "path": "R/U",
+    "class": "M / X"
+  },
+  {
+    "sn": "A85\u2013A87",
+    "claim": "hybrid floor / packing hypotheses residual",
+    "path": "R",
+    "class": "C residual"
+  },
+  {
+    "sn": "A92",
+    "claim": "machine absolute proof-obligation checklist",
+    "path": "R/U",
+    "class": "C ledger of obligations"
+  },
+  {
+    "sn": "A93\u2013A97",
+    "claim": "zig-zag packing / hybrid floor / memory amplitude residual",
+    "path": "R",
+    "class": "C residual"
+  },
+  {
+    "sn": "A98\u2013A99",
+    "claim": "soft-spot ledger (refreshed A351)",
+    "path": "R/U",
+    "class": "C ledger"
+  },
+  {
+    "sn": "A100",
+    "claim": "leak second variation residual hybrid block",
+    "path": "R",
+    "class": "C residual"
+  },
+  {
+    "sn": "A0\u2013A100",
+    "claim": "absolute MeV zero-anchor",
+    "path": "R/U",
+    "class": "IMPOSSIBLE"
+  },
+  {
+    "sn": "A0\u2013A100",
+    "claim": "Omega_b \u2261 lambda_V dual-route C",
+    "path": "R/U",
+    "class": "CERTIFIED_OBSTRUCTION"
+  },
+  {
+    "sn": "A0\u2013A100",
+    "claim": "unrestricted packing Maxwell free-A0",
+    "path": "U",
+    "class": "false"
+  }
+]

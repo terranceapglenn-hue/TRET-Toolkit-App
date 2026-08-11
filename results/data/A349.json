@@ -1,0 +1,87 @@
+{
+  "section": "A349",
+  "map": {
+    "S15_elementary": {
+      "canonical": "\\mathcal{S}_{15}",
+      "meaning": "elementary 15-kernel residual unit (selection principles)",
+      "path": "R",
+      "class": "C residual",
+      "pointers": [
+        "A5.1",
+        "A16.1",
+        "A27"
+      ]
+    },
+    "S15_3_multicentral": {
+      "canonical": "\\mathrm{S}_{15}^{(3)}",
+      "meaning": "3-central + dodecagon equatorial residual flat grid",
+      "path": "R",
+      "class": "C unique under M1\u2013M7",
+      "pointers": [
+        "A291",
+        "A320",
+        "A330"
+      ]
+    },
+    "S29": {
+      "canonical": "\\mathrm{S}_{29}",
+      "meaning": "vertical stack residual grid (5 centrals locked)",
+      "path": "R",
+      "class": "C under multi-central axioms",
+      "pointers": [
+        "A293",
+        "A340",
+        "A347"
+      ]
+    },
+    "S29_thr": {
+      "canonical": "\\mathrm{S}_{29}^{\\mathrm{thr}}",
+      "meaning": "single-open-class throat completion",
+      "path": "R",
+      "class": "C under H_cont",
+      "pointers": [
+        "A335",
+        "A339",
+        "A340"
+      ]
+    },
+    "MKG": {
+      "canonical": "MKG / memory kernel grid",
+      "meaning": "local residual dynamics on elementary shell; not a second geometry",
+      "path": "R",
+      "class": "C residual dynamics",
+      "pointers": [
+        "A5.3 (canonical)",
+        "A16.4 (corollary/pointer)",
+        "A20"
+      ]
+    },
+    "H_cont": {
+      "canonical": "H_{\\rm cont}",
+      "meaning": "open residual continuity / Kirchhoff on closed vertices",
+      "path": "R",
+      "class": "C residual axiom package",
+      "pointers": [
+        "A339",
+        "A341 Path R"
+      ]
+    }
+  },
+  "rules": [
+    "Use S15 for elementary unit; S15^(3) only for multi-central flat grid",
+    "MKG denotes dynamics on residual shell, not a competing lattice name",
+    "Multi-central spine A291+ is authoritative for S15^(3)/S29",
+    "Never equate S15^(3) soft_max=3 soft-zero (soft-zero remains n=6)"
+  ],
+  "claim": "C nomenclature unification for early + multi-central spine",
+  "test_id": "T-A349-nomenclature",
+  "checks": {
+    "n_entries_ge_5": true,
+    "has_S15_3": true,
+    "has_MKG_canonical_A53": true,
+    "soft_zero_not_S15_3": true,
+    "free_params_0": true,
+    "path_R": true
+  },
+  "all_ok": true
+}

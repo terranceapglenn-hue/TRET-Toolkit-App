@@ -1,0 +1,44 @@
+{
+  "section": "A315",
+  "systems": {
+    "S15_3": {
+      "nV": 15,
+      "nE": 33,
+      "H1": 19,
+      "circulation_dim": 19,
+      "connected": true
+    },
+    "S29": {
+      "nV": 29,
+      "nE": 87,
+      "H1": 59,
+      "circulation_dim": 59,
+      "connected": true
+    },
+    "S29_throat": {
+      "nV": 30,
+      "nE": 92,
+      "H1": 63,
+      "open_flux_vertices": 1,
+      "Kirchhoff_closed_vertices": 29
+    }
+  },
+  "theorem": {
+    "circulation_space": "dim H1(G)",
+    "Kirchhoff": "\u03a3_b J_{ab} = 0 for a not throat",
+    "throat_open": "\u03a3_b J_{Tb} = J_thr^ext possible",
+    "Noether_residual": "residual circulation symmetries of F_res under H_cont",
+    "Maxwell_residual": "recovered under H_cont (A192); unrestricted false",
+    "claim": "C under H_cont"
+  },
+  "completeness": "Residual circulation/Noether structure complete under H_cont: H1 dimensions certified; throat open flux channel structured; Maxwell residual recovery conditional on H_cont.",
+  "checks": {
+    "S15_3_H1_19": true,
+    "S29_H1_59": true,
+    "S29_throat_H1_63": true,
+    "all_connected": true,
+    "free_params_0": true,
+    "unrestricted_false": true
+  },
+  "all_ok": true
+}

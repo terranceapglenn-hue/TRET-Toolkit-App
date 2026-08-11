@@ -1,0 +1,51 @@
+{
+  "section": "A312",
+  "channels": {
+    "packing_soft": {
+      "F": -0.6527840567566681,
+      "force": "-grad soft costs",
+      "class": "C"
+    },
+    "throat_open": {
+      "F": 0.051069180942701596,
+      "force": "J_thr^ext Kirchhoff residual",
+      "class": "C under H_cont"
+    },
+    "chiral_mu5": {
+      "F": 0.8047189562170503,
+      "force": "residual CME/CVE schematic",
+      "class": "C residual"
+    },
+    "elastic_kappa_R": {
+      "F": 0.41458980337503154,
+      "force": "-grad elastic residual energy",
+      "class": "C residual"
+    }
+  },
+  "F_total_residual": 0.6175938837781154,
+  "noether": {
+    "residual_circulations": "H1 cycles carry residual current",
+    "conservation": "d*J = 0 at non-throat vertices; throat may source open flux",
+    "class": "C under H_cont",
+    "absolute_SI": "M"
+  },
+  "identity": {
+    "F_res": "F_closed + E_throat + E_chiral + E_elastic",
+    "F_a": "-\u2202F_res/\u2202x_a",
+    "SI_force": "F_SI = F_res_force * F_star (M)",
+    "absolute_MeV_force": "IMPOSSIBLE without M anchor"
+  },
+  "completeness": "Residual force recovery is complete as gradient of residual free-energy channels under H_cont with dual-route moduli only. Absolute SI force is M.",
+  "claim_residual": "C complete under H_cont",
+  "claim_absolute_SI": "M",
+  "checks": {
+    "F_total_finite": true,
+    "n_channels_4": true,
+    "all_channels_C_or_Hcont": true,
+    "F_closed_matches": true,
+    "MeV_impossible": true,
+    "free_params_0": true,
+    "no_absolute_force_claimed": true
+  },
+  "all_ok": true
+}

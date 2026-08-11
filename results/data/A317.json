@@ -1,0 +1,49 @@
+{
+  "section": "A317",
+  "identities": {
+    "kappa_R": true,
+    "omega_pack": true,
+    "R_nat": true,
+    "c_nat": true,
+    "soft_max": true,
+    "lambda_V": true,
+    "soft_zero_nstar": true,
+    "rank_eq_matches_nstar": true,
+    "phi_chi": true,
+    "I_W": true
+  },
+  "moduli": {
+    "PHI": 1.618033988749895,
+    "CHI": 0.38196601125010515,
+    "I_W": 0.4472135954999579,
+    "KAPPA_R": 0.8291796067500631,
+    "R_NAT": 0.0008583722609568171,
+    "OMEGA_PACK": 0.1708203932499369,
+    "N_STAR": 6,
+    "lambda_V": 0.049787068367863944
+  },
+  "commutation": {
+    "soft_only_maximizer_is_nstar": true,
+    "lambda_V_not_equal_p6": true,
+    "layers_distinct": true,
+    "note": "packing ecology p6 \u2260 total residual scale \u03bb_V (category separation)"
+  },
+  "consistency_theorem": "All dual-route moduli identities hold with free_params=0. Soft-only packing ecology and soft_max residual scales are consistent and categorically distinct layers.",
+  "claim": "C",
+  "checks": {
+    "id_kappa_R": true,
+    "id_omega_pack": true,
+    "id_R_nat": true,
+    "id_c_nat": true,
+    "id_soft_max": true,
+    "id_lambda_V": true,
+    "id_soft_zero_nstar": true,
+    "id_rank_eq_matches_nstar": true,
+    "id_phi_chi": true,
+    "id_I_W": true,
+    "comm_maximizer": true,
+    "comm_layers_distinct": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

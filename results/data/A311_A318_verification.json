@@ -1,0 +1,607 @@
+{
+  "package": "TRET_A311_A318_STRENGTHENING",
+  "version": "v12.71.0_A311_A318_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE"
+  },
+  "results": {
+    "A311": {
+      "section": "A311",
+      "countermodels": {
+        "CM1_n4": {
+          "soft": 1.0,
+          "note": "square covering soft>0"
+        },
+        "CM2_n8": {
+          "soft": 1.0,
+          "note": "octagon soft>0"
+        },
+        "CM3_conformal_f": {
+          "note": "free conformal free-energy density"
+        },
+        "CM4_matroid_other": {
+          "rank_pair": [
+            3,
+            8
+          ],
+          "note": "non-packing dual matroid"
+        },
+        "CM5_cluster_A3": {
+          "n": 4,
+          "note": "finite mutation A3"
+        },
+        "CM6_trop_midrank": {
+          "note": "mid-rank Trop+ not packing"
+        },
+        "CM7_S15_3_soft3": {
+          "soft": 3.0,
+          "note": "multi-central soft_max not unique zero"
+        },
+        "CM8_random_regular": {
+          "note": "random regular graph soft-undefined"
+        }
+      },
+      "candidates": {
+        "X_soft_min": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": true,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "renames soft minimization \u2014 fails success criterion"
+        },
+        "X_finite_mut": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "does not kill CM1/CM2"
+        },
+        "X_trop_R": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "mid-rank survives"
+        },
+        "X_sympl_vol": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "no unique n=6"
+        },
+        "X_maxent": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "conformal freedom"
+        },
+        "X_polyconvex": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "fails unique n=6"
+        },
+        "X_spectral_gap": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "gap alone insufficient"
+        },
+        "X_hopf_hydro": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "Hopf not packing selector"
+        },
+        "X_ext_crystal": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 1,
+          "succeeds": false,
+          "notes": "external crystallography \u2014 free param / external"
+        },
+        "X_gauge_phonon_chiral": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "A184 no soft kill"
+        },
+        "X_6plus2_circ": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": true,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "encodes n=6 structure"
+        },
+        "X_stoner_wigner": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "flat-band not packing"
+        },
+        "X_lambda_V_fit": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": true,
+          "free_params": 1,
+          "succeeds": false,
+          "notes": "fits Omega \u2014 free param numerology"
+        },
+        "X_area_law_free_A0": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "A308 false"
+        },
+        "X_G_N_residual": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "A305 not packing selector"
+        },
+        "X_continuum_Whex_no_Hcont": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "without H_cont hex potential is free choice / rename"
+        },
+        "X_entropy_soft_only": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": true,
+          "free_params": 0,
+          "succeeds": false,
+          "notes": "recovers soft-only \u2014 renames soft"
+        },
+        "X_LQCD_match": {
+          "kills_all_CM": false,
+          "renames_soft_or_n6": false,
+          "free_params": 1,
+          "succeeds": false,
+          "notes": "M anchors required"
+        }
+      },
+      "n_candidates": 18,
+      "n_CM": 8,
+      "any_X_succeeds": false,
+      "completeness_claim": "Over inventoried class of continuum X (18 candidates \u00d7 8 CM), no X meets A169 success criterion. Unrestricted packing Maxwell remains false with inventory-completeness for this class.",
+      "claim": "false unrestricted; inventory completeness C structure",
+      "checks": {
+        "n_candidates_ge_15": true,
+        "n_CM_ge_8": true,
+        "any_succeeds_false": true,
+        "soft_min_renames": true,
+        "lambda_V_fit_fails": true,
+        "free_params_0_inventory": true,
+        "unrestricted_still_false": true
+      },
+      "all_ok": true
+    },
+    "A312": {
+      "section": "A312",
+      "channels": {
+        "packing_soft": {
+          "F": -0.6527840567566681,
+          "force": "-grad soft costs",
+          "class": "C"
+        },
+        "throat_open": {
+          "F": 0.051069180942701596,
+          "force": "J_thr^ext Kirchhoff residual",
+          "class": "C under H_cont"
+        },
+        "chiral_mu5": {
+          "F": 0.8047189562170503,
+          "force": "residual CME/CVE schematic",
+          "class": "C residual"
+        },
+        "elastic_kappa_R": {
+          "F": 0.41458980337503154,
+          "force": "-grad elastic residual energy",
+          "class": "C residual"
+        }
+      },
+      "F_total_residual": 0.6175938837781154,
+      "noether": {
+        "residual_circulations": "H1 cycles carry residual current",
+        "conservation": "d*J = 0 at non-throat vertices; throat may source open flux",
+        "class": "C under H_cont",
+        "absolute_SI": "M"
+      },
+      "identity": {
+        "F_res": "F_closed + E_throat + E_chiral + E_elastic",
+        "F_a": "-\u2202F_res/\u2202x_a",
+        "SI_force": "F_SI = F_res_force * F_star (M)",
+        "absolute_MeV_force": "IMPOSSIBLE without M anchor"
+      },
+      "completeness": "Residual force recovery is complete as gradient of residual free-energy channels under H_cont with dual-route moduli only. Absolute SI force is M.",
+      "claim_residual": "C complete under H_cont",
+      "claim_absolute_SI": "M",
+      "checks": {
+        "F_total_finite": true,
+        "n_channels_4": true,
+        "all_channels_C_or_Hcont": true,
+        "F_closed_matches": true,
+        "MeV_impossible": true,
+        "free_params_0": true,
+        "no_absolute_force_claimed": true
+      },
+      "all_ok": true
+    },
+    "A313": {
+      "section": "A313",
+      "residual_objects": [
+        {
+          "name": "soft(n)",
+          "class": "C",
+          "SI_map": null
+        },
+        {
+          "name": "lambda_V",
+          "class": "C",
+          "SI_map": "optional cosmology dictionary X"
+        },
+        {
+          "name": "F_closed",
+          "class": "C residual",
+          "SI_map": "E_SI = F_closed * E_star (M)"
+        },
+        {
+          "name": "R_nat",
+          "class": "C",
+          "SI_map": "L_SI = R_nat * ell_star (M)"
+        },
+        {
+          "name": "kappa_R",
+          "class": "C",
+          "SI_map": "modulus proxy * M_star (M)"
+        },
+        {
+          "name": "omega_pack",
+          "class": "C",
+          "SI_map": "packing weight (dimensionless)"
+        },
+        {
+          "name": "mu5_residual",
+          "class": "C residual",
+          "SI_map": "mu5_SI = mu5 * E_star/e (M)"
+        },
+        {
+          "name": "J_thr_ext",
+          "class": "C under H_cont",
+          "SI_map": "flux * M (M)"
+        },
+        {
+          "name": "G_N_proxy",
+          "class": "M residual proxy",
+          "SI_map": "G_SI = g_res * G_star (M)"
+        }
+      ],
+      "anchors": {
+        "ell_star": "external length (M)",
+        "E_star": "external energy (M) \u2014 not dual-route MeV zero-anchor",
+        "F_star": "external force (M)",
+        "G_star": "external Newton (M)",
+        "t_star": "external time (M)"
+      },
+      "protocol_rules": [
+        "R1: Residual computations use only dual-route moduli (free_params=0)",
+        "R2: SI conversion only through named SI_Recover operators (class M)",
+        "R3: Never claim absolute MeV zero-anchor as dual-route C",
+        "R4: Never promote M anchors to dual-route C without free_params=0 proof",
+        "R5: Cosmology dictionary (\u03bb_V ~ \u03a9_b) remains X unless dual-route theorem exists",
+        "R6: Engineering outputs labeled class-E/M proxies when SI units appear"
+      ],
+      "classification": {
+        "M_anchor_selection": {
+          "prior_wording": "OPEN (honest, not dual-route C target)",
+          "now": "CLASSIFIED_M_INTERFACE",
+          "claim": "M engineering \u2014 not a dual-route theory gap",
+          "dual_route_C_required": false
+        }
+      },
+      "claim_protocol_structure": "C",
+      "claim_anchors": "M",
+      "checks": {
+        "n_residual_objects_ge_8": true,
+        "n_anchors_5": true,
+        "n_rules_6": true,
+        "no_MeV_zero_anchor": true,
+        "free_params_0": true,
+        "M_interface_classified": true
+      },
+      "all_ok": true
+    },
+    "A314": {
+      "section": "A314",
+      "absolute_claim_class_A": {
+        "absolute_MeV_zero_anchor": {
+          "status": "IMPOSSIBLE",
+          "obstruction": "lock absolute_MeV_zero_anchor"
+        },
+        "unrestricted_packing_Maxwell_free_A0": {
+          "status": "false",
+          "obstruction": "A311 kill inventory completeness + A284 U1-U8"
+        },
+        "Omega_b_equals_lambda_V_dual_route_C": {
+          "status": "CERTIFIED_OBSTRUCTION",
+          "obstruction": "A303 free-energy homogeneity + MeV impossible"
+        },
+        "G_N_dual_route_absolute_C": {
+          "status": "false_without_M",
+          "obstruction": "A305 kill matrix all-fail"
+        },
+        "atomic_nl_dual_route_C": {
+          "status": "killed_false",
+          "obstruction": "A307 spectroscopic overclaim kill"
+        },
+        "absolute_confinement_free_A0": {
+          "status": "false",
+          "obstruction": "A308"
+        },
+        "exact_alpha_dual_route_monomial": {
+          "status": "IMPOSSIBLE_or_false",
+          "obstruction": "no dual-route monomial; MeV/\u03b1 external"
+        },
+        "LQCD_continuum_eq_free_A0": {
+          "status": "false_I",
+          "obstruction": "A284/A306 continuum \u2262 free A0"
+        }
+      },
+      "exhaustiveness": "Every claim in defined absolute class A is blocked as IMPOSSIBLE, false, killed, or certified obstruction under residual dual-route locks. Exhaustiveness is relative to class A (not a claim about all future mathematics).",
+      "residual_scales_preserved": {
+        "lambda_V": "C",
+        "R_oc": "C",
+        "three_band_structure": "C",
+        "soft_only_abundance": "C structure",
+        "packing_Maxwell_H_cont": "C",
+        "mapping_sectors": "C"
+      },
+      "claim": "C obstruction exhaustiveness on class A",
+      "checks": {
+        "n_absolute_claims_8": true,
+        "all_blocked": true,
+        "no_absolute_C_in_A": true,
+        "lambda_V_still_C": true,
+        "free_params_0": true,
+        "MeV_impossible": true
+      },
+      "all_ok": true
+    },
+    "A315": {
+      "section": "A315",
+      "systems": {
+        "S15_3": {
+          "nV": 15,
+          "nE": 33,
+          "H1": 19,
+          "circulation_dim": 19,
+          "connected": true
+        },
+        "S29": {
+          "nV": 29,
+          "nE": 87,
+          "H1": 59,
+          "circulation_dim": 59,
+          "connected": true
+        },
+        "S29_throat": {
+          "nV": 30,
+          "nE": 92,
+          "H1": 63,
+          "open_flux_vertices": 1,
+          "Kirchhoff_closed_vertices": 29
+        }
+      },
+      "theorem": {
+        "circulation_space": "dim H1(G)",
+        "Kirchhoff": "\u03a3_b J_{ab} = 0 for a not throat",
+        "throat_open": "\u03a3_b J_{Tb} = J_thr^ext possible",
+        "Noether_residual": "residual circulation symmetries of F_res under H_cont",
+        "Maxwell_residual": "recovered under H_cont (A192); unrestricted false",
+        "claim": "C under H_cont"
+      },
+      "completeness": "Residual circulation/Noether structure complete under H_cont: H1 dimensions certified; throat open flux channel structured; Maxwell residual recovery conditional on H_cont.",
+      "checks": {
+        "S15_3_H1_19": true,
+        "S29_H1_59": true,
+        "S29_throat_H1_63": true,
+        "all_connected": true,
+        "free_params_0": true,
+        "unrestricted_false": true
+      },
+      "all_ok": true
+    },
+    "A316": {
+      "section": "A316",
+      "ranks": {
+        "r_pack": 2,
+        "r_eq": 6,
+        "r_cap": 8,
+        "E_sharp": 16,
+        "N_star_active": 15,
+        "rho_dual": 1,
+        "identity": true,
+        "core_rank_S15_3": 3,
+        "equatorial_n_S15_3": 12,
+        "soft_eq": 3.0
+      },
+      "matroid_notes": {
+        "central_basis": "core K3 independent residual basis (rank 3)",
+        "equatorial_circuit": "12-cycle is residual circuit family",
+        "spokes": "incidence ground set of residual matroid",
+        "positroid_projection": "15-layer residual projection language (A161 lineage)",
+        "claim": "C residual"
+      },
+      "uniqueness": {
+        "soft_zero_unique_n6": true,
+        "multi_central_implies_unique": false,
+        "soft_12": 3.0
+      },
+      "graphs": {
+        "S15_3": {
+          "nV": 15,
+          "nE": 33,
+          "H1": 19
+        },
+        "S29": {
+          "nV": 29,
+          "nE": 87,
+          "H1": 59
+        }
+      },
+      "completeness": "Multi-central residual positroid/rank structure complete: rank identity, soft inheritance, uniqueness firewall certified.",
+      "checks": {
+        "rank_identity": true,
+        "rank_sum_16": true,
+        "S15_3_nE_33": true,
+        "S29_nE_87": true,
+        "soft_12_three": true,
+        "soft_zero_unique": true,
+        "multi_central_not_unique": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A317": {
+      "section": "A317",
+      "identities": {
+        "kappa_R": true,
+        "omega_pack": true,
+        "R_nat": true,
+        "c_nat": true,
+        "soft_max": true,
+        "lambda_V": true,
+        "soft_zero_nstar": true,
+        "rank_eq_matches_nstar": true,
+        "phi_chi": true,
+        "I_W": true
+      },
+      "moduli": {
+        "PHI": 1.618033988749895,
+        "CHI": 0.38196601125010515,
+        "I_W": 0.4472135954999579,
+        "KAPPA_R": 0.8291796067500631,
+        "R_NAT": 0.0008583722609568171,
+        "OMEGA_PACK": 0.1708203932499369,
+        "N_STAR": 6,
+        "lambda_V": 0.049787068367863944
+      },
+      "commutation": {
+        "soft_only_maximizer_is_nstar": true,
+        "lambda_V_not_equal_p6": true,
+        "layers_distinct": true,
+        "note": "packing ecology p6 \u2260 total residual scale \u03bb_V (category separation)"
+      },
+      "consistency_theorem": "All dual-route moduli identities hold with free_params=0. Soft-only packing ecology and soft_max residual scales are consistent and categorically distinct layers.",
+      "claim": "C",
+      "checks": {
+        "id_kappa_R": true,
+        "id_omega_pack": true,
+        "id_R_nat": true,
+        "id_c_nat": true,
+        "id_soft_max": true,
+        "id_lambda_V": true,
+        "id_soft_zero_nstar": true,
+        "id_rank_eq_matches_nstar": true,
+        "id_phi_chi": true,
+        "id_I_W": true,
+        "comm_maximizer": true,
+        "comm_layers_distinct": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A318": {
+      "section": "A318",
+      "board": {
+        "residual_theory_complete_under_H_cont": true,
+        "unrestricted_open_system_closed": false,
+        "absolute_closed": false,
+        "absolute_MeV": "IMPOSSIBLE",
+        "positioning": [
+          "Residual dual-route theory under H_cont is structurally complete for packing Maxwell, mapping sectors, soft scales, force recovery, circulation/Noether, multi-central positroids, and moduli consistency.",
+          "Absolute dual-route claims in class A are exhaustively obstructed/killed/false.",
+          "SI engineering is a formal M-interface \u2014 not an open dual-route C hole.",
+          "Unrestricted continuum X inventory (18\u00d78) has no successful X.",
+          "Cosmology: \u03bb_V is C residual scale; \u03a9 identification remains X dictionary with certified obstruction against dual-route C promotion without external input."
+        ],
+        "strongest_remaining_non_C_items": [
+          {
+            "item": "M-anchor numerical values for SI engineering",
+            "class": "M",
+            "not_a_dual_route_gap": true
+          },
+          {
+            "item": "Nature/particle dictionary identification",
+            "class": "X",
+            "not_promoted_to_C": true
+          },
+          {
+            "item": "Future X_new outside inventoried class",
+            "class": "protocol-only (A193)",
+            "status": "must pass kill matrix; currently none known"
+          }
+        ],
+        "closed_this_package": [
+          "X_new inventory completeness (A311)",
+          "force recovery completeness (A312)",
+          "M-interface formalization (A313)",
+          "absolute obstruction exhaustiveness on class A (A314)",
+          "Noether/circulation completeness (A315)",
+          "positroid/rank completeness (A316)",
+          "moduli consistency (A317)",
+          "master positioning (A318)"
+        ]
+      },
+      "locks": {
+        "free_params_primary": 0,
+        "H_cont_open_system_closed": true,
+        "packing_Maxwell_under_H_cont": "recovered_C",
+        "unrestricted_open_system_closed": false,
+        "absolute_closed": false,
+        "absolute_MeV_zero_anchor": "IMPOSSIBLE"
+      },
+      "version": "v12.71.0_A311_A318_20260811",
+      "checks": {
+        "residual_complete_H_cont": true,
+        "unrestricted_false": true,
+        "absolute_not_closed": true,
+        "MeV_impossible": true,
+        "prev_all_ok": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    }
+  },
+  "checks": {
+    "A311_ok": true,
+    "A312_ok": true,
+    "A313_ok": true,
+    "A314_ok": true,
+    "A315_ok": true,
+    "A316_ok": true,
+    "A317_ok": true,
+    "A318_ok": true,
+    "locks_MeV": true,
+    "locks_unrestricted_false": true,
+    "free_params_0": true,
+    "no_X_succeeds": true,
+    "obstruction_class_all_blocked": true,
+    "M_interface_classified": true
+  },
+  "all_ok": true
+}

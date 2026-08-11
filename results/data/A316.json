@@ -1,0 +1,51 @@
+{
+  "section": "A316",
+  "ranks": {
+    "r_pack": 2,
+    "r_eq": 6,
+    "r_cap": 8,
+    "E_sharp": 16,
+    "N_star_active": 15,
+    "rho_dual": 1,
+    "identity": true,
+    "core_rank_S15_3": 3,
+    "equatorial_n_S15_3": 12,
+    "soft_eq": 3.0
+  },
+  "matroid_notes": {
+    "central_basis": "core K3 independent residual basis (rank 3)",
+    "equatorial_circuit": "12-cycle is residual circuit family",
+    "spokes": "incidence ground set of residual matroid",
+    "positroid_projection": "15-layer residual projection language (A161 lineage)",
+    "claim": "C residual"
+  },
+  "uniqueness": {
+    "soft_zero_unique_n6": true,
+    "multi_central_implies_unique": false,
+    "soft_12": 3.0
+  },
+  "graphs": {
+    "S15_3": {
+      "nV": 15,
+      "nE": 33,
+      "H1": 19
+    },
+    "S29": {
+      "nV": 29,
+      "nE": 87,
+      "H1": 59
+    }
+  },
+  "completeness": "Multi-central residual positroid/rank structure complete: rank identity, soft inheritance, uniqueness firewall certified.",
+  "checks": {
+    "rank_identity": true,
+    "rank_sum_16": true,
+    "S15_3_nE_33": true,
+    "S29_nE_87": true,
+    "soft_12_three": true,
+    "soft_zero_unique": true,
+    "multi_central_not_unique": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

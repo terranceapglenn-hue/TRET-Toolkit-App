@@ -1,0 +1,84 @@
+{
+  "section": "A313",
+  "residual_objects": [
+    {
+      "name": "soft(n)",
+      "class": "C",
+      "SI_map": null
+    },
+    {
+      "name": "lambda_V",
+      "class": "C",
+      "SI_map": "optional cosmology dictionary X"
+    },
+    {
+      "name": "F_closed",
+      "class": "C residual",
+      "SI_map": "E_SI = F_closed * E_star (M)"
+    },
+    {
+      "name": "R_nat",
+      "class": "C",
+      "SI_map": "L_SI = R_nat * ell_star (M)"
+    },
+    {
+      "name": "kappa_R",
+      "class": "C",
+      "SI_map": "modulus proxy * M_star (M)"
+    },
+    {
+      "name": "omega_pack",
+      "class": "C",
+      "SI_map": "packing weight (dimensionless)"
+    },
+    {
+      "name": "mu5_residual",
+      "class": "C residual",
+      "SI_map": "mu5_SI = mu5 * E_star/e (M)"
+    },
+    {
+      "name": "J_thr_ext",
+      "class": "C under H_cont",
+      "SI_map": "flux * M (M)"
+    },
+    {
+      "name": "G_N_proxy",
+      "class": "M residual proxy",
+      "SI_map": "G_SI = g_res * G_star (M)"
+    }
+  ],
+  "anchors": {
+    "ell_star": "external length (M)",
+    "E_star": "external energy (M) \u2014 not dual-route MeV zero-anchor",
+    "F_star": "external force (M)",
+    "G_star": "external Newton (M)",
+    "t_star": "external time (M)"
+  },
+  "protocol_rules": [
+    "R1: Residual computations use only dual-route moduli (free_params=0)",
+    "R2: SI conversion only through named SI_Recover operators (class M)",
+    "R3: Never claim absolute MeV zero-anchor as dual-route C",
+    "R4: Never promote M anchors to dual-route C without free_params=0 proof",
+    "R5: Cosmology dictionary (\u03bb_V ~ \u03a9_b) remains X unless dual-route theorem exists",
+    "R6: Engineering outputs labeled class-E/M proxies when SI units appear"
+  ],
+  "classification": {
+    "M_anchor_selection": {
+      "prior_wording": "OPEN (honest, not dual-route C target)",
+      "now": "CLASSIFIED_M_INTERFACE",
+      "claim": "M engineering \u2014 not a dual-route theory gap",
+      "dual_route_C_required": false
+    }
+  },
+  "claim_protocol_structure": "C",
+  "claim_anchors": "M",
+  "checks": {
+    "n_residual_objects_ge_8": true,
+    "n_anchors_5": true,
+    "n_rules_6": true,
+    "no_MeV_zero_anchor": true,
+    "free_params_0": true,
+    "M_interface_classified": true
+  },
+  "all_ok": true
+}

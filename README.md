@@ -1,4 +1,4 @@
-# TRET Toolkit App v7.1.0
+# TRET Toolkit App v7.2.0
 
 **Residual-native computational instruments** for Toroidal Residual Energy Theory (A159–A302 lineage).
 
@@ -69,6 +69,23 @@ K7, M15, K10, K24, S15^(3), S29, S29^throat — incidence, H1, Laplacian spectru
 - R_oc = e^3−1 ≈ **19.0855**
 - Soft-only n=6 packing share ≈ **52.06%**
 - Three-band V/DM/DE ≈ **4.98 / 31.81 / 63.21 %**
+
+## A311–A318 strengthening (v7.2.0)
+
+| Item | Outcome |
+|------|---------|
+| X_new continuum inventory (18×8) | **no success**; unrestricted false (complete ledger) |
+| Force recovery | **C complete** under H_cont |
+| M-interface SI | **CLASSIFIED M** (not dual-route hole) |
+| Absolute class A | **exhaustively obstructed** |
+| Noether/circulation | **C complete** |
+| Positroid/ranks | **C complete** |
+| Moduli consistency | **C** |
+| Residual theory under H_cont | **structurally complete** |
+
+```bash
+PYTHONPATH=. python scripts/run_A311_A318_strengthening.py
+```
 
 ## A303–A310 gap closure (v7.1.0)
 

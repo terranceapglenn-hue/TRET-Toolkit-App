@@ -1,0 +1,92 @@
+{
+  "section": "A340",
+  "class_k1": {
+    "core3": {
+      "attach": [
+        0,
+        1,
+        2
+      ],
+      "nV": 30,
+      "nE": 90,
+      "H1": 61,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 3
+    },
+    "core3_apex_top": {
+      "attach": [
+        0,
+        1,
+        2,
+        15
+      ],
+      "nV": 30,
+      "nE": 91,
+      "H1": 62,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 4
+    },
+    "core3_both_apices": {
+      "attach": [
+        0,
+        1,
+        2,
+        15,
+        22
+      ],
+      "nV": 30,
+      "nE": 92,
+      "H1": 63,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 5
+    },
+    "apices_only": {
+      "attach": [
+        15,
+        22
+      ],
+      "nV": 30,
+      "nE": 89,
+      "H1": 60,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 2
+    },
+    "core1": {
+      "attach": [
+        0
+      ],
+      "nV": 30,
+      "nE": 88,
+      "H1": 59,
+      "connected": true,
+      "open_flux_dim": 1,
+      "deg_T": 1
+    }
+  },
+  "k2": {
+    "nV": 31,
+    "nE": 93,
+    "H1": 63,
+    "open_flux_dim": 2,
+    "connected": true
+  },
+  "H1_formula": "H1(S29_comp) = 59 + |attach| - 1 for single throat connected completion",
+  "claim": "C classification of residual S29 open completions under H_cont",
+  "test_id": "T-A340-S29-completions",
+  "checks": {
+    "all_k1_flux1": true,
+    "all_k1_connected": true,
+    "k2_flux2": true,
+    "H1_formula_k1": true,
+    "canonical_H1_63": true,
+    "n_patterns_ge5": true,
+    "single_open_class_selects_k1": true,
+    "free_params_0": true,
+    "DE_ID_X": true
+  },
+  "all_ok": true
+}

@@ -1,0 +1,62 @@
+{
+  "section": "A345",
+  "soft_spots": [
+    {
+      "id": "H_cont_cohomology_thin",
+      "was": "soft",
+      "now": "C closed A339"
+    },
+    {
+      "id": "S29_completions_unclassified",
+      "was": "soft",
+      "now": "C closed A340"
+    },
+    {
+      "id": "dual_path_mixable",
+      "was": "soft",
+      "now": "C architecture A341 separation mandatory"
+    },
+    {
+      "id": "energy_budget_weak",
+      "was": "soft",
+      "now": "Path R C multi-layer A342; Path U obstructed A343"
+    },
+    {
+      "id": "linkages_implicit",
+      "was": "soft",
+      "now": "C dictionary A344"
+    },
+    {
+      "id": "Omega_as_maybe_C",
+      "was": "risk",
+      "now": "CERTIFIED_OBSTRUCTION retained"
+    },
+    {
+      "id": "unrestricted_maybe_later_C",
+      "was": "risk",
+      "now": "false Path U retained"
+    }
+  ],
+  "completion": {
+    "path_R_residual_complete_inventoried": true,
+    "path_U_closed_as_nonrecovery": true,
+    "absolute_not_closed": true,
+    "energy_budget_Path_R_strengthened": true,
+    "energy_budget_Path_U_nonrecovery": true,
+    "cohomology_H_cont_detailed": true,
+    "S29_completions_classified": true
+  },
+  "claim": "C dual-path completion board after A339\u2013A344",
+  "test_id": "T-A345-dual-path-completion",
+  "checks": {
+    "all_prev_ok": true,
+    "n_soft_spots_closed": true,
+    "path_R_complete_flag": true,
+    "path_U_nonrecovery": true,
+    "absolute_not_closed": true,
+    "Omega_obstruction": true,
+    "free_params_0": true,
+    "MeV_I": true
+  },
+  "all_ok": true
+}

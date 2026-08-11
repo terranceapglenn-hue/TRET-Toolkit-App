@@ -1,0 +1,128 @@
+{
+  "board": [
+    {
+      "id": "H_cont_cohomology",
+      "section": "A339",
+      "path": "R",
+      "class": "C"
+    },
+    {
+      "id": "S29_completions",
+      "section": "A340",
+      "path": "R",
+      "class": "C"
+    },
+    {
+      "id": "dual_path_architecture",
+      "section": "A341",
+      "path": "R/U",
+      "class": "C architecture"
+    },
+    {
+      "id": "energy_budget_residual",
+      "section": "A342",
+      "path": "R",
+      "class": "C multi-layer"
+    },
+    {
+      "id": "energy_budget_unrestricted",
+      "section": "A343",
+      "path": "U",
+      "class": "false/obstructed"
+    },
+    {
+      "id": "linkages",
+      "section": "A344",
+      "path": "R/U",
+      "class": "C dictionary"
+    },
+    {
+      "id": "dual_path_completion",
+      "section": "A345",
+      "path": "R/U",
+      "class": "C board"
+    },
+    {
+      "id": "lambda_V",
+      "section": "A342",
+      "path": "R",
+      "class": "C residual scale"
+    },
+    {
+      "id": "Omega_dual_route",
+      "section": "A342/A343",
+      "path": "R/U",
+      "class": "CERTIFIED_OBSTRUCTION"
+    },
+    {
+      "id": "MeV",
+      "section": "locks",
+      "path": "R/U",
+      "class": "IMPOSSIBLE"
+    },
+    {
+      "id": "packing_Maxwell_H_cont",
+      "section": "prior",
+      "path": "R",
+      "class": "C"
+    },
+    {
+      "id": "packing_Maxwell_unrestricted",
+      "section": "prior/A343",
+      "path": "U",
+      "class": "false"
+    },
+    {
+      "id": "three_band_residual",
+      "section": "A342",
+      "path": "R",
+      "class": "C structure"
+    },
+    {
+      "id": "three_band_Planck_ID",
+      "section": "A342",
+      "path": "R/U",
+      "class": "X"
+    }
+  ],
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+    "path_R_U_separation": "mandatory"
+  },
+  "tmap": [
+    {
+      "theorem": "A339 H_cont residual cohomology",
+      "test_id": "T-A339-Hcont-cohomology"
+    },
+    {
+      "theorem": "A340 S29 residual completions",
+      "test_id": "T-A340-S29-completions"
+    },
+    {
+      "theorem": "A341 dual-path architecture",
+      "test_id": "T-A341-dual-path"
+    },
+    {
+      "theorem": "A342 Path R energy budget",
+      "test_id": "T-A342-energy-budget-path-R"
+    },
+    {
+      "theorem": "A343 Path U energy budget nonrecovery",
+      "test_id": "T-A343-energy-budget-path-U"
+    },
+    {
+      "theorem": "A344 linkage dictionary",
+      "test_id": "T-A344-linkages"
+    },
+    {
+      "theorem": "A345 dual-path completion",
+      "test_id": "T-A345-dual-path-completion"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "master": "A339-A346",
+  "version": "v12.75.0_A339_A346_20260811",
+  "all_ok": true,
+  "n_checks": 12,
+  "n_pass": 12,
+  "failed": [],
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+    "path_R_U_separation": "mandatory"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "section": "A341",
+  "path_R": {
+    "name": "Path R \u2014 residual under H_cont",
+    "domain": "selection principles P1\u2013P7 + H_cont + soft geometry",
+    "status": "structurally complete for inventoried residual C claims A319\u2013A345",
+    "packing_Maxwell": "C",
+    "energy_budget_residual": "C multi-layer structure",
+    "absolute_Omega": "CERTIFIED_OBSTRUCTION as dual-route C"
+  },
+  "path_U": {
+    "name": "Path U \u2014 unrestricted",
+    "domain": "local continuum without soft/H_cont free-param-free",
+    "status": "closed as false for packing Maxwell uniqueness and absolute budget recovery",
+    "packing_Maxwell": "false",
+    "energy_budget_absolute": "false / obstructed",
+    "free_A0_unique": "false"
+  },
+  "separation": {
+    "rule": "Path R C does not imply Path U C; Path U false does not weaken Path R C",
+    "forbidden": "promoting residual lambda_V to Omega as dual-route C",
+    "mandatory_labels": [
+      "Path R",
+      "Path U",
+      "M",
+      "X",
+      "I"
+    ]
+  },
+  "claim": "C architecture: dual-path separation with honest Path U falsehood",
+  "test_id": "T-A341-dual-path",
+  "checks": {
+    "path_R_defined": true,
+    "path_U_defined": true,
+    "U_packing_false": true,
+    "R_packing_C": true,
+    "separation_mandatory": true,
+    "Omega_obstruction": true,
+    "free_params_0": true,
+    "MeV_I": true
+  },
+  "all_ok": true
+}

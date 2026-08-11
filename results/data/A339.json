@@ -1,0 +1,58 @@
+{
+  "section": "A339",
+  "graphs": {
+    "S15_3": {
+      "nV": 15,
+      "nE": 33,
+      "n_comp": 1,
+      "dim_H0": 1,
+      "dim_H1": 19,
+      "rank_B": 14,
+      "dim_ker_B": 19,
+      "rank_nullity_ok": true
+    },
+    "S29": {
+      "nV": 29,
+      "nE": 87,
+      "n_comp": 1,
+      "dim_H0": 1,
+      "dim_H1": 59,
+      "rank_B": 28,
+      "dim_ker_B": 59,
+      "rank_nullity_ok": true
+    },
+    "S29_thr": {
+      "nV": 30,
+      "nE": 92,
+      "n_comp": 1,
+      "dim_H0": 1,
+      "dim_H1": 63,
+      "rank_B": 29,
+      "dim_ker_B": 63,
+      "rank_nullity_ok": true
+    }
+  },
+  "les": {
+    "absolute_H1_S29": 59,
+    "absolute_H1_S29_thr": 63,
+    "delta_H1_add_thr": 4,
+    "expected_delta": 4,
+    "open_flux_dim_single_T": 1,
+    "H_cont_statement": "\u03b4J=0 on V\\T; \u03b4J=J_ext on T"
+  },
+  "claim": "C residual cohomology under H_cont (absolute H1 + relative open flux)",
+  "test_id": "T-A339-Hcont-cohomology",
+  "checks": {
+    "S15_H1_19": true,
+    "S29_H1_59": true,
+    "S29thr_H1_63": true,
+    "rank_nullity_S15": true,
+    "rank_nullity_S29": true,
+    "rank_nullity_thr": true,
+    "delta_H1_4": true,
+    "open_flux_1": true,
+    "free_params_0": true,
+    "H_cont_defined": true
+  },
+  "all_ok": true
+}

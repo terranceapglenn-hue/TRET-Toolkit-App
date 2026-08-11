@@ -1,0 +1,53 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs,hyperref,microtype,array}
+\title{TRET Dual-Path Claim Board\\through SN-A346}
+\author{Path R ($H_{\rm cont}$) vs Path U (unrestricted)}
+\date{11 August 2026 (v12.75.0)}
+\begin{document}
+\maketitle
+\begin{abstract}
+Dual-path claim board. Path R residual under $H_{\rm cont}$; Path U unrestricted.
+Separation mandatory. MeV Impossible; $\Omega$ dual-route C obstruction retained.
+\end{abstract}
+\section{Locks}
+\begin{center}\begin{tabular}{@{}ll@{}}\toprule Lock & Value \\\midrule
+free\_params\_primary & 0 \\
+H\_cont\_open\_system\_closed & True \\
+packing\_Maxwell\_under\_H\_cont & recovered\_C \\
+unrestricted\_open\_system\_closed & False \\
+absolute\_closed & False \\
+absolute\_MeV\_zero\_anchor & IMPOSSIBLE \\
+Omega\_b\_equals\_lambda\_V\_dual\_route\_C & CERTIFIED\_OBSTRUCTION \\
+path\_R\_U\_separation & mandatory \\
+\bottomrule\end{tabular}\end{center}
+\section{Claim board}
+\begin{center}\begin{tabular}{@{}p{3.4cm}p{1.6cm}p{1.4cm}p{4.5cm}@{}}
+\toprule ID & SN & Path & Class \\\midrule
+H\_cont\_cohomology & A339 & R & C \\
+S29\_completions & A340 & R & C \\
+dual\_path\_architecture & A341 & R/U & C architecture \\
+energy\_budget\_residual & A342 & R & C multi-layer \\
+energy\_budget\_unrestricted & A343 & U & false/obstructed \\
+linkages & A344 & R/U & C dictionary \\
+dual\_path\_completion & A345 & R/U & C board \\
+lambda\_V & A342 & R & C residual scale \\
+Omega\_dual\_route & A342/A343 & R/U & CERTIFIED_OBSTRUCTION \\
+MeV & locks & R/U & IMPOSSIBLE \\
+packing\_Maxwell\_H\_cont & prior & R & C \\
+packing\_Maxwell\_unrestricted & prior/A343 & U & false \\
+three\_band\_residual & A342 & R & C structure \\
+three\_band\_Planck\_ID & A342 & R/U & X \\
+\bottomrule\end{tabular}\end{center}
+\section{Theorem--test map}
+\begin{center}\begin{tabular}{@{}p{6.5cm}p{5cm}@{}}
+\toprule Theorem & Test ID \\\midrule
+A339 H_cont residual cohomology & \texttt{T-A339-Hcont-cohomology} \\
+A340 S29 residual completions & \texttt{T-A340-S29-completions} \\
+A341 dual-path architecture & \texttt{T-A341-dual-path} \\
+A342 Path R energy budget & \texttt{T-A342-energy-budget-path-R} \\
+A343 Path U energy budget nonrecovery & \texttt{T-A343-energy-budget-path-U} \\
+A344 linkage dictionary & \texttt{T-A344-linkages} \\
+A345 dual-path completion & \texttt{T-A345-dual-path-completion} \\
+\bottomrule\end{tabular}\end{center}
+\end{document}

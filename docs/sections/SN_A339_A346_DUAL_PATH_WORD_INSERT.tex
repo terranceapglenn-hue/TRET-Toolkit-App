@@ -1,0 +1,349 @@
+%==============================================================================
+% SN-A339 -- SN-A346 --- Dual-Path Completion: H_cont Cohomology, S29 Completions,
+% Residual vs Unrestricted Energy Budget, Linkages
+% Package: TRET_A339_A346 v12.75.0_A339_A346_20260811
+% Path R = residual under H_cont; Path U = unrestricted
+% free_params=0; MeV IMPOSSIBLE; unrestricted false; Omega dual-route C obstruction
+% Certificate: all_ok
+%==============================================================================
+
+\section*{Master Dual-Path Honesty Register (SN-A339--A346)}
+\begin{center}
+\begin{tabular}{@{}p{3.2cm}p{4.4cm}p{4.6cm}@{}}
+\toprule
+\textbf{Item} & \textbf{Path R ($H_{\rm cont}$)} & \textbf{Path U (unrestricted)} \\
+\midrule
+Packing Maxwell & \textbf{C recovered} & \textbf{false} unique selection \\
+Residual cohomology & \textbf{C} (A339) & not dual-route selected \\
+S29 open completions & \textbf{C classified} (A340) & N/A as residual axiom package \\
+Energy budget layers & \textbf{C multi-layer} (A342) & \textbf{non-recovery} (A343) \\
+$\lambda_V=e^{-3}$ & \textbf{C residual scale} & not dual-route forced \\
+$\Omega_b\equiv\lambda_V$ as dual-route C & \textbf{obstruction} & \textbf{obstruction/false} \\
+Absolute MeV & \textbf{Impossible} & \textbf{Impossible} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Separation rule.}
+Path R class C does \emph{not} imply Path U class C.
+Path U falsehood does \emph{not} weaken Path R residual C.
+Mixing paths without reclassification is forbidden.
+
+%==============================================================================
+\section{SN-A339 --- $H_{\rm cont}$ Residual Cohomology}
+\label{sec:SN-A339}
+
+\begin{definition}[Absolute residual graph cohomology]
+\label{def:A339-abs}
+For a residual incidence graph $G=(V,E)$,
+\begin{equation}
+\dim H_0(G)=n_{\mathrm{comp}}(G),
+\qquad
+\dim H_1(G)=|E|-|V|+n_{\mathrm{comp}}(G).
+\end{equation}
+Equivalently, if $B$ is the incidence matrix, $\mathrm{rank}(B)=|V|-n_{\mathrm{comp}}$ and $\dim\ker B=\dim H_1(G)$.
+\end{definition}
+
+\begin{definition}[Open pair and $H_{\rm cont}$]
+\label{def:A339-Hcont}
+Let $T\subset V$ be the open throat set. Residual continuity $H_{\rm cont}$ is the Kirchhoff law
+\begin{equation}
+(\delta J)_v=0\quad(v\notin T),
+\qquad
+(\delta J)_t=J^{\mathrm{ext}}_t\quad(t\in T).
+\end{equation}
+Open flux dimension equals the dimension of independent residual sources on $T$ (for independent open vertices: $\dim=|T|$).
+\end{definition}
+
+\begin{theorem}[Certified residual cohomology on multi-central grids]
+\label{thm:A339}
+\begin{center}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Graph & $|V|$ & $|E|$ & $\dim H_1$ \\
+\midrule
+$\mathrm{S}_{15}^{(3)}$ & 15 & 33 & 19 \\
+$\mathrm{S}_{29}$ & 29 & 87 & 59 \\
+$\mathrm{S}_{29}^{\mathrm{thr}}$ (canonical) & 30 & 92 & 63 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Rank-nullity holds on each. Adding a single throat vertex with $m$ residual edges to a connected core increases $H_1$ by $m-1$ (canonical $m=5\Rightarrow \Delta H_1=4$: $59\to 63$). Open flux dimension for single open class is $1$.
+\end{theorem}
+
+\begin{proof}
+Direct incidence rank-nullity certificates: \texttt{T-A339-Hcont-cohomology}.
+Connected graph: $\mathrm{rank}(B)=|V|-1$, $\dim\ker B=|E|-|V|+1$.
+Attachment formula: one new vertex and $m$ edges changes
+$H_1'=H_1+m-1$ when connectivity is preserved.
+$H_{\rm cont}$ identifies open sources with $T$; $|T|=1\Rightarrow$ open flux dimension $1$ (SN-A335).
+\end{proof}
+
+\begin{remark}[Pair sequence (residual schematic)]
+For discrete open set $T$, the residual exact sequence of the pair encodes the map from absolute circulations $H_1(G)$ to relative classes and the open $H_0(T)\cong\mathbb{R}^{|T|}$ measuring throat sources. The operational residual content used for force recovery is Definition~\ref{def:A339-Hcont} plus Theorem~\ref{thm:A339}.
+\end{remark}
+
+\subsection*{Status (A339)}
+$H_{\rm cont}$ residual cohomology: \textbf{C Path R}.
+
+%==============================================================================
+\section{SN-A340 --- $\mathrm{S}_{29}$ Residual Open Completions}
+\label{sec:SN-A340}
+
+\begin{definition}[Residual open completion]
+\label{def:A340-comp}
+A residual open completion of $\mathrm{S}_{29}$ adjoins $k\ge 1$ open throat vertices with residual edges into the closed core/apices.
+\end{definition}
+
+\begin{theorem}[Classification under single open class]
+\label{thm:A340}
+\begin{enumerate}[label=(\roman*)]
+\item For $k=1$ (single open class) and attachment set $A\subset V(\mathrm{S}_{29})$ with connected completion,
+\begin{equation}
+\dim H_1 = 59+|A|-1,
+\qquad
+\text{open flux dimension}=1.
+\end{equation}
+\item Canonical attachment $A=\{C_0,C_1,C_2,C_t,C_b\}$ yields $|A|=5$, $H_1=63$.
+\item Distinct attachments (core only; core+apex; apices only; \ldots) all have open flux dimension $1$ when $k=1$.
+\item For $k=2$ independent open vertices, open flux dimension $=2$ (excluded by single open class).
+\end{enumerate}
+Vacuum/DE identification remains dictionary X.
+\end{theorem}
+
+\begin{proof}
+Certificate enumeration of attachment patterns: all $k=1$ completions connected with open flux dimension $1$; $H_1$ matches $59+|A|-1$; two-throat model has open flux dimension $2$. Certificate: \texttt{T-A340-S29-completions}.
+\end{proof}
+
+\subsection*{Status (A340)}
+$\mathrm{S}_{29}$ residual completions: \textbf{C Path R classified}. DE ID: \textbf{X}.
+
+%==============================================================================
+\section{SN-A341 --- Dual-Path Architecture}
+\label{sec:SN-A341}
+
+\begin{definition}[Path R and Path U]
+\label{def:A341-paths}
+\begin{itemize}
+\item \textbf{Path R (restricted residual):} geometric selection principles P1--P7, soft from residual geometry, multi-central axioms, and $H_{\rm cont}$ residual cohomology/Kirchhoff.
+\item \textbf{Path U (unrestricted):} local residual continuum / free $\mathcal{A}_0$ without soft rename and without $H_{\rm cont}$ packing package; free continuous primary parameters $=0$.
+\end{itemize}
+\end{definition}
+
+\begin{theorem}[Dual-path separation]
+\label{thm:A341}
+\begin{enumerate}[label=(\roman*)]
+\item Path R packing Maxwell is class C under $H_{\rm cont}$.
+\item Path U packing Maxwell unique selection is false (soft-free non-uniqueness; inventory meta-kill).
+\item Path R residual energy-budget layers are class C structure (SN-A342).
+\item Path U absolute energy-budget recovery as dual-route C is false/obstructed (SN-A343).
+\item No Path R residual C claim may be re-labelled Path U C without a new free-param-free theorem.
+\item Absolute MeV is Impossible on both paths.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+(i) SN-A192, A319--A333. (ii) SN-A323--A324, A331. (iii)--(iv) SN-A342--A343. (v) separation rule. (vi) absolute recovery firewall. Certificate: \texttt{T-A341-dual-path}.
+\end{proof}
+
+\subsection*{Status (A341)}
+Dual-path architecture: \textbf{C}. Separation: \textbf{mandatory}.
+
+%==============================================================================
+\section{SN-A342 --- Path R Residual Energy Budget and Open Recovery}
+\label{sec:SN-A342}
+
+\begin{definition}[Path R residual layers]
+\label{def:A342-layers}
+\begin{enumerate}[label=(L\arabic*)]
+\item Soft$_{\max}$ unit: $\lambda_V=e^{-3}$, $\lambda_{\mathrm{dark}}=1-\lambda_V$, $R_{\mathrm{oc}}=e^{3}-1$.
+\item Two-channel Boltzmann: $w_{\mathrm{cl}}=1/(1+e^{-3})$, $w_{\mathrm{op}}=e^{-3}/(1+e^{-3})$.
+\item Soft-only ecology on $\mathcal{C}_0=\{4,6,8,10,12\}$: $p_n=e^{-\mathrm{soft}(n)}/Z_{\mathrm{soft}}$.
+\end{enumerate}
+Three-band residual ladder (unit residual measure, \emph{not} Planck ID):
+\begin{equation}
+\rho_V=e^{-3},
+\quad
+\rho_{\mathrm{DM}}=e^{-1}-e^{-3},
+\quad
+\rho_{\mathrm{DE}}=1-e^{-1},
+\quad
+\rho_V+\rho_{\mathrm{DM}}+\rho_{\mathrm{DE}}=1.
+\end{equation}
+\end{definition}
+
+\begin{definition}[Path R residual free energy]
+\label{def:A342-F}
+\begin{equation}
+F_{\mathrm{res}}
+=
+F_{\mathrm{closed}}+F_{\mathrm{open}}+F_{\mathrm{chiral}}+F_{\mathrm{elastic}},
+\end{equation}
+with $F_{\mathrm{closed}}=-\log Z_{\mathrm{soft}}$, open scale fixed by soft$_{\max}$ unit / throat open flux under $H_{\rm cont}$, $F_{\mathrm{chiral}}$ from dual-route $I_W$, $F_{\mathrm{elastic}}$ from $\kappa_R$.
+\end{definition}
+
+\begin{theorem}[Path R residual energy-budget closure]
+\label{thm:A342}
+Under Path R:
+\begin{enumerate}[label=(\roman*)]
+\item Layers L1--L3 are dual-route fixed with free parameters $=0$ and are categorically distinct.
+\item Packing force channel uses L3; throat scale channel uses L1; L2 is a distinct residual two-channel object.
+\item Three-band ladder is residual unit structure C; numerical order $\approx 4.98\%/31.81\%/63.21\%$.
+\item Open residual energy recovery is multi-channel class C under $H_{\rm cont}$ (closed packing + open throat + chiral + elastic).
+\item Absolute identification $\Omega_b\equiv\lambda_V$ (or three-band $\equiv(\Omega_b,\Omega_c,\Omega_\Lambda)$) as dual-route C is a \textbf{certified obstruction}; dictionary contact remains X.
+\item Absolute MeV zero-anchor remains Impossible.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Soft from geometry (A329) and soft$_{\max}=3$ (A320/A330) give L1.
+Soft-only Boltzmann on $\mathcal{C}_0$ (A338) gives L3 with $p_6\approx 52.06\%$.
+L2 is unit-temperature two-channel Boltzmann on energies $\{0,\mathrm{soft}_{\max}\}$.
+Separation $| \lambda_V-p_6 |>0.4$.
+Three-band sums to $1$ by algebra.
+Force-channel assignment A333.
+Open flux dim 1 under $H_{\rm cont}$ A335/A339--A340.
+$\Omega$ obstruction A303/A333: residual $T$-freedom and MeV impossibility block absolute dual-route promotion.
+Certificate: \texttt{T-A342-energy-budget-path-R}.
+\end{proof}
+
+\begin{center}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Path R residual quantity & Value (approx.) & Class \\
+\midrule
+$\lambda_V=e^{-3}$ & $4.9787\%$ & C residual scale \\
+$p_6$ soft-only & $52.06\%$ & C ecology weight \\
+$R_{\mathrm{oc}}=e^{3}-1$ & $19.086$ & C residual ratio \\
+Three-band $(\rho_V,\rho_{\mathrm{DM}},\rho_{\mathrm{DE}})$ & $(4.98,31.81,63.21)\%$ & C structure; Planck ID X \\
+Open flux dim (single class) & $1$ & C under $H_{\rm cont}$ \\
+$\Omega_b\equiv\lambda_V$ dual-route C & --- & obstruction \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Status (A342)}
+Path R residual energy budget + open recovery: \textbf{C multi-layer}. $\Omega$ dual-route C: \textbf{obstruction}.
+
+%==============================================================================
+\section{SN-A343 --- Path U Energy-Budget Non-Recovery}
+\label{sec:SN-A343}
+
+\begin{theorem}[Path U dual-route energy-budget non-recovery]
+\label{thm:A343}
+On Path U (soft-free local continuum / free $\mathcal{A}_0$ without $H_{\rm cont}$ residual package):
+\begin{enumerate}[label=(\roman*)]
+\item Unique packing-Maxwell residual weight is false (equal bulk hex/square critical types).
+\item Unique soft$_{\max}$ residual diameter is not dual-route forced without multi-central $H_{\rm cont}$ package.
+\item Absolute cosmological budget recovery as dual-route C is false/obstructed.
+\item Absolute MeV budget is Impossible.
+\item These Path U closures do \emph{not} reduce Path R residual C layers of SN-A342.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Soft-free non-uniqueness A331; free $\mathcal{A}_0$ A324; absolute obstruction class A314; MeV firewall; separation Theorem~\ref{thm:A341}. Certificate: \texttt{T-A343-energy-budget-path-U}.
+\end{proof}
+
+\subsection*{Status (A343)}
+Path U energy budget dual-route recovery: \textbf{false/obstructed}. MeV: \textbf{I}.
+
+%==============================================================================
+\section{SN-A344 --- Dual-Path Linkage Dictionary}
+\label{sec:SN-A344}
+
+\begin{theorem}[Linkage dictionary]
+\label{thm:A344}
+\begin{center}
+\begin{tabular}{@{}p{4.2cm}p{4.0cm}cc@{}}
+\toprule
+From & To & Path & Class \\
+\midrule
+AF $C_6$ + packing Maxwell unit & $\mathrm{soft}(n)=|n/2-3|$ & R & C \\
+soft & $Z_{\mathrm{soft}}$, $F_{\mathrm{closed}}$, $p_n$ & R & C \\
+multi-central soft$_{\max}=3$ & $\lambda_V=e^{-3}$ & R & C \\
+$H_{\rm cont}$ relative cohomology & open flux, $F_{\mathrm{open}}$ & R & C \\
+L3 / L1 assignment & packing force / throat scale & R & C structure \\
+three-band ladder & residual unit partition & R & C structure \\
+three-band ladder & Planck $(\Omega_b,\Omega_c,\Omega_\Lambda)$ ID & R/U & X / obstruction \\
+soft-free continuum & unique packing Maxwell & U & false \\
+free $\mathcal{A}_0$ & absolute MeV budget & U & I / false \\
+$I_W$, $\kappa_R$ & $F_{\mathrm{chiral}}$, $F_{\mathrm{elastic}}$ & R & C \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{theorem}
+
+\begin{proof}
+Union of SN-A329--A343 with moduli identities A317. Certificate: \texttt{T-A344-linkages}.
+\end{proof}
+
+\subsection*{Status (A344)}
+Linkage dictionary: \textbf{C} with Path R/U separation.
+
+%==============================================================================
+\section{SN-A345 --- Soft-Spot Kill Board and Dual-Path Completion}
+\label{sec:SN-A345}
+
+\begin{theorem}[Soft spots closed in this package]
+\label{thm:A345}
+\begin{center}
+\begin{tabular}{@{}p{5.2cm}p{6.6cm}@{}}
+\toprule
+Prior soft spot & Closure \\
+\midrule
+$H_{\rm cont}$ cohomology thin & C detailed A339 \\
+S29 completions unclassified & C classified A340 \\
+Dual paths mixable & Mandatory separation A341 \\
+Energy budget under-specified & Path R C multi-layer A342; Path U non-recovery A343 \\
+Linkages implicit & Explicit dictionary A344 \\
+$\Omega$ ``maybe later C'' & Obstruction retained \\
+Unrestricted ``maybe later C'' & False Path U retained \\
+\bottomrule
+\end{tabular}
+\end{center}
+Dual-path completion criterion: Path R residual inventoried claims closed under $H_{\rm cont}$; Path U closed as non-recovery for packing uniqueness and absolute budget; absolute MeV Impossible; $\Omega$ dual-route C obstruction retained.
+\end{theorem}
+
+\begin{proof}
+SN-A339--A344 certificates all\_ok; locks. Certificate: \texttt{T-A345-dual-path-completion}.
+\end{proof}
+
+\subsection*{Status (A345)}
+Dual-path completion board: \textbf{C}.
+
+%==============================================================================
+\section{SN-A346 --- Master Dual-Path Claim Board}
+\label{sec:SN-A346}
+
+\begin{theorem}[Master board through A346]
+\label{thm:A346}
+\begin{center}
+\begin{tabular}{@{}p{4.0cm}p{1.6cm}p{1.4cm}p{4.2cm}@{}}
+\toprule
+Claim & SN & Path & Class \\
+\midrule
+$H_{\rm cont}$ residual cohomology & A339 & R & C \\
+S29 residual completions & A340 & R & C \\
+Dual-path architecture & A341 & R/U & C architecture \\
+Residual energy budget + open recovery & A342 & R & C multi-layer \\
+Unrestricted energy budget recovery & A343 & U & false/obstructed \\
+Linkage dictionary & A344 & R/U & C dictionary \\
+$\lambda_V=e^{-3}$ & A342 & R & C residual scale \\
+Three-band residual ladder & A342 & R & C structure \\
+Three-band $=$ Planck $\Omega$ ID & A342 & R/U & X \\
+$\Omega_b\equiv\lambda_V$ dual-route C & A342/A343 & R/U & obstruction \\
+Absolute MeV & locks & R/U & Impossible \\
+Packing Maxwell under $H_{\rm cont}$ & prior & R & C \\
+Packing Maxwell unrestricted & prior/A343 & U & false \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{theorem}
+
+\begin{proof}
+Aggregate certificates A339--A345 and prior residual completion A329--A338. Certificate: \texttt{T-A346-master-board}.
+\end{proof}
+
+\subsection*{Status (A346)}
+Master dual-path claim board: \textbf{C ledger}. Absolute track: \textbf{blocked}.

@@ -1,0 +1,76 @@
+{
+  "section": "A344",
+  "links": [
+    {
+      "from": "G-AF+G-PM+G-RU",
+      "to": "soft(n)=|n/2-3|",
+      "path": "R",
+      "class": "C"
+    },
+    {
+      "from": "soft",
+      "to": "Z_soft, p_n, F_closed",
+      "path": "R",
+      "class": "C"
+    },
+    {
+      "from": "S15^(3)/S29 soft_max",
+      "to": "lambda_V=e^{-3}",
+      "path": "R",
+      "class": "C"
+    },
+    {
+      "from": "H_cont relative cohomology",
+      "to": "open_flux_dim, F_open",
+      "path": "R",
+      "class": "C"
+    },
+    {
+      "from": "L3 vs L1 assignment",
+      "to": "packing force vs throat scale",
+      "path": "R",
+      "class": "C structure"
+    },
+    {
+      "from": "three-band ladder",
+      "to": "residual unit partition",
+      "path": "R",
+      "class": "C structure"
+    },
+    {
+      "from": "three-band ladder",
+      "to": "Planck Omega ID",
+      "path": "R/U",
+      "class": "X / obstruction"
+    },
+    {
+      "from": "soft-free continuum",
+      "to": "unique packing Maxwell",
+      "path": "U",
+      "class": "false"
+    },
+    {
+      "from": "free A0",
+      "to": "absolute MeV budget",
+      "path": "U",
+      "class": "I / false"
+    },
+    {
+      "from": "I_W, kappa_R",
+      "to": "F_chiral, F_elastic",
+      "path": "R",
+      "class": "C"
+    }
+  ],
+  "claim": "C linkage dictionary with Path R/U separation",
+  "test_id": "T-A344-linkages",
+  "checks": {
+    "n_links_ge_8": true,
+    "has_Omega_X": true,
+    "has_U_false": true,
+    "has_R_C": true,
+    "free_params_0": true,
+    "separation_clean": true
+  },
+  "all_ok": true
+}

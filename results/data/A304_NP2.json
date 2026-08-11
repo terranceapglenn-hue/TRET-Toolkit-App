@@ -1,0 +1,43 @@
+{
+  "section": "A304",
+  "NP": "NP2",
+  "W_hex": " (1-cos(6\u03b8))/2 ",
+  "E0_discrete": {
+    "4": 1.0,
+    "6": 0.0,
+    "8": 1.0,
+    "10": 2.0,
+    "12": 3.0
+  },
+  "packing_sector_continuum": {
+    "status": "CLOSED_structure_C",
+    "claim": "C under H_cont",
+    "selects": "soft-zero hex orientation / n*=6 packing"
+  },
+  "unrestricted_continuum": {
+    "status": "false",
+    "claim": "false",
+    "countermodels": {
+      "CM1_n4": 1.0,
+      "CM2_n8": 1.0
+    }
+  },
+  "p6": {
+    "Lambda_res": 2.03467,
+    "gamma_star": 0.92048080835,
+    "role": "definitional spectral floor under residual orientation block",
+    "free_params": 0
+  },
+  "soft_spot_fix": "Continuum gap no longer vague O: packing-sector continuum under H_cont is C structure; unrestricted continuum is false by CM1/CM2.",
+  "checks": {
+    "E0_min_is_6": true,
+    "hex_wells_zero": true,
+    "packing_sector_selects_hex": true,
+    "unrestricted_not_unique": true,
+    "CM1_soft_pos": true,
+    "CM2_soft_pos": true,
+    "p6_locked": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

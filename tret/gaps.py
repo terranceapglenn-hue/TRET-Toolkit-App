@@ -8,7 +8,7 @@ NEXT_PROGRAMS = [
         "id": "NP1_dual_route_open_closed_homogeneity",
         "title": "Residual free-energy homogeneity theorem for packing vs throat weight",
         "closes": "Omega_b = lambda_V as C (if successful) or strengthens X→O obstruction",
-        "status": "OPEN",
+        "status": "CLOSED_OBSTRUCTION_A303",
         "concrete_steps": [
             "Write residual free-energy functional F[pack, throat, chiral] with dual-route moduli only",
             "Prove Gamma-limit / EL stationarity selects weight ratio without free params",
@@ -21,7 +21,7 @@ NEXT_PROGRAMS = [
         "id": "NP2_continuum_Gamma_beyond_packing",
         "title": "Continuum Gamma-limit beyond discrete packing census",
         "closes": "continuum_Gamma_beyond_packing O → C or certified obstruction",
-        "status": "OPEN",
+        "status": "CLOSED_SPLIT_A304",
         "concrete_steps": [
             "Define continuum residual energy on torus/hex domain with soft density",
             "Prove or disprove Gamma-convergence to soft-zero hex packing measure",
@@ -33,7 +33,7 @@ NEXT_PROGRAMS = [
         "id": "NP3_G_N_dual_route",
         "title": "G_N dual-route absolute theorem attempt",
         "closes": "G_N dual-route OPEN",
-        "status": "OPEN",
+        "status": "CLOSED_KILL_A305",
         "concrete_steps": [
             "Inventory residual geometric candidates for Newton constant",
             "Apply kill-matrix protocol (A193) to each candidate",
@@ -45,7 +45,7 @@ NEXT_PROGRAMS = [
         "id": "NP4_LQCD_S1_S5_bridges",
         "title": "LQCD residual bridges S1–S5 (w0/t0/fπ dictionary M)",
         "closes": "S1–S5 M-class dictionary rigor",
-        "status": "OPEN_M",
+        "status": "CLOSED_M_A306",
         "concrete_steps": [
             "Formalize residual→LQCD scale-setting map as M operators",
             "Add chi_t residual witnesses; OOS nuclear chart checks",
@@ -57,7 +57,7 @@ NEXT_PROGRAMS = [
         "id": "NP5_atomic_spectroscopic_nl",
         "title": "Atomic spectroscopic nℓ dual-route C attempt",
         "closes": "atomic nℓ as C or certified O",
-        "status": "OPEN",
+        "status": "CLOSED_KILLED_A307",
         "concrete_steps": [
             "Map residual shell ranks (2,6,8) to spectroscopic shells carefully",
             "Kill overclaim of absolute spectroscopic recovery",
@@ -69,7 +69,7 @@ NEXT_PROGRAMS = [
         "id": "NP6_chiral_dynamics_PDE",
         "title": "Runnable residual chiral PDE on S15^(3)/S29 with mu5",
         "closes": "dynamics property investigation depth",
-        "status": "PARTIAL",
+        "status": "CLOSED_OPERATIONAL_A309",
         "concrete_steps": [
             "Couple dynamics.py springs to residual mu5 orientation field on core K3",
             "Evolve CME/CVE residual currents under H_cont (structure C)",
@@ -81,7 +81,7 @@ NEXT_PROGRAMS = [
         "id": "NP7_OOS_abundance_nature_table",
         "title": "Out-of-sample nature correlation table with fixed residual dictionary",
         "closes": "nature correlation rigor (still X for particle ID)",
-        "status": "PARTIAL",
+        "status": "CLOSED_FROZEN_A310",
         "concrete_steps": [
             "Freeze soft-only + multi-central census weights",
             "Map families to material/crystal/quasi classes as X dictionary only",

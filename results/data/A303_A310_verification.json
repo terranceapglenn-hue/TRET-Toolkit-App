@@ -1,0 +1,745 @@
+{
+  "package": "TRET_A303_A310_GAP_CLOSURE",
+  "version": "v12.70.0_A303_A310_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE"
+  },
+  "results": {
+    "A303_NP1": {
+      "section": "A303",
+      "NP": "NP1",
+      "F_closed": -0.6527840567566681,
+      "F_open_weight": 0.051069180942701596,
+      "F_chiral": 0.8047189562170503,
+      "dF_dalpha": -0.7038532376993697,
+      "scale_freedom": {
+        "residual_T_unit": 1.0,
+        "reparametrisation": "T \u2192 \u03bbT leaves relative residual weights invariant",
+        "absolute_MeV_anchor": "IMPOSSIBLE",
+        "implies_absolute_Omega_from_residual_only": false
+      },
+      "soft_max_unit": {
+        "lambda_V": 0.049787068367863944,
+        "lambda_V_pct": 4.978706836786395,
+        "is_packing_weight_alpha": false,
+        "is_residual_visible_scale": true,
+        "claim": "C residual scale",
+        "claim_Omega_b_ID": "X blocked by obstruction theorem"
+      },
+      "three_band": {
+        "rho_V": 0.049787068367863944,
+        "rho_DM": 0.3180923728035784,
+        "rho_DE": 0.6321205588285577,
+        "sum": 1.0
+      },
+      "obstruction": {
+        "name": "Absolute_Omega_from_residual_only",
+        "status": "CERTIFIED_OBSTRUCTION",
+        "claim_class": "false_as_dual_route_C",
+        "proof_sketch": [
+          "Residual free energy homogeneous under residual T reparametrisation",
+          "absolute_MeV_zero_anchor = IMPOSSIBLE \u21d2 no dual-route SI energy unit",
+          "EL for \u03b1 without external anchor does not select \u03b1=\u03a9_b",
+          "\u03bb_V is soft_max unit residual scale (C), not proven \u03a9_b (X)"
+        ],
+        "lambda_V_structure_preserved": "C",
+        "dictionary_contact": "X numerical order-of-magnitude only"
+      },
+      "strengthened_positioning": {
+        "lambda_V": "C residual visible scale under soft_max unit",
+        "Omega_b_equals_lambda_V": "X dictionary; absolute dual-route C blocked by obstruction",
+        "soft_spot_fix": "no longer 'maybe later C' \u2014 obstruction certified for absolute claim"
+      },
+      "checks": {
+        "Z_soft_positive": true,
+        "lambda_V_eq_e3": true,
+        "R_oc_eq_e3m1": true,
+        "bands_sum_1": true,
+        "no_unique_interior_alpha": true,
+        "obstruction_certified": true,
+        "MeV_impossible": true,
+        "free_params_0": true,
+        "lambda_V_is_not_alpha": true
+      },
+      "all_ok": true
+    },
+    "A304_NP2": {
+      "section": "A304",
+      "NP": "NP2",
+      "W_hex": " (1-cos(6\u03b8))/2 ",
+      "E0_discrete": {
+        "4": 1.0,
+        "6": 0.0,
+        "8": 1.0,
+        "10": 2.0,
+        "12": 3.0
+      },
+      "packing_sector_continuum": {
+        "status": "CLOSED_structure_C",
+        "claim": "C under H_cont",
+        "selects": "soft-zero hex orientation / n*=6 packing"
+      },
+      "unrestricted_continuum": {
+        "status": "false",
+        "claim": "false",
+        "countermodels": {
+          "CM1_n4": 1.0,
+          "CM2_n8": 1.0
+        }
+      },
+      "p6": {
+        "Lambda_res": 2.03467,
+        "gamma_star": 0.92048080835,
+        "role": "definitional spectral floor under residual orientation block",
+        "free_params": 0
+      },
+      "soft_spot_fix": "Continuum gap no longer vague O: packing-sector continuum under H_cont is C structure; unrestricted continuum is false by CM1/CM2.",
+      "checks": {
+        "E0_min_is_6": true,
+        "hex_wells_zero": true,
+        "packing_sector_selects_hex": true,
+        "unrestricted_not_unique": true,
+        "CM1_soft_pos": true,
+        "CM2_soft_pos": true,
+        "p6_locked": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A305_NP3": {
+      "section": "A305",
+      "NP": "NP3",
+      "candidates": {
+        "G_Rnat2": {
+          "formula": "G ~ R_nat^2",
+          "value_residual": 7.36802938380118e-07,
+          "uses_only_dual_route": true,
+          "absolute_SI_without_anchor": false,
+          "kills_all_CM": false,
+          "reason_fail": "dimensionless residual; needs M length^2/mass anchor"
+        },
+        "G_kappa_inv": {
+          "formula": "G ~ 1/\u03ba_R",
+          "value_residual": 1.2060113295832984,
+          "uses_only_dual_route": true,
+          "absolute_SI_without_anchor": false,
+          "kills_all_CM": false,
+          "reason_fail": "dimensionless; no SI G_N without external anchor"
+        },
+        "G_omega_pack": {
+          "formula": "G ~ \u03c9_pack",
+          "value_residual": 0.1708203932499369,
+          "uses_only_dual_route": true,
+          "absolute_SI_without_anchor": false,
+          "kills_all_CM": false,
+          "reason_fail": "packing weight not Newton constant"
+        },
+        "G_Rnat_over_kappa": {
+          "formula": "G ~ R_nat/\u03ba_R",
+          "value_residual": 0.0010352066717139528,
+          "uses_only_dual_route": true,
+          "absolute_SI_without_anchor": false,
+          "kills_all_CM": false,
+          "reason_fail": "still dimensionless residual ratio"
+        },
+        "G_soft_max_exp": {
+          "formula": "G ~ e^{-soft_max}",
+          "value_residual": 0.049787068367863944,
+          "uses_only_dual_route": true,
+          "absolute_SI_without_anchor": false,
+          "kills_all_CM": false,
+          "reason_fail": "\u03bb_V residual scale; not G_N"
+        }
+      },
+      "countermodels": {
+        "CM_scale_free": "residual moduli dimensionless under residual T reparam",
+        "CM_MeV_impossible": "absolute_MeV_zero_anchor IMPOSSIBLE",
+        "CM_external_G": "observed G_N requires external SI metrology (M)"
+      },
+      "any_X_succeeds": false,
+      "residual_proxy": {
+        "name": "G_N_residual_proxy",
+        "class": "M",
+        "formula": "G_SI = g_res * G_star  (G_star external M-anchor)",
+        "g_res_candidates": {
+          "G_Rnat2": 7.36802938380118e-07,
+          "G_kappa_inv": 1.2060113295832984,
+          "G_omega_pack": 0.1708203932499369,
+          "G_Rnat_over_kappa": 0.0010352066717139528,
+          "G_soft_max_exp": 0.049787068367863944
+        },
+        "claim_absolute_C": false
+      },
+      "verdict": "G_N dual-route absolute theorem remains false/OPEN-as-C: all residual candidates fail absolute SI without M anchor. Soft spot fixed: not 'no theorem yet' but 'kill matrix all-fail + M-only proxy'.",
+      "claim_absolute_G_N": "false_as_dual_route_C_without_M",
+      "claim_residual_proxy": "M",
+      "checks": {
+        "n_candidates_5": true,
+        "any_succeeds_false": true,
+        "all_fail_absolute_SI": true,
+        "MeV_impossible": true,
+        "free_params_0": true,
+        "proxy_is_M": true
+      },
+      "all_ok": true
+    },
+    "A306_NP4": {
+      "section": "A306",
+      "NP": "NP4",
+      "bridges": {
+        "S1_scale_w0": {
+          "residual_input": "soft-zero packing scale / R_nat",
+          "lqcd_target": "w0 gradient-flow scale",
+          "operator": "M_S1: w0_SI = w0_res * ell_star",
+          "class": "M",
+          "absolute_free_A0": false
+        },
+        "S2_scale_t0": {
+          "residual_input": "residual spectral gap \u03bb2 packing",
+          "lqcd_target": "t0 flow time",
+          "operator": "M_S2: t0_SI = t0_res * t_star",
+          "class": "M",
+          "absolute_free_A0": false
+        },
+        "S3_fpi": {
+          "residual_input": "\u03c9_pack, \u03ba_R residual chiral scale",
+          "lqcd_target": "f_\u03c0",
+          "operator": "M_S3: f\u03c0_SI = f\u03c0_res * E_star",
+          "class": "M",
+          "absolute_free_A0": false
+        },
+        "S4_chi_t": {
+          "residual_input": "residual topological H1 / throat flux proxy",
+          "lqcd_target": "\u03c7_t topological susceptibility",
+          "operator": "M_S4: \u03c7t residual witness \u2194 LQCD \u03c7t (M dictionary)",
+          "class": "M",
+          "absolute_free_A0": false
+        },
+        "S5_nuclear_OOS": {
+          "residual_input": "nuclear force balance residual forms (A257\u2013A259)",
+          "lqcd_target": "OOS nuclear chart proxies",
+          "operator": "M_S5: residual B-form dictionary; calibration M",
+          "class": "M",
+          "absolute_free_A0": false
+        }
+      },
+      "locks": {
+        "LQCD_continuum_eq_free_A0": "false_I",
+        "S1_S5_dictionary": "M_formalized",
+        "absolute_MeV": "IMPOSSIBLE"
+      },
+      "soft_spot_fix": "S1\u2013S5 no longer incomplete inventory \u2014 formal M operators with absolute firewall",
+      "checks": {
+        "n_bridges_5": true,
+        "all_class_M": true,
+        "none_absolute_free_A0": true,
+        "continuum_eq_free_A0_false": true,
+        "free_params_0": true,
+        "MeV_impossible": true
+      },
+      "all_ok": true
+    },
+    "A307_NP5": {
+      "section": "A307",
+      "NP": "NP5",
+      "ranks": {
+        "r_pack": 2,
+        "r_eq": 6,
+        "r_cap": 8,
+        "sum": 16
+      },
+      "overclaims_killed": {
+        "n_equals_soft_zero_only": {
+          "claim": "n=1 shell absolute from soft(6)=0",
+          "killed": true,
+          "reason": "shell principal quantum number needs SI Rydberg; residual only ranks"
+        },
+        "ell_equals_eq_rank": {
+          "claim": "\u2113 absolute from r_eq=6",
+          "killed": true,
+          "reason": "\u2113 degeneracy 2\u2113+1 not dual-route fixed to residual rank without M"
+        },
+        "magic_numbers_absolute": {
+          "claim": "nuclear magic numbers absolute from residual ranks",
+          "killed": true,
+          "reason": "nuclear shell model needs absolute MeV spacings (I as dual-route C)"
+        }
+      },
+      "dictionary": {
+        "residual_block_pack": {
+          "rank": 2,
+          "soft_related": "pack depth 0",
+          "claim": "C"
+        },
+        "residual_block_eq": {
+          "rank": 6,
+          "soft_related": "n*=6 packing Maxwell",
+          "claim": "C"
+        },
+        "residual_block_cap": {
+          "rank": 8,
+          "soft_related": "cap depth 4",
+          "claim": "C"
+        },
+        "spectroscopic_conversion": {
+          "class": "M",
+          "absolute_C": false
+        }
+      },
+      "verdict": "Atomic spectroscopic n\u2113 as dual-route C is false/killed. Residual shell ranks (2,6,8) remain C structure; spectroscopic map is M.",
+      "claim_absolute_nl": "false_as_dual_route_C",
+      "claim_residual_ranks": "C",
+      "soft_spot_fix": "absolute spectroscopic ID no longer OPEN-as-maybe-C; killed as dual-route C",
+      "checks": {
+        "rank_sum_16": true,
+        "all_overclaims_killed": true,
+        "absolute_nl_not_C": true,
+        "residual_ranks_C": true,
+        "free_params_0": true,
+        "MeV_impossible": true
+      },
+      "all_ok": true
+    },
+    "A308_confinement": {
+      "section": "A308",
+      "candidates": {
+        "X_area_law_free_A0": {
+          "kills_CM_soft_pos": false,
+          "kills_unrestricted": false,
+          "absolute_without_H_cont": false
+        },
+        "X_wilson_loop_residual": {
+          "residual_structure": true,
+          "absolute_confinement_theorem": false,
+          "class": "C_structure_under_H_cont_optional"
+        }
+      },
+      "verdict": "Absolute confinement theorem from free A0 remains false. Residual Wilson/throat structure under H_cont is C residual; not absolute.",
+      "claim_absolute_confinement_free_A0": "false",
+      "checks": {
+        "absolute_confinement_free_A0_false": true,
+        "unrestricted_false": true,
+        "MeV_impossible": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A309_NP6": {
+      "section": "A309",
+      "NP": "NP6",
+      "nV": 15,
+      "nE": 33,
+      "H1": 19,
+      "mu5_residual": 0.0007901151926307481,
+      "lam6": 0.8291796067500631,
+      "history": [
+        {
+          "t": 0,
+          "E": 2.439025901111164,
+          "E_spring": 2.2758193326409577,
+          "E_hex": 0.16320656265904032,
+          "E_chi": 5.81116566667783e-09,
+          "phi": [
+            0.04381719711471059,
+            0.10726066366664085,
+            -0.07205775613420094
+          ]
+        },
+        {
+          "t": 6,
+          "E": 0.9859324697110837,
+          "E_spring": 0.9859287719340318,
+          "E_hex": 3.6977769236057334e-06,
+          "E_chi": 1.2824761454208471e-13,
+          "phi": [
+            0.00019152414778777458,
+            0.0005176491536606876,
+            -0.00032591749024608944
+          ]
+        },
+        {
+          "t": 12,
+          "E": 0.7472641880173939,
+          "E_spring": 0.7472641879495544,
+          "E_hex": 6.783951178590542e-11,
+          "E_chi": 2.3528338411204422e-18,
+          "phi": [
+            8.203397228743888e-07,
+            2.217209737702565e-06,
+            -1.3959767685681798e-06
+          ]
+        },
+        {
+          "t": 18,
+          "E": 0.6586319599731596,
+          "E_spring": 0.6586319599731584,
+          "E_hex": 1.27675647831893e-15,
+          "E_chi": 4.3164958350319845e-23,
+          "phi": [
+            3.5136926948782694e-09,
+            9.49678949037331e-09,
+            -5.979270827965571e-09
+          ]
+        },
+        {
+          "t": 24,
+          "E": 0.6138248688192564,
+          "E_spring": 0.6138248688192564,
+          "E_hex": 0.0,
+          "E_chi": 7.919019170297579e-28,
+          "phi": [
+            1.504990677605306e-11,
+            4.06768061163273e-11,
+            -2.561051189275191e-11
+          ]
+        },
+        {
+          "t": 30,
+          "E": 0.5864340209841068,
+          "E_spring": 0.5864340209841068,
+          "E_hex": 0.0,
+          "E_chi": 1.4528188376921195e-32,
+          "phi": [
+            6.44620100949764e-14,
+            1.7422757001221452e-13,
+            -1.096953689304545e-13
+          ]
+        },
+        {
+          "t": 36,
+          "E": 0.5676017991579796,
+          "E_spring": 0.5676017991579796,
+          "E_hex": 0.0,
+          "E_chi": 2.6653333320239534e-37,
+          "phi": [
+            2.76104749837833e-16,
+            7.462544149988414e-16,
+            -4.69849021963283e-16
+          ]
+        },
+        {
+          "t": 42,
+          "E": 0.5534506997077325,
+          "E_spring": 0.5534506997077325,
+          "E_hex": 0.0,
+          "E_chi": 4.8898056567624055e-42,
+          "phi": [
+            1.182616439833193e-18,
+            3.1963692764940747e-18,
+            -2.012465116734432e-18
+          ]
+        },
+        {
+          "t": 48,
+          "E": 0.5419574298172118,
+          "E_spring": 0.5419574298172118,
+          "E_hex": 0.0,
+          "E_chi": 8.970810169829349e-47,
+          "phi": [
+            5.065402332213326e-21,
+            1.3690741852068133e-20,
+            -8.619823936527045e-21
+          ]
+        },
+        {
+          "t": 54,
+          "E": 0.531969387467155,
+          "E_spring": 0.531969387467155,
+          "E_hex": 0.0,
+          "E_chi": 1.6457798275033565e-51,
+          "phi": [
+            2.169621520804437e-23,
+            5.864041236986199e-23,
+            -3.69205727239095e-23
+          ]
+        },
+        {
+          "t": 60,
+          "E": 0.5228019617197766,
+          "E_spring": 0.5228019617197766,
+          "E_hex": 0.0,
+          "E_chi": 3.0193384870928613e-56,
+          "phi": [
+            9.292958850676175e-26,
+            2.51169585992012e-25,
+            -1.5813880890132188e-25
+          ]
+        },
+        {
+          "t": 66,
+          "E": 0.5140437583811486,
+          "E_spring": 0.5140437583811486,
+          "E_hex": 0.0,
+          "E_chi": 5.539261538689389e-61,
+          "phi": [
+            3.98037553427019e-28,
+            1.0758137328485358e-27,
+            -6.773427668020403e-28
+          ]
+        },
+        {
+          "t": 72,
+          "E": 0.505454795911731,
+          "E_spring": 0.505454795911731,
+          "E_hex": 0.0,
+          "E_chi": 1.0162298306456778e-65,
+          "phi": [
+            1.704881044713106e-30,
+            4.607943207830543e-30,
+            -2.9012057630036196e-30
+          ]
+        },
+        {
+          "t": 78,
+          "E": 0.49690977326332275,
+          "E_spring": 0.49690977326332275,
+          "E_hex": 0.0,
+          "E_chi": 1.8643695761267282e-70,
+          "phi": [
+            7.302374742274129e-33,
+            1.973681870593954e-32,
+            -1.2426492599935534e-32
+          ]
+        },
+        {
+          "t": 84,
+          "E": 0.4883627173913237,
+          "E_spring": 0.4883627173913237,
+          "E_hex": 0.0,
+          "E_chi": 3.4203620200545636e-75,
+          "phi": [
+            3.1277652503654027e-35,
+            8.453706893981549e-35,
+            -5.322535902327169e-35
+          ]
+        },
+        {
+          "t": 90,
+          "E": 0.4798213648793383,
+          "E_spring": 0.4798213648793383,
+          "E_hex": 0.0,
+          "E_chi": 6.2749770743075635e-80,
+          "phi": [
+            1.3396895950517483e-37,
+            3.6209057454555543e-37,
+            -2.279757397651261e-37
+          ]
+        },
+        {
+          "t": 96,
+          "E": 0.47132658377111514,
+          "E_spring": 0.47132658377111514,
+          "E_hex": 0.0,
+          "E_chi": 1.151203792236512e-84,
+          "phi": [
+            5.7381806735024076e-40,
+            1.5509123490911577e-39,
+            -9.764694663446505e-40
+          ]
+        },
+        {
+          "t": 99,
+          "E": 0.46711432684584075,
+          "E_spring": 0.46711432684584075,
+          "E_hex": 0.0,
+          "E_chi": 4.9308551594886955e-87,
+          "phi": [
+            3.75542623113125e-41,
+            1.0150145576380612e-40,
+            -6.39063016043232e-41
+          ]
+        }
+      ],
+      "energy_decreased": true,
+      "currents": {
+        "j_CME_schema": "\u03bc5 B_res  (residual; SI M)",
+        "j_CVE_schema": "\u03bc5 \u03a9_res  (residual; SI M)",
+        "mu5_residual": 0.0007901151926307481,
+        "claim_structure": "C under H_cont",
+        "claim_particle_ID": "X",
+        "not_PQ_axion": true
+      },
+      "soft_spot_fix": "Chiral dynamics operational on S15^(3); particle ID firewall explicit X",
+      "checks": {
+        "H1_19": true,
+        "mu5_positive": true,
+        "energy_finite": true,
+        "history_len_gt_5": true,
+        "particle_ID_is_X": true,
+        "not_PQ": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A310_NP7": {
+      "section": "A310",
+      "NP": "NP7",
+      "soft_only_shares": {
+        "4": 0.19151597437154383,
+        "6": 0.5205943929937957,
+        "8": 0.19151597437154383,
+        "10": 0.07045478962720782,
+        "12": 0.02591886863590874
+      },
+      "table": [
+        {
+          "family": "K7 / M15",
+          "n_eq": 6,
+          "soft": 0,
+          "soft_only_pct": 52.05943929937958,
+          "nature_dictionary_X": "hex packing / graphene-like residual template",
+          "claim_residual": "C",
+          "claim_nature_ID": "X"
+        },
+        {
+          "family": "K10 / K24",
+          "n_eq": 8,
+          "soft": 1,
+          "soft_only_pct": 19.151597437154383,
+          "nature_dictionary_X": "soft-positive octagonal / duplex residual modes",
+          "claim_residual": "C",
+          "claim_nature_ID": "X"
+        },
+        {
+          "family": "S15^(3) / S29",
+          "n_eq": 12,
+          "soft": 3,
+          "soft_only_pct": 2.591886863590874,
+          "nature_dictionary_X": "multi-central soft_max ceiling; \u03bb_V scale",
+          "claim_residual": "C",
+          "claim_nature_ID": "X"
+        },
+        {
+          "family": "throat open flux",
+          "n_eq": null,
+          "soft": null,
+          "soft_only_pct": null,
+          "nature_dictionary_X": "vacuum / DE residual channel proxy",
+          "claim_residual": "C under H_cont",
+          "claim_nature_ID": "X"
+        },
+        {
+          "family": "chiral H1 / \u03bc5 modes",
+          "n_eq": null,
+          "soft": null,
+          "soft_only_pct": null,
+          "nature_dictionary_X": "light residual modes (\u03bd/ALP-like dictionary only)",
+          "claim_residual": "C residual spectral",
+          "claim_nature_ID": "X"
+        }
+      ],
+      "calibration_note": "No OOS fit parameters; dictionary frozen; nature ID remains X",
+      "checks": {
+        "soft0_dominates": true,
+        "soft0_gt_50pct": true,
+        "all_nature_ID_X": true,
+        "frozen": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    }
+  },
+  "gap_board": {
+    "version": "v12.70.0_A303_A310_20260811",
+    "locks": {
+      "free_params_primary": 0,
+      "H_cont_open_system_closed": true,
+      "packing_Maxwell_under_H_cont": "recovered_C",
+      "unrestricted_open_system_closed": false,
+      "absolute_closed": false,
+      "absolute_MeV_zero_anchor": "IMPOSSIBLE"
+    },
+    "gap_status_after_A303_A310": {
+      "Omega_b_equals_lambda_V_absolute_C": {
+        "prior": "OPEN (X)",
+        "now": "CERTIFIED_OBSTRUCTION as dual-route C",
+        "claim": "false_as_dual_route_C; \u03bb_V remains C scale; dictionary X",
+        "section": "A303"
+      },
+      "continuum_Gamma_beyond_packing": {
+        "prior": "OPEN (O)",
+        "now": "SPLIT: packing-sector continuum under H_cont = C structure; unrestricted = false",
+        "claim": "C under H_cont / false unrestricted",
+        "section": "A304"
+      },
+      "G_N_dual_route_absolute": {
+        "prior": "OPEN",
+        "now": "KILL_MATRIX_ALL_FAIL; residual proxy M only",
+        "claim": "false_as_dual_route_C_without_M",
+        "section": "A305"
+      },
+      "LQCD_S1_S5": {
+        "prior": "OPEN (M rigor)",
+        "now": "CLOSED as formal M operators",
+        "claim": "M",
+        "section": "A306"
+      },
+      "atomic_nl_dual_route_C": {
+        "prior": "OPEN",
+        "now": "KILLED as dual-route C; residual ranks C; spectroscopic M",
+        "claim": "false_as_dual_route_C",
+        "section": "A307"
+      },
+      "absolute_confinement_free_A0": {
+        "prior": "OPEN",
+        "now": "false",
+        "claim": "false",
+        "section": "A308"
+      },
+      "particle_ID_nu_ALP": {
+        "prior": "X",
+        "now": "X reinforced; chiral dynamics C structure operational",
+        "claim": "X",
+        "section": "A309"
+      },
+      "nature_correlation_table": {
+        "prior": "PARTIAL",
+        "now": "FROZEN dictionary; residual C; nature ID X",
+        "claim": "C residual / X nature",
+        "section": "A310"
+      }
+    },
+    "soft_spots_fixed": [
+      "Absolute Omega no longer 'maybe C later' \u2014 obstruction certified",
+      "Continuum Gamma split into packing-sector C vs unrestricted false",
+      "G_N kill matrix all-fail; M-only proxy explicit",
+      "Atomic n\u2113 absolute C killed; residual ranks preserved",
+      "LQCD S1\u2013S5 formal M operators",
+      "Particle ID firewall with operational chiral dynamics",
+      "Nature table frozen without fit parameters"
+    ],
+    "still_impossible": [
+      "absolute_MeV_zero_anchor",
+      "unrestricted packing Maxwell from free A0",
+      "exact \u03b1/\u03b1_s dual-route monomial",
+      "LQCD continuum \u2261 free residual A0"
+    ],
+    "still_open_honest": [
+      "External M-anchor selection for SI engineering (not dual-route C)",
+      "Optional future X_new continuum principles via A193 protocol only"
+    ]
+  },
+  "checks": {
+    "A303": true,
+    "A304": true,
+    "A305": true,
+    "A306": true,
+    "A307": true,
+    "A308": true,
+    "A309": true,
+    "A310": true,
+    "obstruction_Omega": true,
+    "G_N_no_success": true,
+    "atomic_killed": true,
+    "confinement_false": true,
+    "locks_MeV": true,
+    "locks_unrestricted_false": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

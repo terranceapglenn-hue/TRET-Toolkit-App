@@ -1,0 +1,67 @@
+{
+  "section": "A310",
+  "NP": "NP7",
+  "soft_only_shares": {
+    "4": 0.19151597437154383,
+    "6": 0.5205943929937957,
+    "8": 0.19151597437154383,
+    "10": 0.07045478962720782,
+    "12": 0.02591886863590874
+  },
+  "table": [
+    {
+      "family": "K7 / M15",
+      "n_eq": 6,
+      "soft": 0,
+      "soft_only_pct": 52.05943929937958,
+      "nature_dictionary_X": "hex packing / graphene-like residual template",
+      "claim_residual": "C",
+      "claim_nature_ID": "X"
+    },
+    {
+      "family": "K10 / K24",
+      "n_eq": 8,
+      "soft": 1,
+      "soft_only_pct": 19.151597437154383,
+      "nature_dictionary_X": "soft-positive octagonal / duplex residual modes",
+      "claim_residual": "C",
+      "claim_nature_ID": "X"
+    },
+    {
+      "family": "S15^(3) / S29",
+      "n_eq": 12,
+      "soft": 3,
+      "soft_only_pct": 2.591886863590874,
+      "nature_dictionary_X": "multi-central soft_max ceiling; \u03bb_V scale",
+      "claim_residual": "C",
+      "claim_nature_ID": "X"
+    },
+    {
+      "family": "throat open flux",
+      "n_eq": null,
+      "soft": null,
+      "soft_only_pct": null,
+      "nature_dictionary_X": "vacuum / DE residual channel proxy",
+      "claim_residual": "C under H_cont",
+      "claim_nature_ID": "X"
+    },
+    {
+      "family": "chiral H1 / \u03bc5 modes",
+      "n_eq": null,
+      "soft": null,
+      "soft_only_pct": null,
+      "nature_dictionary_X": "light residual modes (\u03bd/ALP-like dictionary only)",
+      "claim_residual": "C residual spectral",
+      "claim_nature_ID": "X"
+    }
+  ],
+  "calibration_note": "No OOS fit parameters; dictionary frozen; nature ID remains X",
+  "checks": {
+    "soft0_dominates": true,
+    "soft0_gt_50pct": true,
+    "all_nature_ID_X": true,
+    "frozen": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

@@ -1,4 +1,4 @@
-# TRET Toolkit App v7.0.0
+# TRET Toolkit App v7.1.0
 
 **Residual-native computational instruments** for Toroidal Residual Energy Theory (A159–A302 lineage).
 
@@ -69,6 +69,25 @@ K7, M15, K10, K24, S15^(3), S29, S29^throat — incidence, H1, Laplacian spectru
 - R_oc = e^3−1 ≈ **19.0855**
 - Soft-only n=6 packing share ≈ **52.06%**
 - Three-band V/DM/DE ≈ **4.98 / 31.81 / 63.21 %**
+
+## A303–A310 gap closure (v7.1.0)
+
+| Gap | Outcome |
+|-----|---------|
+| Ω_b ≡ λ_V absolute C | **CERTIFIED OBSTRUCTION** (λ_V still C) |
+| Continuum Γ | packing-sector **C** under H_cont; unrestricted **false** |
+| G_N absolute | kill matrix all-fail; **M** proxy |
+| LQCD S1–S5 | **M** formalized |
+| Atomic nℓ dual-route C | **killed**; ranks C |
+| Confinement free-A0 | **false** |
+| Particle ID | **X** + chiral dynamics C |
+| Nature table | **frozen** |
+
+```bash
+PYTHONPATH=. python scripts/run_A303_A310_gap_closure.py
+```
+
+Section: `docs/sections/SN_A303_A310_GAP_CLOSURE_WORD_INSERT.tex`
 
 ## Remaining gaps
 

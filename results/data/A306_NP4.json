@@ -1,0 +1,56 @@
+{
+  "section": "A306",
+  "NP": "NP4",
+  "bridges": {
+    "S1_scale_w0": {
+      "residual_input": "soft-zero packing scale / R_nat",
+      "lqcd_target": "w0 gradient-flow scale",
+      "operator": "M_S1: w0_SI = w0_res * ell_star",
+      "class": "M",
+      "absolute_free_A0": false
+    },
+    "S2_scale_t0": {
+      "residual_input": "residual spectral gap \u03bb2 packing",
+      "lqcd_target": "t0 flow time",
+      "operator": "M_S2: t0_SI = t0_res * t_star",
+      "class": "M",
+      "absolute_free_A0": false
+    },
+    "S3_fpi": {
+      "residual_input": "\u03c9_pack, \u03ba_R residual chiral scale",
+      "lqcd_target": "f_\u03c0",
+      "operator": "M_S3: f\u03c0_SI = f\u03c0_res * E_star",
+      "class": "M",
+      "absolute_free_A0": false
+    },
+    "S4_chi_t": {
+      "residual_input": "residual topological H1 / throat flux proxy",
+      "lqcd_target": "\u03c7_t topological susceptibility",
+      "operator": "M_S4: \u03c7t residual witness \u2194 LQCD \u03c7t (M dictionary)",
+      "class": "M",
+      "absolute_free_A0": false
+    },
+    "S5_nuclear_OOS": {
+      "residual_input": "nuclear force balance residual forms (A257\u2013A259)",
+      "lqcd_target": "OOS nuclear chart proxies",
+      "operator": "M_S5: residual B-form dictionary; calibration M",
+      "class": "M",
+      "absolute_free_A0": false
+    }
+  },
+  "locks": {
+    "LQCD_continuum_eq_free_A0": "false_I",
+    "S1_S5_dictionary": "M_formalized",
+    "absolute_MeV": "IMPOSSIBLE"
+  },
+  "soft_spot_fix": "S1\u2013S5 no longer incomplete inventory \u2014 formal M operators with absolute firewall",
+  "checks": {
+    "n_bridges_5": true,
+    "all_class_M": true,
+    "none_absolute_free_A0": true,
+    "continuum_eq_free_A0_false": true,
+    "free_params_0": true,
+    "MeV_impossible": true
+  },
+  "all_ok": true
+}

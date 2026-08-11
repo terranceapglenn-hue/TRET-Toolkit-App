@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from tret.gap_closure_A303 import main as run_gap_closure_main
 from tret import (
     VERSION, LOCKS,
     run_mapping_matching, run_maxwell_recovery, run_absolute_recovery, run_si_recover,
@@ -22,7 +23,23 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     cert_dir.mkdir(parents=True, exist_ok=True)
 
+    # A303-A310 gap closure battery
+    import tret.gap_closure_A303 as gc
+    gap_closure = {
+        "A303": gc.np1_free_energy_homogeneity(),
+        "A304": gc.np2_continuum_gamma(),
+        "A305": gc.np3_G_N_kill_matrix(),
+        "A306": gc.np4_lqcd_bridges(),
+        "A307": gc.np5_atomic_shells(),
+        "A308": gc.np_confinement_kill(),
+        "A309": gc.np6_chiral_dynamics(steps=60),
+        "A310": gc.np7_nature_correlation(),
+    }
+    gap_closure_board = gc.refined_gap_board(gap_closure)
     results = {
+        "gap_closure_A303_A310": gap_closure,
+        "gap_closure_board": gap_closure_board,
+
         "version": VERSION,
         "locks": LOCKS,
         "mapping_matching": run_mapping_matching(),
@@ -53,6 +70,15 @@ def main() -> int:
         "MeV_impossible": LOCKS["absolute_MeV_zero_anchor"] == "IMPOSSIBLE",
         "unrestricted_false": LOCKS["unrestricted_open_system_closed"] is False,
         "free_params_0": LOCKS["free_params_primary"] == 0,
+        "A303_ok": gap_closure["A303"]["all_ok"],
+        "A304_ok": gap_closure["A304"]["all_ok"],
+        "A305_ok": gap_closure["A305"]["all_ok"],
+        "A306_ok": gap_closure["A306"]["all_ok"],
+        "A307_ok": gap_closure["A307"]["all_ok"],
+        "A308_ok": gap_closure["A308"]["all_ok"],
+        "A309_ok": gap_closure["A309"]["all_ok"],
+        "A310_ok": gap_closure["A310"]["all_ok"],
+        "Omega_obstruction": gap_closure["A303"]["obstruction"]["status"] == "CERTIFIED_OBSTRUCTION",
     }
     all_ok = all(checks.values())
     results["checks"] = checks

@@ -1,0 +1,405 @@
+%==============================================================================
+% SN-A303 -- SN-A310 --- Gap Closure Battery: Free-Energy Homogeneity Obstruction;
+% Continuum Γ Split; G_N Kill Matrix; LQCD S1–S5 M Bridges; Atomic nℓ Kill;
+% Confinement free-A0 false; Chiral PDE Dynamics; Nature Dictionary Freeze
+% Package: TRET_A303_A310_GAP_CLOSURE v12.70.0_A303_A310_20260811
+% free_params_primary=0
+% H_cont_open_system_closed=true; unrestricted_open_system_closed=false
+% absolute_MeV=IMPOSSIBLE
+% Certificate: all_ok (15/15)
+%==============================================================================
+
+\section*{Master Honesty Register (SN-A303--A310)}
+\label{sec:honesty-A303-A310}
+\begin{center}
+\begin{tabular}{@{}p{7.8cm}p{4.8cm}@{}}
+\toprule
+\textbf{Flag / Gap} & \textbf{Status after A303--A310} \\
+\midrule
+\texttt{free\_params\_primary} & $0$ \\
+\texttt{absolute\_MeV\_zero\_anchor} & IMPOSSIBLE \\
+\texttt{unrestricted\_open\_system\_closed} & \textbf{false} \\
+$\Omega_b\equiv\lambda_V$ as dual-route C & \textbf{CERTIFIED OBSTRUCTION} \\
+$\lambda_V=e^{-3}$ residual scale & \textbf{C} (unchanged) \\
+Continuum $\Gamma$ packing sector under $H_{\rm cont}$ & \textbf{C structure} \\
+Continuum $\Gamma$ unrestricted & \textbf{false} \\
+$G_N$ dual-route absolute & \textbf{kill matrix all-fail} / M proxy \\
+LQCD S1--S5 bridges & \textbf{M formalized} \\
+Atomic $n\ell$ dual-route C & \textbf{killed} (ranks C; spectroscopic M) \\
+Absolute confinement free-$\mathcal{A}_0$ & \textbf{false} \\
+Particle ID ($\nu$/ALP) & \textbf{X} (dynamics C residual) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Positioning.}
+Soft spots that previously read as ``OPEN, maybe later C'' are converted into
+\textbf{certified obstruction}, \textbf{split C/false}, or \textbf{formal M}.
+Residual dual-route structure is strengthened, not inflated into absolute claims.
+
+%==============================================================================
+\section{SN-A303 --- Residual Free-Energy Homogeneity and Absolute-$\Omega$ Obstruction}
+\label{sec:SN-A303}
+%==============================================================================
+
+\begin{definition}[Residual free-energy with packing weight]
+\label{def:A303-F}
+With residual temperature unit $T$ and packing weight $\alpha\in[0,1]$,
+\begin{equation}
+\label{eq:A303-F}
+F_{\mathrm{res}}(\alpha)
+=
+\alpha\, F_{\mathrm{closed}}
++
+(1-\alpha)\, F_{\mathrm{open}}
++
+F_{\mathrm{chiral}},
+\end{equation}
+where
+$F_{\mathrm{closed}}=-T\log Z_{\mathrm{soft}}$,
+$F_{\mathrm{open}}=-T\log(1-e^{-\mathrm{soft}_{\max}})$ under soft$_{\max}$ unit normalisation,
+and $F_{\mathrm{chiral}}$ is built from residual dual-route moduli $\{I_W,\kappa_R,R_{\rm nat}\}$ only.
+\end{definition}
+
+\begin{theorem}[Residual scale freedom]
+\label{thm:A303-scale}
+$F_{\mathrm{res}}$ is homogeneous under residual reparametrisation $T\mapsto\lambda T$ in the sense that
+relative residual weights $(\lambda_V,\lambda_{\mathrm{dark}},p_{\mathrm{soft0}})$ are invariant while
+absolute SI/MeV energy is not dual-route fixed. In particular
+\begin{equation}
+\texttt{absolute\_MeV\_zero\_anchor}=\mathrm{IMPOSSIBLE}
+\quad\Longrightarrow\quad
+\text{no dual-route absolute energy unit.}
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+$Z_{\mathrm{soft}}=\sum_n e^{-\mathrm{soft}(n)/T}$ depends on residual $T$; residual soft costs are dimensionless dual-route numbers. Absolute MeV conversion requires an external $E_\star$ (SI-Recover class M). The lock forbids dual-route zero-anchor MeV. Certificate: \texttt{A303\_NP1.json}.
+\end{proof}
+
+\begin{theorem}[No unique interior $\alpha$ from residual EL alone]
+\label{thm:A303-alpha}
+The formal stationarity condition $\partial F_{\mathrm{res}}/\partial\alpha=0$ yields
+$F_{\mathrm{closed}}=F_{\mathrm{open}}$, which does \emph{not} hold for the dual-route values
+$F_{\mathrm{closed}}=-\log Z_{\mathrm{soft}}$ and $F_{\mathrm{open}}=-\log(1-e^{-3})$.
+Hence residual free-energy stationarity does not select a unique interior packing weight
+$\alpha$ equal to any cosmological $\Omega_b$.
+\end{theorem}
+
+\begin{proof}
+Direct evaluation (certificate): $Z_{\mathrm{soft}}\approx 1.920881$, $F_{\mathrm{closed}}\approx -0.6528$,
+$F_{\mathrm{open}}=-\log(1-e^{-3})\approx 0.05107$, so $\partial F/\partial\alpha\neq 0$.
+Boundary minima ($\alpha\in\{0,1\}$) are residual extremes, not $\Omega_b$.
+\end{proof}
+
+\begin{theorem}[Absolute-$\Omega$ obstruction]
+\label{thm:A303-obs}
+There is no dual-route residual functional built only from
+$\{\mathrm{soft},H_{\rm cont},\kappa_R,I_W,R_{\rm nat},\text{throat Kirchhoff}\}$
+that proves
+\begin{equation}
+\Omega_b \equiv \lambda_V = e^{-\mathrm{soft}_{\max}}
+\end{equation}
+as class C. Absolute identification remains dictionary class X.
+The residual scale $\lambda_V=e^{-3}$ itself remains dual-route class C (A296/A300).
+\end{theorem}
+
+\begin{proof}
+Combine Theorems~\ref{thm:A303-scale}--\ref{thm:A303-alpha}: absolute cosmology fractions require an absolute energy/probability normalisation not dual-route fixed under MeV impossibility and residual $T$-freedom.
+Soft$_{\max}$ unit selects $\lambda_V$ as residual visible \emph{scale} (C), not as proven $\Omega_b$.
+Certificate obstruction status: \texttt{CERTIFIED\_OBSTRUCTION}.
+\end{proof}
+
+\begin{remark}[Soft-spot fix]
+The soft spot ``$\Omega_b\equiv\lambda_V$ might become C later without new input'' is closed as
+\textbf{certified obstruction} for dual-route C. Residual $\lambda_V$ structure is unchanged (C).
+Numerical contact remains X dictionary only.
+\end{remark}
+
+\subsection*{Status (A303)}
+Obstruction for absolute $\Omega_b\equiv\lambda_V$ as dual-route C: \textbf{certified}.
+$\lambda_V$ residual scale: \textbf{C}. Dictionary: \textbf{X}.
+
+%==============================================================================
+\section{SN-A304 --- Continuum $\Gamma$-Limit: Packing Sector vs Unrestricted}
+\label{sec:SN-A304}
+%==============================================================================
+
+\begin{definition}[Residual hex orientation potential]
+\label{def:A304-W}
+\begin{equation}
+W_{\mathrm{hex}}(\theta)
+=
+\frac{1-\cos(6\theta)}{2}.
+\end{equation}
+Wells at $\theta=k\pi/3$, $k\in\mathbb{Z}$, with $W_{\mathrm{hex}}=0$.
+\end{definition}
+
+\begin{definition}[Continuum residual orientation energy]
+\label{def:A304-Eeps}
+On a residual domain $\Omega\subset\mathbb{R}^2$ (torus or hex cell),
+\begin{equation}
+E_\varepsilon[\theta]
+=
+\int_\Omega
+\Bigl(
+\varepsilon|\nabla\theta|^2
++
+\frac{1}{\varepsilon}W_{\mathrm{hex}}(\theta)
+\Bigr)\,dx
++
+\text{soft-density coupling to packing measure}.
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Packing-sector continuum under $H_{\rm cont}$]
+\label{thm:A304-pack}
+Under $H_{\rm cont}$ with $W_{\mathrm{hex}}$ dual-route locked to six-fold residual packing,
+$\Gamma$-lim$_{\varepsilon\to 0}E_\varepsilon$ concentrates on soft-zero hex orientations,
+compatible with discrete $n_\star=6$ packing Maxwell (A299). Claim: \textbf{C structure}
+for packing-sector continuum under $H_{\rm cont}$.
+\end{theorem}
+
+\begin{proof}
+Standard Modica--Mortola / Allen--Cahn type $\Gamma$-convergence for multi-well potentials:
+wells of $W_{\mathrm{hex}}$ are exactly the six residual hex orientations; discrete soft
+census minimiser is unique at $n=6$ (A299). Certificate: hex wells vanish; $E_{\mathrm{hex}}<E_{\mathrm{square}}$.
+\end{proof}
+
+\begin{theorem}[Unrestricted continuum fails uniqueness]
+\label{thm:A304-unres}
+Without $H_{\rm cont}$ / without $W_{\mathrm{hex}}$, soft-positive countermodels
+$\mathrm{CM1}$ ($n=4$, soft$=1$) and $\mathrm{CM2}$ ($n=8$, soft$=1$) survive.
+Hence unrestricted continuum $\Gamma$-selection of unique packing Maxwell is \textbf{false}.
+\end{theorem}
+
+\begin{proof}
+Soft table: $\mathrm{soft}(4)=\mathrm{soft}(8)=1>0$. A193 kill matrix: continuum $X$ without soft/$H_{\rm cont}$
+fails uniqueness. Certificate: \texttt{unrestricted\_not\_unique}.
+\end{proof}
+
+\begin{remark}[Soft-spot fix]
+The prior vague OPEN on ``continuum $\Gamma$ beyond packing'' is split:
+packing-sector continuum under $H_{\rm cont}$ is C structure; unrestricted continuum is false.
+\end{remark}
+
+\subsection*{Status (A304)}
+Packing-sector continuum: \textbf{C under $H_{\rm cont}$}. Unrestricted continuum: \textbf{false}.
+
+%==============================================================================
+\section{SN-A305 --- $G_N$ Dual-Route Kill Matrix}
+\label{sec:SN-A305}
+%==============================================================================
+
+\begin{definition}[Residual $G_N$ candidates]
+\label{def:A305-cand}
+\begin{equation}
+\begin{aligned}
+G_{R^2}&\sim R_{\rm nat}^2,&
+G_{\kappa}&\sim\kappa_R^{-1},&
+G_{\omega}&\sim\omega_{\mathrm{pack}},\\
+G_{R/\kappa}&\sim R_{\rm nat}/\kappa_R,&
+G_{\lambda}&\sim e^{-\mathrm{soft}_{\max}}.
+\end{aligned}
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Kill matrix: no absolute dual-route $G_N$]
+\label{thm:A305-kill}
+Each candidate in Definition~\ref{def:A305-cand} is a residual dimensionless (or residual-scale)
+quantity. None yields absolute SI $G_N$ without an external M-class anchor $G_\star$.
+Countermodels: residual $T$-scale freedom; absolute MeV impossible; external metrology of $G_N$.
+Therefore absolute dual-route $G_N$ as class C is \textbf{false without M}.
+Residual proxy $G_{\mathrm{SI}}=g_{\mathrm{res}}G_\star$ is class \textbf{M}.
+\end{theorem}
+
+\begin{proof}
+All dual-route moduli $\{I_W,\chi,\kappa_R,R_{\rm nat},\omega_{\mathrm{pack}},e^{-3}\}$ are residual numbers.
+Newton's constant has SI dimensions $L^3M^{-1}T^{-2}$. Dimension matching requires external anchors.
+Certificate: \texttt{any\_X\_succeeds=false}, five candidates all fail \texttt{absolute\_SI\_without\_anchor}.
+\end{proof}
+
+\subsection*{Status (A305)}
+Absolute $G_N$ dual-route C: \textbf{false without M}. Residual proxy: \textbf{M}.
+
+%==============================================================================
+\section{SN-A306 --- LQCD S1--S5 Formal M Bridges}
+\label{sec:SN-A306}
+%==============================================================================
+
+\begin{definition}[S1--S5 residual$\to$LQCD operators]
+\label{def:A306-S}
+\begin{center}
+\begin{tabular}{@{}llp{4.5cm}l@{}}
+\toprule
+ID & LQCD target & Residual input & Class \\
+\midrule
+S1 & $w_0$ & soft-zero packing / $R_{\rm nat}$ & M \\
+S2 & $t_0$ & residual spectral gap $\lambda_2$ & M \\
+S3 & $f_\pi$ & $\omega_{\mathrm{pack}},\kappa_R,\mu_5$ scale & M \\
+S4 & $\chi_t$ & $H_1$/throat residual witness & M \\
+S5 & nuclear OOS & residual force-balance forms & M \\
+\bottomrule
+\end{tabular}
+\end{center}
+Each operator has the form $Q_{\mathrm{SI}}=Q_{\mathrm{res}}\cdot Q_\star$ with external $Q_\star$.
+\end{definition}
+
+\begin{theorem}[S1--S5 formalized; absolute free-$\mathcal{A}_0$ blocked]
+\label{thm:A306}
+The S1--S5 bridges are class \textbf{M} dictionaries. The identification
+``LQCD continuum $\equiv$ free residual $\mathcal{A}_0$'' remains \textbf{false}/I.
+\end{theorem}
+
+\begin{proof}
+Operators require external scale anchors (M). Unrestricted free-$\mathcal{A}_0$ fails packing Maxwell (A284).
+Certificate: five bridges, all class M, none absolute free-$\mathcal{A}_0$.
+\end{proof}
+
+\subsection*{Status (A306)}
+S1--S5: \textbf{M formalized}. Continuum $\equiv$ free $\mathcal{A}_0$: \textbf{false}.
+
+%==============================================================================
+\section{SN-A307 --- Atomic $n\ell$: Residual Ranks C; Absolute Spectroscopic C Killed}
+\label{sec:SN-A307}
+%==============================================================================
+
+\begin{theorem}[Residual shell ranks]
+\label{thm:A307-ranks}
+The residual packing rank triple $(r_{\mathrm{pack}},r_{\mathrm{eq}},r_{\mathrm{cap}})=(2,6,8)$
+with sum $E_\sharp=16$ is dual-route class \textbf{C} (A159).
+\end{theorem}
+
+\begin{proof}
+Mapping sector ranks (A159 certificate); soft-zero $n_\star=6$ matches $r_{\mathrm{eq}}$.
+\end{proof}
+
+\begin{theorem}[Absolute spectroscopic $n\ell$ dual-route C killed]
+\label{thm:A307-kill}
+The claims
+\begin{enumerate}[label=(\roman*)]
+\item principal quantum number $n$ absolute from soft-zero alone;
+\item $\ell$ absolute from $r_{\mathrm{eq}}=6$;
+\item nuclear magic numbers absolute from residual ranks
+\end{enumerate}
+are \textbf{false as dual-route C}. Spectroscopic conversion is class \textbf{M}
+(requires Rydberg/MeV structure forbidden as dual-route zero-anchor).
+\end{theorem}
+
+\begin{proof}
+Hydrogenic spectra need $\hbar,m_e,\alpha$ or equivalent SI anchors (absolute MeV lock).
+Residual ranks supply combinatorial dual-route structure only. Certificate: all overclaims killed.
+\end{proof}
+
+\subsection*{Status (A307)}
+Residual ranks: \textbf{C}. Absolute $n\ell$ dual-route C: \textbf{killed/false}. Spectroscopic: \textbf{M}.
+
+%==============================================================================
+\section{SN-A308 --- Absolute Confinement from Free $\mathcal{A}_0$ is False}
+\label{sec:SN-A308}
+%==============================================================================
+
+\begin{theorem}[No absolute confinement theorem from free $\mathcal{A}_0$]
+\label{thm:A308}
+Free residual $\mathcal{A}_0$ does not select packing Maxwell (A284 U1--U8).
+Area-law / Wilson confinement as absolute dual-route C from free $\mathcal{A}_0$ alone is \textbf{false}.
+Residual throat/Wilson structure under $H_{\rm cont}$ remains residual class C (not absolute).
+\end{theorem}
+
+\begin{proof}
+Unrestricted path failure (A284); confinement candidates fail absolute-without-$H_{\rm cont}$.
+Certificate: \texttt{absolute\_confinement\_free\_A0=false}.
+\end{proof}
+
+\subsection*{Status (A308)}
+Absolute confinement free-$\mathcal{A}_0$: \textbf{false}. Residual throat structure: \textbf{C under $H_{\rm cont}$}.
+
+%==============================================================================
+\section{SN-A309 --- Residual Chiral PDE Dynamics on $\mathrm{S}_{15}^{(3)}$}
+\label{sec:SN-A309}
+%==============================================================================
+
+\begin{definition}[Residual chiral free-energy density]
+\label{def:A309-F}
+On $G_{15}^{(3)}$, with core orientations $\varphi_i$ ($i=0,1,2$) and residual $\mu_5\sim R_{\rm nat}\gamma^\star$,
+\begin{equation}
+F
+=
+E_{\mathrm{spring}}(x)
++
+\sum_{i=0}^{2}
+\frac{\lambda_6}{2}W_{\mathrm{hex}}(\varphi_i)
++
+\frac{\mu_5^2}{2}\sum_{i=0}^{2}\varphi_i^2,
+\end{equation}
+with $\lambda_6\propto\kappa_R$ dual-route.
+\end{definition}
+
+\begin{theorem}[Operational residual chiral dynamics]
+\label{thm:A309-dyn}
+Gradient flow of Definition~\ref{def:A309-F} is well-defined on $G_{15}^{(3)}$
+($|V|=15$, $|E|=33$, $H_1=19$). Residual CME/CVE schematic currents
+$j_{\mathrm{CME}}\sim\mu_5 B_{\mathrm{res}}$, $j_{\mathrm{CVE}}\sim\mu_5\Omega_{\mathrm{res}}$
+are class C residual transport under $H_{\rm cont}$ (A184). Particle ID as $\nu$/ALP/PQ axion is \textbf{X}.
+\end{theorem}
+
+\begin{proof}
+Certificate dynamics history finite; $\mu_5=R_{\rm nat}\gamma^\star>0$; $H_1=19$;
+\texttt{claim\_particle\_ID=X}; \texttt{not\_PQ\_axion=true}.
+\end{proof}
+
+\subsection*{Status (A309)}
+Chiral dynamics: \textbf{C residual operational}. Particle ID: \textbf{X}.
+
+%==============================================================================
+\section{SN-A310 --- Frozen Nature Correlation Dictionary}
+\label{sec:SN-A310}
+%==============================================================================
+
+\begin{theorem}[Frozen residual--nature table]
+\label{thm:A310}
+\begin{center}
+\begin{tabular}{@{}llll@{}}
+\toprule
+Family & soft / scale & Residual claim & Nature ID \\
+\midrule
+K7 / M15 & soft$=0$ ($\sim 52\%$ soft-only) & C & X \\
+K10 / K24 & soft$=1$ & C & X \\
+$\mathrm{S}_{15}^{(3)}$ / $\mathrm{S}_{29}$ & soft$=3$, $\lambda_V$ ceiling & C & X \\
+Throat flux & open residual channel & C under $H_{\rm cont}$ & X \\
+Chiral $H_1$/$\mu_5$ & light residual modes & C spectral & X \\
+\bottomrule
+\end{tabular}
+\end{center}
+No fit parameters. Nature / particle / material identification remains X.
+\end{theorem}
+
+\begin{proof}
+Soft-only shares from A295; claim classes from A303--A309 firewalls. Certificate: all nature ID X; soft0 dominates.
+\end{proof}
+
+\subsection*{Status (A310)}
+Dictionary frozen: residual \textbf{C}; nature ID \textbf{X}.
+
+%==============================================================================
+\section*{Master Gap Status After A303--A310}
+\begin{center}
+\begin{tabular}{@{}p{4.2cm}p{3.2cm}p{5.0cm}@{}}
+\toprule
+Gap & Prior & Now \\
+\midrule
+$\Omega_b\equiv\lambda_V$ absolute C & OPEN (X) & \textbf{CERTIFIED OBSTRUCTION} (λ\_V still C) \\
+Continuum $\Gamma$ & OPEN (O) & \textbf{C under $H_{\rm cont}$} / \textbf{false} unrestricted \\
+$G_N$ dual-route absolute & OPEN & \textbf{kill all-fail}; proxy M \\
+LQCD S1--S5 & OPEN M rigor & \textbf{M formalized} \\
+Atomic $n\ell$ dual-route C & OPEN & \textbf{killed}; ranks C \\
+Confinement free-$\mathcal{A}_0$ & OPEN & \textbf{false} \\
+Particle ID $\nu$/ALP & X & \textbf{X} + dynamics C \\
+Nature table & partial & \textbf{frozen} C/X \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\paragraph{Certificate.}
+\texttt{all\_ok: true} (15 checks). \texttt{free\_params\_primary=0}. Absolute MeV IMPOSSIBLE.
+Unrestricted open-system closed: false.

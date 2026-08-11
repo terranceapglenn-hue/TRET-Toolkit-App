@@ -1,9 +1,9 @@
 {
   "package": "TRET-Toolkit-App",
-  "version": "v7.0.0_A291_A302_toolkit_20260811",
+  "version": "v7.1.0_A303_A310_toolkit_20260811",
   "all_ok": true,
-  "n_checks": 15,
-  "n_pass": 15,
+  "n_checks": 24,
+  "n_pass": 24,
   "failed": [],
   "locks": {
     "free_params_primary": 0,

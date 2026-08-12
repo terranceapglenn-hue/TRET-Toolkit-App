@@ -1,0 +1,24 @@
+{
+  "section": "A308",
+  "candidates": {
+    "X_area_law_free_A0": {
+      "kills_CM_soft_pos": false,
+      "kills_unrestricted": false,
+      "absolute_without_H_cont": false
+    },
+    "X_wilson_loop_residual": {
+      "residual_structure": true,
+      "absolute_confinement_theorem": false,
+      "class": "C_structure_under_H_cont_optional"
+    }
+  },
+  "verdict": "Absolute confinement theorem from free A0 remains false. Residual Wilson/throat structure under H_cont is C residual; not absolute.",
+  "claim_absolute_confinement_free_A0": "false",
+  "checks": {
+    "absolute_confinement_free_A0_false": true,
+    "unrestricted_false": true,
+    "MeV_impossible": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

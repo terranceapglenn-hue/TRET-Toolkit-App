@@ -1,0 +1,449 @@
+{
+  "package": "TRET_A319_A328_RESIDUAL_UNRESTRICTED_CLOSURES",
+  "version": "v12.72.0_A319_A328_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE"
+  },
+  "results": {
+    "A319": {
+      "section": "A319",
+      "axioms": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ],
+      "unique_soft": "abs(n/2-3)",
+      "table": {
+        "4": 1.0,
+        "6": 0.0,
+        "8": 1.0,
+        "10": 2.0,
+        "12": 3.0
+      },
+      "alternatives_killed": {
+        "s_squared": {
+          "formula": "(n/2-3)^2",
+          "kills_S4": true,
+          "note": "slope at 6 is 0, not unit"
+        },
+        "s_abs_scaled": {
+          "formula": "c|n/2-3| c!=1",
+          "kills_S4_or_S5": true,
+          "note": "free continuous scale"
+        },
+        "s_zero_all": {
+          "formula": "0",
+          "kills_S4": true
+        }
+      },
+      "uniqueness": {
+        "g_at_3": 0,
+        "right_slope": 1,
+        "left_slope": 1,
+        "convex_plus_unit_slopes_implies_abs": true,
+        "formula": "s(n)=|n/2-3|"
+      },
+      "claim": "C",
+      "checks": {
+        "ax_S1_zero_at_6": true,
+        "ax_S2_reflection": true,
+        "ax_S2_explicit": true,
+        "ax_S3_convex_g": true,
+        "ax_S4_unit_slope": true,
+        "ax_S5_free_params_0": true,
+        "reflection_ok": true,
+        "unique_formula": true,
+        "soft6_zero": true,
+        "soft12_three": true,
+        "alt_squared_fails_S4": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A320": {
+      "section": "A320",
+      "axioms": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ],
+      "invariants_S15_3": {
+        "nV": 15,
+        "nE": 33,
+        "H1": 19,
+        "central_degs": [
+          8,
+          8,
+          8
+        ],
+        "eq_deg_min": 3,
+        "eq_deg_max": 4,
+        "n_spokes": 18,
+        "connected": true,
+        "soft_eq": 3.0
+      },
+      "even_m_candidates": [
+        [
+          2,
+          6,
+          3.0
+        ],
+        [
+          4,
+          12,
+          1.5
+        ],
+        [
+          6,
+          18,
+          1.0
+        ]
+      ],
+      "selected": {
+        "m": 4,
+        "n_eq": 12,
+        "avg_spoke_deg": 1.5
+      },
+      "countermodels": {
+        "c2_only": "c=2 duplex is different residual family (K10), not c=3",
+        "n_eq_9": "not free C3 with 6-spokes packing residual",
+        "n_eq_6": "collapses to soft-zero hex, not multi-central soft_max",
+        "no_K3": "violates M1"
+      },
+      "S29": {
+        "nV": 29,
+        "nE": 87,
+        "H1": 59
+      },
+      "claim": "C under residual multi-central axioms M1\u2013M6",
+      "checks": {
+        "central_degs_8": true,
+        "n_spokes_18": true,
+        "nE_33": true,
+        "H1_19": true,
+        "connected": true,
+        "soft_12_3": true,
+        "selected_n_eq_12": true,
+        "S29_nE_87": true,
+        "S29_H1_59": true,
+        "free_params_0": true,
+        "soft_zero_unique_preserved": true
+      },
+      "all_ok": true
+    },
+    "A321": {
+      "section": "A321",
+      "partition": {
+        "soft_max_unit": {
+          "lambda_V": 0.049787068367863944,
+          "lambda_dark": 0.950212931632136,
+          "R_oc": 19.085536923187668
+        },
+        "two_channel_boltzmann": {
+          "w_closed": 0.9525741268224334,
+          "w_open": 0.04742587317756679,
+          "Z2": 1.0497870683678638
+        },
+        "soft_only_ecology": {
+          "p6": 0.5205943929937957,
+          "Z_soft": 1.9208812339473613
+        },
+        "category_separation": {
+          "lambda_V_equals_p6": false,
+          "lambda_V_equals_w_op": false,
+          "note": "three residual layers remain distinct objects"
+        }
+      },
+      "firewall": {
+        "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+        "residual_lambda_V": "C",
+        "residual_two_channel_weights": "C under H_cont soft unit",
+        "alpha_packing_to_Omega": "not dual-route C"
+      },
+      "claim_residual_partition": "C under H_cont (soft_max unit + two-channel)",
+      "claim_Omega": "obstruction",
+      "checks": {
+        "R_oc_e3m1": true,
+        "lam_V_e3": true,
+        "w_sum_1": true,
+        "layers_distinct_p6": true,
+        "w_op_lt_lam_dark": true,
+        "firewall_obstruction": true,
+        "free_params_0": true,
+        "no_planck_fit": true
+      },
+      "all_ok": true
+    },
+    "A322": {
+      "section": "A322",
+      "drop_one": {
+        "D1_drop_H_cont": {
+          "packing_Maxwell_unique": false,
+          "reason": "unrestricted continuum CM1/CM2 survive; A304/A311",
+          "residual_force_Kirchhoff": false
+        },
+        "D2_drop_soft": {
+          "packing_Maxwell_unique": false,
+          "reason": "without soft, n=4,8 not penalized; abundance undefined dual-route",
+          "soft_zero_unique": false
+        },
+        "D3_drop_orientation_AF": {
+          "packing_Maxwell_unique": false,
+          "reason": "ferromagnetic residual allows non-hex sign patterns; exchange B_eq not forced",
+          "orientation_unique": false
+        },
+        "D4_drop_packing_max": {
+          "packing_Maxwell_unique": false,
+          "reason": "no selection among even coverings"
+        },
+        "D5_drop_P6": {
+          "packing_Maxwell_combinatorial": true,
+          "spectral_protection": false,
+          "reason": "soft uniqueness may hold; hybrid-mode protection lost \u2014 not full residual recovery",
+          "full_residual_recovery": false
+        }
+      },
+      "necessary": {
+        "H_cont_necessary_for_open_Kirchhoff_and_unrestricted_kill": true,
+        "soft_necessary_for_combinatorial_packing_Maxwell": true,
+        "orientation_necessary_for_AF_exchange": true,
+        "conjunction_for_full_residual_C": true
+      },
+      "claim": "C ledger: among inventoried weakenings, H_cont is necessary for open-system Kirchhoff residual recovery and unrestricted kill; soft necessary for combinatorial packing Maxwell; full residual C needs conjunction.",
+      "checks": {
+        "D1_fails_unique": true,
+        "D2_fails_unique": true,
+        "D3_fails_unique": true,
+        "D4_fails_unique": true,
+        "D5_not_full_recovery": true,
+        "H_cont_necessary": true,
+        "soft_necessary": true,
+        "free_params_0": true,
+        "unrestricted_still_false": true
+      },
+      "all_ok": true
+    },
+    "A323": {
+      "section": "A323",
+      "mathfrak_X_axioms": [
+        "X1_free_params_0",
+        "X2_no_rename_soft_n6",
+        "X3_local_variational",
+        "X4_frame_indiff",
+        "X5_kill_CM"
+      ],
+      "structural": {
+        "lemma": "If X is local residual continuum and admits both hex and square residual critical points without soft penalty, then X does not uniquely select n=6.",
+        "corollary_soft_rename": "If X penalizes square/octagon exactly as soft, it renames soft (fails X2).",
+        "corollary_H_cont": "H_cont + soft is residual open-system package outside pure unrestricted X."
+      },
+      "inventory": {
+        "n_candidates": 18,
+        "n_CM": 8,
+        "successes": 0
+      },
+      "claim": "false unrestricted packing Maxwell for all X in inventoried class; structural lemma: local continuum without soft/H_cont cannot unique-select n=6 without rename or free params (C ledger of obstruction).",
+      "claim_class": "false unrestricted; C obstruction ledger",
+      "checks": {
+        "inventory_successes_0": true,
+        "n_cand_18": true,
+        "n_cm_8": true,
+        "X2_forbids_rename": true,
+        "structural_lemma": true,
+        "unrestricted_false": true,
+        "free_params_0": true,
+        "meta_kill_claim": true
+      },
+      "all_ok": true
+    },
+    "A324": {
+      "section": "A324",
+      "configs": {
+        "hex_n6": {
+          "soft": 0.0,
+          "selected_under_H_cont_soft": true
+        },
+        "square_n4": {
+          "soft": 1.0,
+          "selected_under_H_cont_soft": false
+        },
+        "oct_n8": {
+          "soft": 1.0,
+          "selected_under_H_cont_soft": false
+        }
+      },
+      "theorem": "Free residual A0 without soft/H_cont does not uniquely select packing Maxwell n=6; square/octagon residual critical images survive. Claim: false as unrestricted dual-route C.",
+      "claim": "false",
+      "checks": {
+        "hex_soft0": true,
+        "square_soft_pos": true,
+        "free_A0_not_unique": true,
+        "unrestricted_false": true,
+        "MeV_impossible": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A325": {
+      "section": "A325",
+      "F_structure": "\u222b \u03b5|\u2207\u03b8|\u00b2/2 + W_hex/\u03b5 + f_soft(\u03c1) + \u03ba_R|\u2207\u03c1|\u00b2/2 + throat",
+      "coercivity": {
+        "W_hex_nonneg": true,
+        "W_hex_zero_iff_hex": true,
+        "f_soft_min_at_6": true,
+        "kappa_R_pos": true,
+        "rank_saturation_P5": true,
+        "equi_coercive_structure": true
+      },
+      "claim": "C structure under H_cont + P5; unrestricted without W_hex false",
+      "checks": {
+        "c_W_hex_nonneg": true,
+        "c_W_hex_zero_iff_hex": true,
+        "c_f_soft_min_at_6": true,
+        "c_kappa_R_pos": true,
+        "c_rank_saturation_P5": true,
+        "c_equi_coercive_structure": true,
+        "unrestricted_without_W_false": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A326": {
+      "section": "A326",
+      "EL": "\u03c6_dot = -\u03bb6 W_hex'(\u03c6) - \u03bc5\u00b2 \u03c6",
+      "mu5": 0.0007901151926307481,
+      "lam6": 0.8291796067500631,
+      "W_second_at_well": 18.0,
+      "m_res": 14.925233545783154,
+      "claim_structure": "C residual under H_cont",
+      "claim_particle_ID": "X",
+      "checks": {
+        "mu5_pos": true,
+        "lam6_pos": true,
+        "W_pp0_18": true,
+        "m_res_pos": true,
+        "H1_19": true,
+        "particle_ID_X": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    },
+    "A327": {
+      "section": "A327",
+      "nV": 30,
+      "nE": 92,
+      "H1": 63,
+      "deg_T": 5,
+      "open_flux_dim": 1,
+      "claim_structure": "C under H_cont (unique single-throat open flux dim 1)",
+      "claim_DE_ID": "X",
+      "checks": {
+        "nV_30": true,
+        "H1_63": true,
+        "deg_T_5": true,
+        "open_flux_dim_1": true,
+        "connected": true,
+        "free_params_0": true,
+        "DE_dictionary_X": true
+      },
+      "all_ok": true
+    },
+    "A328": {
+      "section": "A328",
+      "ledger": [
+        {
+          "eq": "Kirchhoff current conservation (non-throat)",
+          "class": "C under H_cont"
+        },
+        {
+          "eq": "Circulation quantization / H1 residual currents",
+          "class": "C under H_cont"
+        },
+        {
+          "eq": "Soft spring residual force F=-grad E_soft",
+          "class": "C residual"
+        },
+        {
+          "eq": "Orientation AF exchange residual",
+          "class": "C under P3"
+        },
+        {
+          "eq": "Throat open flux J_thr^ext",
+          "class": "C under H_cont; DE proxy X"
+        },
+        {
+          "eq": "SI Maxwell EM (E,B) laboratory",
+          "class": "M"
+        },
+        {
+          "eq": "SI G_N Einstein coupling",
+          "class": "M / false absolute dual-route C"
+        },
+        {
+          "eq": "Packing Maxwell n=6 under H_cont",
+          "class": "C"
+        },
+        {
+          "eq": "Packing Maxwell unrestricted free A0",
+          "class": "false"
+        }
+      ],
+      "board": {
+        "residual_under_H_cont": "structurally complete for inventoried C claims + A319\u2013A327 strengthenings",
+        "unrestricted": "false (inventory + structural meta-kill A323 + free A0 nonunique A324)",
+        "H_cont_minimality": "necessary among inventoried weakenings (A322)",
+        "soft_characterization": "unique s(n)=|n/2-3| in axiom class S (A319)",
+        "multicentral_uniqueness": "n_eq=12 selected under M1\u2013M6 (A320)",
+        "open_closed_residual": "C partition layers without Omega promotion (A321)",
+        "absolute_MeV": "IMPOSSIBLE",
+        "Omega_dual_route_C": "CERTIFIED_OBSTRUCTION"
+      },
+      "locks": {
+        "free_params_primary": 0,
+        "H_cont_open_system_closed": true,
+        "packing_Maxwell_under_H_cont": "recovered_C",
+        "unrestricted_open_system_closed": false,
+        "absolute_closed": false,
+        "absolute_MeV_zero_anchor": "IMPOSSIBLE"
+      },
+      "version": "v12.72.0_A319_A328_20260811",
+      "checks": {
+        "ledger_ge_8": true,
+        "prev_all": true,
+        "unrestricted_false": true,
+        "MeV_I": true,
+        "free_params_0": true
+      },
+      "all_ok": true
+    }
+  },
+  "checks": {
+    "A319_ok": true,
+    "A320_ok": true,
+    "A321_ok": true,
+    "A322_ok": true,
+    "A323_ok": true,
+    "A324_ok": true,
+    "A325_ok": true,
+    "A326_ok": true,
+    "A327_ok": true,
+    "A328_ok": true,
+    "locks_MeV": true,
+    "locks_unrestricted_false": true,
+    "free_params_0": true,
+    "soft_unique": true,
+    "n_eq_12": true,
+    "meta_kill_0": true
+  },
+  "all_ok": true
+}

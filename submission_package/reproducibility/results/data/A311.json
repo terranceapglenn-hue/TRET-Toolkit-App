@@ -1,0 +1,180 @@
+{
+  "section": "A311",
+  "countermodels": {
+    "CM1_n4": {
+      "soft": 1.0,
+      "note": "square covering soft>0"
+    },
+    "CM2_n8": {
+      "soft": 1.0,
+      "note": "octagon soft>0"
+    },
+    "CM3_conformal_f": {
+      "note": "free conformal free-energy density"
+    },
+    "CM4_matroid_other": {
+      "rank_pair": [
+        3,
+        8
+      ],
+      "note": "non-packing dual matroid"
+    },
+    "CM5_cluster_A3": {
+      "n": 4,
+      "note": "finite mutation A3"
+    },
+    "CM6_trop_midrank": {
+      "note": "mid-rank Trop+ not packing"
+    },
+    "CM7_S15_3_soft3": {
+      "soft": 3.0,
+      "note": "multi-central soft_max not unique zero"
+    },
+    "CM8_random_regular": {
+      "note": "random regular graph soft-undefined"
+    }
+  },
+  "candidates": {
+    "X_soft_min": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": true,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "renames soft minimization \u2014 fails success criterion"
+    },
+    "X_finite_mut": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "does not kill CM1/CM2"
+    },
+    "X_trop_R": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "mid-rank survives"
+    },
+    "X_sympl_vol": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "no unique n=6"
+    },
+    "X_maxent": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "conformal freedom"
+    },
+    "X_polyconvex": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "fails unique n=6"
+    },
+    "X_spectral_gap": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "gap alone insufficient"
+    },
+    "X_hopf_hydro": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "Hopf not packing selector"
+    },
+    "X_ext_crystal": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 1,
+      "succeeds": false,
+      "notes": "external crystallography \u2014 free param / external"
+    },
+    "X_gauge_phonon_chiral": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "A184 no soft kill"
+    },
+    "X_6plus2_circ": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": true,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "encodes n=6 structure"
+    },
+    "X_stoner_wigner": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "flat-band not packing"
+    },
+    "X_lambda_V_fit": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": true,
+      "free_params": 1,
+      "succeeds": false,
+      "notes": "fits Omega \u2014 free param numerology"
+    },
+    "X_area_law_free_A0": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "A308 false"
+    },
+    "X_G_N_residual": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "A305 not packing selector"
+    },
+    "X_continuum_Whex_no_Hcont": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "without H_cont hex potential is free choice / rename"
+    },
+    "X_entropy_soft_only": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": true,
+      "free_params": 0,
+      "succeeds": false,
+      "notes": "recovers soft-only \u2014 renames soft"
+    },
+    "X_LQCD_match": {
+      "kills_all_CM": false,
+      "renames_soft_or_n6": false,
+      "free_params": 1,
+      "succeeds": false,
+      "notes": "M anchors required"
+    }
+  },
+  "n_candidates": 18,
+  "n_CM": 8,
+  "any_X_succeeds": false,
+  "completeness_claim": "Over inventoried class of continuum X (18 candidates \u00d7 8 CM), no X meets A169 success criterion. Unrestricted packing Maxwell remains false with inventory-completeness for this class.",
+  "claim": "false unrestricted; inventory completeness C structure",
+  "checks": {
+    "n_candidates_ge_15": true,
+    "n_CM_ge_8": true,
+    "any_succeeds_false": true,
+    "soft_min_renames": true,
+    "lambda_V_fit_fails": true,
+    "free_params_0_inventory": true,
+    "unrestricted_still_false": true
+  },
+  "all_ok": true
+}

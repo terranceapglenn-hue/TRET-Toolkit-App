@@ -1,0 +1,320 @@
+{
+  "package": "TRET_A329_A333_RESIDUAL_COMPLETION",
+  "version": "v12.73.0_A329_A333_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION"
+  },
+  "results": {
+    "A329": {
+      "section": "A329",
+      "axioms": [
+        "G-AF",
+        "G-PM",
+        "G-RU",
+        "G-EV",
+        "G-RF",
+        "G-CX"
+      ],
+      "derived_soft": "abs(n/2-3)",
+      "chi_C6": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "g_table": {
+        "1": 2,
+        "2": 1,
+        "3": 0,
+        "4": 1,
+        "5": 2,
+        "6": 3,
+        "7": 4,
+        "8": 5,
+        "9": 6
+      },
+      "alternatives_killed": {
+        "squared": {
+          "fails": "G-RU (vanishing slope at minimum)"
+        },
+        "scaled_c": {
+          "fails": "G-RU or free continuous scale"
+        },
+        "asymmetric": {
+          "fails": "G-RF residual duality"
+        }
+      },
+      "claim": "C (soft derived from residual geometry, not free definition)",
+      "checks": {
+        "AF_C6": true,
+        "g3_zero": true,
+        "unit_slopes": true,
+        "reflection": true,
+        "convex_abs": true,
+        "soft_formula": true,
+        "soft6_0": true,
+        "soft12_3": true,
+        "free_params_0": true,
+        "n_star_6": true
+      },
+      "all_ok": true
+    },
+    "A330": {
+      "section": "A330",
+      "invariants": {
+        "nV": 15,
+        "nE": 33,
+        "H1": 19,
+        "deg_seq": [
+          8,
+          8,
+          8,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "central_degs": [
+          8,
+          8,
+          8
+        ],
+        "n_spokes": 18
+      },
+      "uniqueness": {
+        "n_candidates_deg_correct": 6,
+        "n_iso_to_star_via_dihedral_C3": 6,
+        "n_non_iso_same_deg_H1": 0,
+        "standard_schedule": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "claim": "All M1\u2013M7 C3-equivariant contiguous-arc schedules with residual packing degrees are residual-isomorphic to S15^(3) under dihedral\u00d7C3 residual automorphisms OR are excluded by degree/H1; certificate enumerates fixed-min S0 class."
+      },
+      "non_iso_sample": [],
+      "claim": "C residual-isomorphism uniqueness under M1\u2013M6 (enumerated)",
+      "checks": {
+        "inv_nE_33": true,
+        "inv_H1_19": true,
+        "central_8": true,
+        "n_spokes_18": true,
+        "enumeration_ran": true,
+        "all_same_deg_H1_iso_or_empty_noniso": true,
+        "iso_count_positive": true,
+        "free_params_0": true,
+        "soft_zero_preserved": true,
+        "strict_residual_iso_unique": true
+      },
+      "all_ok": true
+    },
+    "A331": {
+      "section": "A331",
+      "mathfrak_X_poly": [
+        "local",
+        "polyconvex_admissible",
+        "free_params_0",
+        "no_soft_rename",
+        "no_hardcode_n6"
+      ],
+      "theorem": {
+        "statement": "Local soft-free residual continuum energy with equal bulk energy on hex and square microstructures cannot uniquely select packing Maxwell n=6.",
+        "soft_free_nonunique": true,
+        "with_soft_unique": true,
+        "rename_ban": "encoding soft as bulk energy renames soft (fails X2)"
+      },
+      "claim": "false unrestricted packing Maxwell for soft-free local residual continuum (structural)",
+      "claim_class": "false unrestricted; C obstruction ledger",
+      "checks": {
+        "soft_free_equal_bulk": true,
+        "soft_free_not_unique": true,
+        "soft_ranks_hex": true,
+        "unrestricted_false": true,
+        "free_params_0": true,
+        "meta_structural": true,
+        "inventory_A311_0_success": true,
+        "soft_free_is_not_unique": true
+      },
+      "all_ok": true
+    },
+    "A332": {
+      "section": "A332",
+      "W_hex": "(1-cos(6\u03b8))/2",
+      "Modica_constant_num": 0.9427896557684549,
+      "W_mid": 1.0,
+      "packing_soft": {
+        "4": 1.0,
+        "6": 0.0,
+        "8": 1.0,
+        "10": 2.0,
+        "12": 3.0
+      },
+      "Gamma_limit": "c_W * Perimeter(hex-well interfaces) + soft packing + throat residual boundary",
+      "claim": "C under H_cont + P5 (residual Gamma packing sector)",
+      "checks": {
+        "W_nonneg_wells": true,
+        "W_barrier_pos": true,
+        "cW_pos": true,
+        "argmin_soft_6": true,
+        "kappa_R_pos": true,
+        "equi_coercive_structure": true,
+        "throat_boundary_structure": true,
+        "unrestricted_without_W_false": true,
+        "free_params_0": true,
+        "gamma_claim_under_H_cont": true
+      },
+      "all_ok": true
+    },
+    "A333": {
+      "section": "A333",
+      "layers": {
+        "L1": {
+          "lambda_V": 0.049787068367863944,
+          "lambda_dark": 0.950212931632136
+        },
+        "L2": {
+          "w_cl": 0.9525741268224334,
+          "w_op": 0.04742587317756679
+        },
+        "L3": {
+          "p6": 0.5205943929937957,
+          "Z_soft": 1.9208812339473613
+        }
+      },
+      "separation": {
+        "L1_vs_L3": 0.4708073246259318,
+        "L1_vs_L2_op": 0.0023611951902971565,
+        "L2_op_vs_L3": 0.4731685198162289
+      },
+      "assignment": {
+        "packing_force_channel": "L3_soft_only",
+        "throat_scale_channel": "L1_soft_max_unit",
+        "two_channel_free_energy": "L2_boltzmann_distinct",
+        "single_weight_for_all_channels": false,
+        "Omega_promotion": "CERTIFIED_OBSTRUCTION"
+      },
+      "claim": "C: multi-layer residual force-channel assignment under H_cont; single universal residual weight false; Omega dual-route C obstruction retained",
+      "checks": {
+        "layers_separated": true,
+        "assignment_packing_L3": true,
+        "assignment_throat_L1": true,
+        "no_single_weight": true,
+        "Omega_obstruction": true,
+        "free_params_0": true,
+        "p6_dom": true,
+        "lam_V_e3": true
+      },
+      "all_ok": true
+    }
+  },
+  "claim_board": {
+    "version": "v12.73.0_A329_A333_20260811",
+    "locks": {
+      "free_params_primary": 0,
+      "H_cont_open_system_closed": true,
+      "packing_Maxwell_under_H_cont": "recovered_C",
+      "unrestricted_open_system_closed": false,
+      "absolute_closed": false,
+      "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+      "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION"
+    },
+    "board": [
+      {
+        "id": "soft_geometry",
+        "section": "A329",
+        "claim": "soft from AF C6 + residual unit",
+        "class": "C"
+      },
+      {
+        "id": "S15_3_iso",
+        "section": "A330",
+        "claim": "residual isomorphism uniqueness",
+        "class": "C"
+      },
+      {
+        "id": "X_poly_meta",
+        "section": "A331",
+        "claim": "soft-free local continuum nonunique packing Maxwell",
+        "class": "false unrestricted"
+      },
+      {
+        "id": "Gamma_residual",
+        "section": "A332",
+        "claim": "Gamma packing sector under H_cont",
+        "class": "C under H_cont"
+      },
+      {
+        "id": "layer_assignment",
+        "section": "A333",
+        "claim": "multi-layer force channels; no single weight",
+        "class": "C residual structure"
+      },
+      {
+        "id": "Omega_dual_route",
+        "section": "A303/A333",
+        "claim": "Omega_b = lambda_V dual-route C",
+        "class": "CERTIFIED_OBSTRUCTION"
+      },
+      {
+        "id": "MeV",
+        "section": "locks",
+        "claim": "absolute MeV zero-anchor",
+        "class": "IMPOSSIBLE"
+      },
+      {
+        "id": "unrestricted_Maxwell",
+        "section": "A323-A331",
+        "claim": "unrestricted packing Maxwell",
+        "class": "false"
+      },
+      {
+        "id": "lambda_V",
+        "section": "A300/A329",
+        "claim": "lambda_V = e^{-3}",
+        "class": "C residual scale"
+      },
+      {
+        "id": "soft_zero",
+        "section": "A319/A329",
+        "claim": "n_star=6 unique soft zero",
+        "class": "C"
+      }
+    ],
+    "n_C": 7,
+    "n_false_or_blocked": 4
+  },
+  "checks": {
+    "A329_ok": true,
+    "A330_ok": true,
+    "A331_ok": true,
+    "A332_ok": true,
+    "A333_ok": true,
+    "locks_MeV": true,
+    "locks_unrestricted_false": true,
+    "locks_Omega_obs": true,
+    "free_params_0": true,
+    "soft_geometry": true,
+    "gamma_cW_pos": true,
+    "layers_multi": true
+  },
+  "all_ok": true
+}

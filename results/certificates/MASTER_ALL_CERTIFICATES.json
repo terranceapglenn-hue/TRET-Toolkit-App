@@ -1,0 +1,41 @@
+{
+  "package": "TRET_SUBMISSION_READY_v12.77.0",
+  "results": {
+    "run_A303_A310_gap_closure.py": {
+      "exists": true,
+      "returncode": 0,
+      "all_ok": true
+    },
+    "run_A311_A318_strengthening.py": {
+      "exists": true,
+      "returncode": 0,
+      "all_ok": true
+    },
+    "run_A319_A328_verification.py": {
+      "exists": true,
+      "returncode": 0,
+      "all_ok": true
+    },
+    "run_A329_A333_verification.py": {
+      "exists": true,
+      "returncode": 0,
+      "all_ok": true
+    },
+    "run_A334_A338_verification.py": {
+      "exists": true,
+      "returncode": 0,
+      "all_ok": true
+    },
+    "run_A339_A346_verification.py": {
+      "exists": true,
+      "returncode": 0,
+      "all_ok": true
+    },
+    "run_A347_A351_verification.py": {
+      "exists": true,
+      "returncode": 0,
+      "all_ok": true
+    }
+  },
+  "all_ok": true
+}

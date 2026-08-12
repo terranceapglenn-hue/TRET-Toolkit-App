@@ -1,0 +1,92 @@
+{
+  "version": "v12.74.0_A334_A338_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION"
+  },
+  "board": [
+    {
+      "id": "chiral_continuum",
+      "section": "A334",
+      "claim": "continuum chiral EL + lambda2 multiplet",
+      "class": "C residual; ID X"
+    },
+    {
+      "id": "throat_dim1_unique",
+      "section": "A335",
+      "claim": "open-flux dim 1 for single open class",
+      "class": "C under H_cont; DE X"
+    },
+    {
+      "id": "exterior_maxwell",
+      "section": "A336",
+      "claim": "residual cochain Maxwell under H_cont",
+      "class": "C residual; SI M"
+    },
+    {
+      "id": "dropone_D1_D8",
+      "section": "A337",
+      "claim": "expanded drop-one all fail full recovery",
+      "class": "C ledger"
+    },
+    {
+      "id": "census_tail",
+      "section": "A338",
+      "claim": "C0 ecology + soft-tail suppression",
+      "class": "C"
+    },
+    {
+      "id": "soft_geometry",
+      "section": "A329",
+      "claim": "soft from residual geometry",
+      "class": "C"
+    },
+    {
+      "id": "S15_iso",
+      "section": "A330",
+      "claim": "residual-isomorphism uniqueness",
+      "class": "C"
+    },
+    {
+      "id": "unrestricted",
+      "section": "A331",
+      "claim": "unrestricted packing Maxwell",
+      "class": "false"
+    },
+    {
+      "id": "Gamma",
+      "section": "A332",
+      "claim": "residual Gamma packing sector",
+      "class": "C under H_cont"
+    },
+    {
+      "id": "layers",
+      "section": "A333",
+      "claim": "multi-layer force channels",
+      "class": "C structure"
+    },
+    {
+      "id": "Omega",
+      "section": "A303/A333",
+      "claim": "Omega_b = lambda_V dual-route C",
+      "class": "CERTIFIED_OBSTRUCTION"
+    },
+    {
+      "id": "MeV",
+      "section": "locks",
+      "claim": "absolute MeV",
+      "class": "IMPOSSIBLE"
+    },
+    {
+      "id": "lambda_V",
+      "section": "A300/A329",
+      "claim": "lambda_V = e^{-3}",
+      "class": "C residual scale"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "section": "A305",
+  "NP": "NP3",
+  "candidates": {
+    "G_Rnat2": {
+      "formula": "G ~ R_nat^2",
+      "value_residual": 7.36802938380118e-07,
+      "uses_only_dual_route": true,
+      "absolute_SI_without_anchor": false,
+      "kills_all_CM": false,
+      "reason_fail": "dimensionless residual; needs M length^2/mass anchor"
+    },
+    "G_kappa_inv": {
+      "formula": "G ~ 1/\u03ba_R",
+      "value_residual": 1.2060113295832984,
+      "uses_only_dual_route": true,
+      "absolute_SI_without_anchor": false,
+      "kills_all_CM": false,
+      "reason_fail": "dimensionless; no SI G_N without external anchor"
+    },
+    "G_omega_pack": {
+      "formula": "G ~ \u03c9_pack",
+      "value_residual": 0.1708203932499369,
+      "uses_only_dual_route": true,
+      "absolute_SI_without_anchor": false,
+      "kills_all_CM": false,
+      "reason_fail": "packing weight not Newton constant"
+    },
+    "G_Rnat_over_kappa": {
+      "formula": "G ~ R_nat/\u03ba_R",
+      "value_residual": 0.0010352066717139528,
+      "uses_only_dual_route": true,
+      "absolute_SI_without_anchor": false,
+      "kills_all_CM": false,
+      "reason_fail": "still dimensionless residual ratio"
+    },
+    "G_soft_max_exp": {
+      "formula": "G ~ e^{-soft_max}",
+      "value_residual": 0.049787068367863944,
+      "uses_only_dual_route": true,
+      "absolute_SI_without_anchor": false,
+      "kills_all_CM": false,
+      "reason_fail": "\u03bb_V residual scale; not G_N"
+    }
+  },
+  "countermodels": {
+    "CM_scale_free": "residual moduli dimensionless under residual T reparam",
+    "CM_MeV_impossible": "absolute_MeV_zero_anchor IMPOSSIBLE",
+    "CM_external_G": "observed G_N requires external SI metrology (M)"
+  },
+  "any_X_succeeds": false,
+  "residual_proxy": {
+    "name": "G_N_residual_proxy",
+    "class": "M",
+    "formula": "G_SI = g_res * G_star  (G_star external M-anchor)",
+    "g_res_candidates": {
+      "G_Rnat2": 7.36802938380118e-07,
+      "G_kappa_inv": 1.2060113295832984,
+      "G_omega_pack": 0.1708203932499369,
+      "G_Rnat_over_kappa": 0.0010352066717139528,
+      "G_soft_max_exp": 0.049787068367863944
+    },
+    "claim_absolute_C": false
+  },
+  "verdict": "G_N dual-route absolute theorem remains false/OPEN-as-C: all residual candidates fail absolute SI without M anchor. Soft spot fixed: not 'no theorem yet' but 'kill matrix all-fail + M-only proxy'.",
+  "claim_absolute_G_N": "false_as_dual_route_C_without_M",
+  "claim_residual_proxy": "M",
+  "checks": {
+    "n_candidates_5": true,
+    "any_succeeds_false": true,
+    "all_fail_absolute_SI": true,
+    "MeV_impossible": true,
+    "free_params_0": true,
+    "proxy_is_M": true
+  },
+  "all_ok": true
+}

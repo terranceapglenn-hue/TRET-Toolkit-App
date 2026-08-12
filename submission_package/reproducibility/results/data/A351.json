@@ -1,0 +1,73 @@
+{
+  "section": "A351",
+  "refreshed_ledger": [
+    {
+      "spot": "early particle ID overclaim",
+      "status": "killed as dual-route C; residual structure C; ID X (A348)"
+    },
+    {
+      "spot": "early Omega/G_N absolute overread",
+      "status": "obstruction / false without M (A348, A342\u2013A343)"
+    },
+    {
+      "spot": "S15 vs S15^(3) nomenclature",
+      "status": "unified A349"
+    },
+    {
+      "spot": "A5/A16 MKG duplication",
+      "status": "canonical A5.3; A16.4 pointer (A350)"
+    },
+    {
+      "spot": "A29\u2013A84 numbering hole",
+      "status": "mapped reserved/consolidated (A350); not dual-route gap"
+    },
+    {
+      "spot": "H_cont cohomology thin",
+      "status": "closed A339; filtration A347"
+    },
+    {
+      "spot": "energy budget dual-path mix",
+      "status": "closed A341\u2013A343; separation mandatory"
+    },
+    {
+      "spot": "A98\u2013A99 outdated maybe-C",
+      "status": "superseded by this refresh + A345"
+    },
+    {
+      "spot": "unrestricted packing Maxwell",
+      "status": "false Path U retained"
+    },
+    {
+      "spot": "absolute MeV",
+      "status": "IMPOSSIBLE retained"
+    },
+    {
+      "spot": "Tate cohomology programme",
+      "status": "not main track; AF C6 residual lemma only"
+    },
+    {
+      "spot": "classical S29 Serre SS",
+      "status": "not claimed; thin residual filtration only A347"
+    }
+  ],
+  "af_C6_lemma": {
+    "statement": "On residual C6, AF orientation is unique up to global sign: chi_k=(-1)^k",
+    "class": "C residual combinatorial",
+    "path": "R",
+    "tate_used": false,
+    "af_ok": true
+  },
+  "claim": "C refreshed soft-spot ledger A98\u2013A99 + AF C6 residual uniqueness (no Tate)",
+  "test_id": "T-A351-softspot-refresh-afC6",
+  "checks": {
+    "n_spots_ge_10": true,
+    "af_unique_up_to_sign": true,
+    "tate_not_main": true,
+    "Omega_obs_retained": true,
+    "MeV_I_retained": true,
+    "unrestricted_false": true,
+    "free_params_0": true,
+    "path_separation": true
+  },
+  "all_ok": true
+}

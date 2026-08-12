@@ -1,0 +1,28 @@
+{
+  "section": "A324",
+  "configs": {
+    "hex_n6": {
+      "soft": 0.0,
+      "selected_under_H_cont_soft": true
+    },
+    "square_n4": {
+      "soft": 1.0,
+      "selected_under_H_cont_soft": false
+    },
+    "oct_n8": {
+      "soft": 1.0,
+      "selected_under_H_cont_soft": false
+    }
+  },
+  "theorem": "Free residual A0 without soft/H_cont does not uniquely select packing Maxwell n=6; square/octagon residual critical images survive. Claim: false as unrestricted dual-route C.",
+  "claim": "false",
+  "checks": {
+    "hex_soft0": true,
+    "square_soft_pos": true,
+    "free_A0_not_unique": true,
+    "unrestricted_false": true,
+    "MeV_impossible": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

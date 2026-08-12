@@ -1,0 +1,28 @@
+{
+  "section": "A332",
+  "W_hex": "(1-cos(6\u03b8))/2",
+  "Modica_constant_num": 0.9427896557684549,
+  "W_mid": 1.0,
+  "packing_soft": {
+    "4": 1.0,
+    "6": 0.0,
+    "8": 1.0,
+    "10": 2.0,
+    "12": 3.0
+  },
+  "Gamma_limit": "c_W * Perimeter(hex-well interfaces) + soft packing + throat residual boundary",
+  "claim": "C under H_cont + P5 (residual Gamma packing sector)",
+  "checks": {
+    "W_nonneg_wells": true,
+    "W_barrier_pos": true,
+    "cW_pos": true,
+    "argmin_soft_6": true,
+    "kappa_R_pos": true,
+    "equi_coercive_structure": true,
+    "throat_boundary_structure": true,
+    "unrestricted_without_W_false": true,
+    "free_params_0": true,
+    "gamma_claim_under_H_cont": true
+  },
+  "all_ok": true
+}

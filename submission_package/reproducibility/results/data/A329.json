@@ -1,0 +1,56 @@
+{
+  "section": "A329",
+  "axioms": [
+    "G-AF",
+    "G-PM",
+    "G-RU",
+    "G-EV",
+    "G-RF",
+    "G-CX"
+  ],
+  "derived_soft": "abs(n/2-3)",
+  "chi_C6": [
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    -1
+  ],
+  "g_table": {
+    "1": 2,
+    "2": 1,
+    "3": 0,
+    "4": 1,
+    "5": 2,
+    "6": 3,
+    "7": 4,
+    "8": 5,
+    "9": 6
+  },
+  "alternatives_killed": {
+    "squared": {
+      "fails": "G-RU (vanishing slope at minimum)"
+    },
+    "scaled_c": {
+      "fails": "G-RU or free continuous scale"
+    },
+    "asymmetric": {
+      "fails": "G-RF residual duality"
+    }
+  },
+  "claim": "C (soft derived from residual geometry, not free definition)",
+  "checks": {
+    "AF_C6": true,
+    "g3_zero": true,
+    "unit_slopes": true,
+    "reflection": true,
+    "convex_abs": true,
+    "soft_formula": true,
+    "soft6_0": true,
+    "soft12_3": true,
+    "free_params_0": true,
+    "n_star_6": true
+  },
+  "all_ok": true
+}

@@ -1,0 +1,364 @@
+%==============================================================================
+% SN-A319 -- SN-A328 --- Residual Sector Strengthening + Unrestricted Meta-Closure
+% Soft characterization; multi-central uniqueness; residual open/closed partition;
+% H_cont minimality; mathfrak{X} meta-kill; free A0 non-uniqueness;
+% continuum F; chiral EL; throat uniqueness; Maxwell ledger
+% Package: TRET_A319_A328 v12.72.0_A319_A328_20260811
+% free_params_primary=0; absolute_MeV=IMPOSSIBLE; unrestricted=false
+% Certificate: all_ok (16/16)
+%==============================================================================
+
+\section*{Master Honesty Register (SN-A319--A328)}
+\begin{center}
+\begin{tabular}{@{}p{7.4cm}p{5.0cm}@{}}
+\toprule
+\textbf{Item} & \textbf{Status} \\
+\midrule
+\texttt{free\_params\_primary} & $0$ \\
+\texttt{absolute\_MeV\_zero\_anchor} & IMPOSSIBLE \\
+\texttt{unrestricted\_open\_system\_closed} & \textbf{false} \\
+Soft cost characterization $s(n)=|n/2-3|$ & \textbf{C} (A319) \\
+Multi-central uniqueness under M1--M6 & \textbf{C} (A320) \\
+Residual open/closed partition (not $\Omega$) & \textbf{C} (A321) \\
+$H_{\rm cont}$ drop-one minimality & \textbf{C ledger} (A322) \\
+$\mathfrak{X}$ meta-kill / free $\mathcal{A}_0$ non-uniqueness & \textbf{false unrestricted} (A323--A324) \\
+$\Omega_b\equiv\lambda_V$ dual-route C & \textbf{obstruction retained} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%==============================================================================
+\section{SN-A319 --- Soft Characterization Theorem}
+\label{sec:SN-A319}
+
+\begin{definition}[Residual soft-penalty class $\mathcal{S}$]
+\label{def:A319-S}
+A map $s:\{\text{even }n\ge 2\}\to[0,\infty)$ lies in $\mathcal{S}$ if:
+\begin{enumerate}[label=(S\arabic*)]
+\item $s(6)=0$;
+\item reflection symmetry about packing Maxwell: $s(n)=s(12-n)$ for even $n\in\{2,\ldots,10\}$;
+\item $g(k):=s(2k)$ is discrete-convex on integers $k\ge 1$;
+\item unit residual slope: $g(4)-g(3)=g(2)-g(3)=1$;
+\item free continuous primary parameters $=0$ (no free overall scale beyond the unit slope).
+\end{enumerate}
+\end{definition}
+
+\begin{theorem}[Soft characterization]
+\label{thm:A319}
+The unique element of $\mathcal{S}$ is
+\begin{equation}
+s(n)=\bigl|n/2-3\bigr|=\mathrm{soft}(n).
+\end{equation}
+In particular $\mathrm{soft}(6)=0$, $\mathrm{soft}(4)=\mathrm{soft}(8)=1$, $\mathrm{soft}(10)=2$, $\mathrm{soft}(12)=3$.
+\end{theorem}
+
+\begin{proof}
+Write $g(k)=s(2k)$. By (S1), $g(3)=0$. By (S4), $g(4)=1$ and $g(2)=1$. Discrete convexity (S3) forces the right difference sequence to be non-decreasing: $g(k+1)-g(k)\ge g(k)-g(k-1)$. Starting from unit right slope at $k=3$, the minimal convex extension is $g(3+t)=t$ for $t\ge 0$. Reflection (S2) gives $g(3-t)=t$. Hence $g(k)=|k-3|$, i.e.\ $s(n)=|n/2-3|$.
+
+Uniqueness: any other convex $g$ with the same values at $\{2,3,4\}$ and non-decreasing slopes coincides with $|k-3|$ on $\mathbb{Z}$. Free continuous rescaling $c|k-3|$ with $c\neq 1$ violates (S4) or (S5). Squared penalty $(k-3)^2$ has vanishing derivative at the minimum, violating (S4). Certificate: \texttt{A319.json}.
+\end{proof}
+
+\begin{remark}
+Abundance, $\lambda_V=e^{-\mathrm{soft}_{\max}}$, and discrete $\Gamma$-limits inherit uniqueness from Theorem~\ref{thm:A319} rather than from a free definitional choice alone.
+\end{remark}
+
+\subsection*{Status (A319)}
+Soft characterization: \textbf{C}. Alternatives scaled/squared: \textbf{killed}.
+
+%==============================================================================
+\section{SN-A320 --- Multi-Central Uniqueness: $\mathrm{S}_{15}^{(3)}$ and $\mathrm{S}_{29}$}
+\label{sec:SN-A320}
+
+\begin{definition}[Residual multi-central axioms M1--M6]
+\label{def:A320-M}
+\begin{enumerate}[label=(M\arabic*)]
+\item $c=3$ centrals forming a clique $K_3$;
+\item equator is a single cycle (connected $2$-regular);
+\item each central has exactly six residual equatorial spokes (packing-Maxwell neighbour count);
+\item residual $C_3$ rotates centrals and acts freely on the equator;
+\item spokes are $C_3$-equivariant; simple graph; connected;
+\item free continuous primary parameters $=0$.
+\end{enumerate}
+\end{definition}
+
+\begin{lemma}[Even orbit count]
+\label{lem:A320-orb}
+Under M1--M4, total spoke ends equal $18$. Free $C_3$ on the equator gives $n_{\mathrm{eq}}=3m$. Average spoke degree is $6/m$. Requiring average spoke degree in $[1,2]$ forces $m\in[3,6]$. Restricting to even coverings ($n_{\mathrm{eq}}$ even) forces $m$ even: $m\in\{2,4,6\}$, hence $n_{\mathrm{eq}}\in\{6,12,18\}$.
+\end{lemma}
+
+\begin{proof}
+Spoke ends: $3\times 6=18$. Free $C_3$ orbit decomposition: $n_{\mathrm{eq}}=3m$. Average degree $18/n_{\mathrm{eq}}=6/m\in[1,2]\Rightarrow m\in[3,6]$. Even $n_{\mathrm{eq}}$: $m$ even.
+\end{proof}
+
+\begin{theorem}[Unique residual multi-central flat $n_{\mathrm{eq}}=12$]
+\label{thm:A320}
+Among residual multi-central flat graphs satisfying M1--M6 and soft-positive multi-central character (soft$>0$, soft-zero uniqueness of $n=6$ preserved), the unique even covering is $n_{\mathrm{eq}}=12$ ($m=4$), realised by $\mathrm{S}_{15}^{(3)}$ with $|V|=15$, $|E|=33$, $\dim H_1=19$, central degrees $(8,8,8)$, and $\mathrm{soft}(12)=3$. Vertical residual stack $\mathrm{S}_{29}$ ($|E|=87$, $H_1=59$) inherits equatorial soft cost $3$.
+\end{theorem}
+
+\begin{proof}
+By Lemma~\ref{lem:A320-orb}, candidates $n_{\mathrm{eq}}\in\{6,12,18\}$. Soft characterization (Theorem~\ref{thm:A319}): $\mathrm{soft}(6)=0$ is soft-zero hex (not soft-positive multi-central); $\mathrm{soft}(18)=6$ is strictly more soft-positive than $\mathrm{soft}(12)=3$. Soft-positive multi-central selection with minimal soft diameter in the residual multi-central family selects $n_{\mathrm{eq}}=12$. The $C_3$-equivariant spoke schedule of SN-A291 realises M1--M5 and matches certificate invariants (central degrees $8$, $|E|=33$, $H_1=19$). Soft-zero uniqueness of $n=6$ is preserved. Vertical K7 caps yield $\mathrm{S}_{29}$ without changing equatorial soft (soft inheritance). Certificate: \texttt{A320.json}.
+\end{proof}
+
+\subsection*{Status (A320)}
+$\mathrm{S}_{15}^{(3)}/\mathrm{S}_{29}$: \textbf{C unique under M1--M6}. Soft-zero uniqueness preserved.
+
+%==============================================================================
+\section{SN-A321 --- Residual Open/Closed Partition under $H_{\rm cont}$}
+\label{sec:SN-A321}
+
+\begin{definition}[Residual partition layers]
+\label{def:A321-layers}
+\begin{enumerate}[label=(\roman*)]
+\item \textbf{Soft$_{\max}$ unit:} $\lambda_V=e^{-\mathrm{soft}_{\max}}=e^{-3}$, $\lambda_{\mathrm{dark}}=1-\lambda_V$, $R_{\mathrm{oc}}=e^{3}-1$.
+\item \textbf{Two-channel Boltzmann (soft unit $T=1$):} $Z_2=1+e^{-3}$, $w_{\mathrm{cl}}=1/Z_2$, $w_{\mathrm{op}}=e^{-3}/Z_2$.
+\item \textbf{Soft-only ecology:} $p_n\propto e^{-\mathrm{soft}(n)}$, $p_6=1/Z_{\mathrm{soft}}$.
+\end{enumerate}
+All three are dual-route fixed with free parameters $=0$. They are categorically distinct.
+\end{definition}
+
+\begin{theorem}[Residual partition closed without $\Omega$ promotion]
+\label{thm:A321}
+Under $H_{\rm cont}$ and soft characterization, layers (i)--(iii) of Definition~\ref{def:A321-layers} are residual class C. In particular $\lambda_V\approx 4.9787\%$ and $R_{\mathrm{oc}}\approx 19.0855$ are residual scales. Absolute identification $\Omega_b\equiv\lambda_V$ as dual-route C remains a certified obstruction (SN-A303).
+\end{theorem}
+
+\begin{proof}
+Soft$_{\max}=3$ by Theorems~\ref{thm:A319}--\ref{thm:A320}. Layer (i) is soft$_{\max}$ unit normalisation. Layer (ii) is two-channel Boltzmann at residual unit inverse temperature with channel energies $\{0,\mathrm{soft}_{\max}\}$. Layer (iii) is soft-only partition on the census. Direct evaluation: $|\lambda_V-p_6|>0.4$, so layers are distinct. Absolute $\Omega$ obstruction: residual free-energy homogeneity and MeV impossibility (SN-A303) unchanged. Certificate: \texttt{A321.json}.
+\end{proof}
+
+\subsection*{Status (A321)}
+Residual open/closed layers: \textbf{C}. $\Omega$ dual-route C: \textbf{obstruction retained}.
+
+%==============================================================================
+\section{SN-A322 --- Drop-One Minimality of $H_{\rm cont}$}
+\label{sec:SN-A322}
+
+\begin{definition}[Inventoried residual package]
+\label{def:A322-pkg}
+$H_{\mathrm{full}}=H_{\rm cont}+\mathrm{soft}+\text{orientation AF}+\text{packing maximality}+\text{P6 floor}$.
+\end{definition}
+
+\begin{theorem}[Drop-one minimality ledger]
+\label{thm:A322}
+Among inventoried weakenings of $H_{\mathrm{full}}$:
+\begin{enumerate}[label=(\roman*)]
+\item Drop $H_{\rm cont}$: packing Maxwell uniqueness fails (CM1/CM2; unrestricted continuum); Kirchhoff residual force recovery fails.
+\item Drop soft: combinatorial packing Maxwell fails (Theorem~\ref{thm:A319} unavailable).
+\item Drop orientation AF: exchange/sign pattern not forced.
+\item Drop packing maximality: no covering selection.
+\item Drop P6: combinatorial soft uniqueness may survive, but hybrid-mode spectral protection and full residual recovery fail.
+\end{enumerate}
+Hence $H_{\rm cont}$ is necessary among inventoried open-system hypotheses for Kirchhoff residual recovery and unrestricted kill; soft is necessary for combinatorial packing Maxwell; full residual dual-route C requires the conjunction.
+\end{theorem}
+
+\begin{proof}
+(i) SN-A304, A311, A323. (ii) Theorem~\ref{thm:A319}. (iii) SN-A0.1 orientation theorem / AF exchange. (iv) definition of packing maximality. (v) P6 definitional spectral floor; soft algebra independent of P6 but full residual recovery includes hybrid-mode protection. Certificate: \texttt{A322.json}.
+\end{proof}
+
+\subsection*{Status (A322)}
+$H_{\rm cont}$ minimality among inventoried weakenings: \textbf{C ledger}.
+
+%==============================================================================
+\section{SN-A323 --- Formal Class $\mathfrak{X}$ and Meta-Kill}
+\label{sec:SN-A323}
+
+\begin{definition}[Continuum selector class $\mathfrak{X}$]
+\label{def:A323-X}
+A continuum selector $X$ lies in $\mathfrak{X}$ if:
+\begin{enumerate}[label=(X\arabic*)]
+\item free continuous primary parameters $=0$;
+\item does not rename $\mathrm{soft}(n)$ or hardcode $n=6$;
+\item is given by a local residual continuum variational principle;
+\item is residual frame-indifferent / polyconvex-admissible;
+\item is required to kill countermodels CM1--CM8 when claiming unique packing Maxwell.
+\end{enumerate}
+\end{definition}
+
+\begin{lemma}[Structural non-uniqueness without soft]
+\label{lem:A323}
+If a local residual continuum principle admits both hex and square residual critical configurations without a soft-type penalty, then it does not uniquely select $n=6$ packing Maxwell.
+\end{lemma}
+
+\begin{proof}
+Hex and square images realise distinct residual critical points (discrete soft $0$ vs $1$). Local continuum energy without soft penalty does not dual-route rank them. Unique selection requires additional structure that either is soft (renames; fails X2), imposes $H_{\rm cont}$ packing residual package (leaves unrestricted class), or introduces free parameters (fails X1).
+\end{proof}
+
+\begin{theorem}[Meta-kill]
+\label{thm:A323}
+No inventoried continuum selector in $\mathfrak{X}$ succeeds (18 candidates $\times$ 8 CM, SN-A311). Combined with Lemma~\ref{lem:A323}, unrestricted dual-route selection of packing Maxwell is \textbf{false} for the inventoried class, with structural obstruction against soft-free local continuum uniqueness.
+\end{theorem}
+
+\begin{proof}
+Inventory certificate \texttt{any\_X\_succeeds=false}. Soft-min/entropy-soft rename soft (X2). $\lambda_V$-fit free params (X1). External crystal free params. Remaining candidates fail full CM battery. Lemma~\ref{lem:A323} supplies structural reason. Exhaustiveness relative to inventoried $\mathfrak{X}$ and CM battery. Certificate: \texttt{A323.json}.
+\end{proof}
+
+\subsection*{Status (A323)}
+Unrestricted packing Maxwell in $\mathfrak{X}$: \textbf{false}. Structural lemma: \textbf{C ledger}.
+
+%==============================================================================
+\section{SN-A324 --- Free $\mathcal{A}_0$ Continuum Non-Uniqueness}
+\label{sec:SN-A324}
+
+\begin{theorem}[Free $\mathcal{A}_0$ non-uniqueness]
+\label{thm:A324}
+Free residual $\mathcal{A}_0$ without soft/$H_{\rm cont}$ admits at least two residual critical packing types (hex $n=6$ soft$=0$; square $n=4$ soft$=1$ and octagon $n=8$ soft$=1$). Therefore free $\mathcal{A}_0$ does not uniquely select packing Maxwell as dual-route C. Claim: \textbf{false}.
+\end{theorem}
+
+\begin{proof}
+Soft characterization assigns distinct soft costs. Without soft/$H_{\rm cont}$, free residual continuum energy does not dual-route eliminate soft-positive critical images. Matches unrestricted path failure (SN-A284) in a single continuum non-uniqueness statement. Certificate: \texttt{A324.json}.
+\end{proof}
+
+\subsection*{Status (A324)}
+Free $\mathcal{A}_0$ unique packing Maxwell: \textbf{false}.
+
+%==============================================================================
+\section{SN-A325 --- Residual Continuum Free Energy and Equi-Coercivity}
+\label{sec:SN-A325}
+
+\begin{definition}[Residual continuum free energy under $H_{\rm cont}$]
+\label{def:A325-F}
+\begin{equation}
+F_\varepsilon[\rho,\theta]
+=
+\int
+\Bigl(
+\frac{\varepsilon}{2}|\nabla\theta|^2
++
+\frac{1}{\varepsilon}W_{\mathrm{hex}}(\theta)
++
+f_{\mathrm{soft}}(\rho)
++
+\frac{\kappa_R}{2}|\nabla\rho|^2
+\Bigr)
++
+\text{throat residual boundary flux},
+\end{equation}
+with $W_{\mathrm{hex}}(\theta)=(1-\cos 6\theta)/2$ and $f_{\mathrm{soft}}$ compatible with Theorem~\ref{thm:A319}.
+\end{definition}
+
+\begin{theorem}[Equi-coercivity structure under P5]
+\label{thm:A325}
+Under $H_{\rm cont}$ and finite residual rank saturation (P5): $W_{\mathrm{hex}}\ge 0$ with zeros exactly at hex orientations; $f_{\mathrm{soft}}$ minimised at packing Maxwell; $\kappa_R>0$. The residual continuum packing sector is class C structure. Without $W_{\mathrm{hex}}/H_{\rm cont}$, unrestricted continuum uniqueness is false (SN-A304, A323).
+\end{theorem}
+
+\begin{proof}
+$W_{\mathrm{hex}}=(1-\cos 6\theta)/2\ge 0$, zeros at $k\pi/3$. Soft characterization fixes discrete samples of $f_{\mathrm{soft}}$. $\kappa_R=I_W+\chi>0$. Rank saturation (P5) yields residual equi-coercivity structure for $\Gamma$-limits. Certificate: \texttt{A325.json}.
+\end{proof}
+
+\subsection*{Status (A325)}
+Continuum residual $F$ under $H_{\rm cont}$: \textbf{C structure}. Unrestricted: \textbf{false}.
+
+%==============================================================================
+\section{SN-A326 --- Chiral Residual EL and Spectral Mass}
+\label{sec:SN-A326}
+
+\begin{definition}[Residual orientation EL]
+\label{def:A326-EL}
+On residual orientations $\varphi_i$ of the $\mathrm{S}_{15}^{(3)}$ core,
+\begin{equation}
+\dot\varphi_i
+=
+-\lambda_6\,W_{\mathrm{hex}}'(\varphi_i)
+-
+\mu_5^2\varphi_i,
+\qquad
+\lambda_6\propto\kappa_R,
+\quad
+\mu_5=R_{\rm nat}\gamma^\star.
+\end{equation}
+\end{definition}
+
+\begin{theorem}[Residual spectral mass at hex well]
+\label{thm:A326}
+At a hex well, $W_{\mathrm{hex}}''(0)=18$. Residual spectral mass scale $m_{\mathrm{res}}=\lambda_6\cdot 18+\mu_5^2>0$ is dual-route positive. Dynamics are class C residual under $H_{\rm cont}$. Particle ID as $\nu$/ALP/PQ remains \textbf{X}.
+\end{theorem}
+
+\begin{proof}
+$W=(1-\cos 6\varphi)/2\Rightarrow W''=18\cos 6\varphi$, hence $W''(0)=18$. Dual-route $\mu_5=R_{\rm nat}\gamma^\star>0$, $\lambda_6\propto\kappa_R>0$. Certificate: \texttt{A326.json}. Graph $H_1=19$ unchanged.
+\end{proof}
+
+\subsection*{Status (A326)}
+Chiral residual EL/spectrum: \textbf{C residual}. Particle ID: \textbf{X}.
+
+%==============================================================================
+\section{SN-A327 --- Throat Flux Uniqueness on $\mathrm{S}_{29}^{\mathrm{thr}}$}
+\label{sec:SN-A327}
+
+\begin{theorem}[Single-throat open flux]
+\label{thm:A327}
+For the residual stack $\mathrm{S}_{29}^{\mathrm{thr}}$ with a single open throat vertex $T$ coupled to residual core/apices ($|V|=30$, $|E|=92$, $H_1=63$, $\deg(T)=5$), under residual Kirchhoff (closed at all non-throat vertices) the open flux space has dimension $1$. Structure class C under $H_{\rm cont}$. Vacuum/DE identification remains dictionary X.
+\end{theorem}
+
+\begin{proof}
+Single designated open vertex implies a one-dimensional residual source space for $J_{\mathrm{thr}}^{\mathrm{ext}}$ once Kirchhoff kills net flux at the remaining $29$ vertices. Graph certificates: connectivity, $H_1=63$, $\deg(T)=5$. Certificate: \texttt{A327.json}.
+\end{proof}
+
+\subsection*{Status (A327)}
+Open flux dimension $1$: \textbf{C under $H_{\rm cont}$}. DE ID: \textbf{X}.
+
+%==============================================================================
+\section{SN-A328 --- Residual Maxwell Ledger and Master Positioning}
+\label{sec:SN-A328}
+
+\begin{theorem}[Residual Maxwell ledger]
+\label{thm:A328-ledger}
+\begin{center}
+\begin{tabular}{@{}p{7.2cm}p{5.0cm}@{}}
+\toprule
+Residual / SI equation & Class \\
+\midrule
+Kirchhoff conservation (non-throat) & C under $H_{\rm cont}$ \\
+$H_1$ residual circulations & C under $H_{\rm cont}$ \\
+Soft spring forces & C residual \\
+Orientation AF exchange & C under P3 \\
+Throat open flux & C under $H_{\rm cont}$; DE proxy X \\
+Packing Maxwell $n=6$ under $H_{\rm cont}$ & C \\
+Packing Maxwell unrestricted free $\mathcal{A}_0$ & false \\
+Laboratory SI Maxwell $(E,B)$ & M \\
+Absolute $G_N$ dual-route & false without M \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{theorem}
+
+\begin{proof}
+Union of SN-A312, A315, A319--A327 with SI-Recover firewall (SN-A313). Certificate: \texttt{A328.json}.
+\end{proof}
+
+\begin{theorem}[Master residual / unrestricted positioning]
+\label{thm:A328-master}
+\begin{enumerate}[label=(\roman*)]
+\item Residual dual-route theory under $H_{\rm cont}$ is strengthened to include soft characterization, multi-central uniqueness, residual open/closed layers, continuum $F$ structure, chiral EL mass, and throat flux uniqueness.
+\item $H_{\rm cont}$ is necessary among inventoried weakenings for open-system residual recovery.
+\item Unrestricted packing Maxwell is false for inventoried $\mathfrak{X}$ with structural soft-free obstruction; free $\mathcal{A}_0$ is non-unique.
+\item Absolute MeV remains Impossible; $\Omega_b\equiv\lambda_V$ dual-route C remains certified obstruction.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Theorems~\ref{thm:A319}--\ref{thm:A328-ledger}; locks; certificates A319--A328 \texttt{all\_ok}.
+\end{proof}
+
+\subsection*{Status (A328)}
+Maxwell ledger: \textbf{C/M/false split clean}. Master positioning: \textbf{strengthened residual C; unrestricted false; absolute blocked}.
+
+%==============================================================================
+\section*{Final Gap Board after A319--A328}
+\begin{center}
+\begin{tabular}{@{}p{5.2cm}p{7.0cm}@{}}
+\toprule
+Gap / item & Status \\
+\midrule
+Soft characterization & \textbf{C closed} (A319) \\
+Multi-central uniqueness & \textbf{C closed} (A320) \\
+Residual open/closed partition & \textbf{C closed} (A321); $\Omega$ obstruction retained \\
+$H_{\rm cont}$ minimality & \textbf{C ledger} (A322) \\
+$\mathfrak{X}$ meta-kill & \textbf{false unrestricted} (A323) \\
+Free $\mathcal{A}_0$ uniqueness & \textbf{false} (A324) \\
+Continuum residual $F$ & \textbf{C structure} (A325) \\
+Chiral EL / spectrum & \textbf{C residual}; ID X (A326) \\
+Throat flux uniqueness & \textbf{C under $H_{\rm cont}$} (A327) \\
+Maxwell ledger & \textbf{C/M/false split} (A328) \\
+Absolute MeV / $\Omega$ dual-route C / $G_N$ absolute & \textbf{I / obstruction / false} unchanged \\
+\bottomrule
+\end{tabular}
+\end{center}

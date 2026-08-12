@@ -1,0 +1,61 @@
+{
+  "section": "A307",
+  "NP": "NP5",
+  "ranks": {
+    "r_pack": 2,
+    "r_eq": 6,
+    "r_cap": 8,
+    "sum": 16
+  },
+  "overclaims_killed": {
+    "n_equals_soft_zero_only": {
+      "claim": "n=1 shell absolute from soft(6)=0",
+      "killed": true,
+      "reason": "shell principal quantum number needs SI Rydberg; residual only ranks"
+    },
+    "ell_equals_eq_rank": {
+      "claim": "\u2113 absolute from r_eq=6",
+      "killed": true,
+      "reason": "\u2113 degeneracy 2\u2113+1 not dual-route fixed to residual rank without M"
+    },
+    "magic_numbers_absolute": {
+      "claim": "nuclear magic numbers absolute from residual ranks",
+      "killed": true,
+      "reason": "nuclear shell model needs absolute MeV spacings (I as dual-route C)"
+    }
+  },
+  "dictionary": {
+    "residual_block_pack": {
+      "rank": 2,
+      "soft_related": "pack depth 0",
+      "claim": "C"
+    },
+    "residual_block_eq": {
+      "rank": 6,
+      "soft_related": "n*=6 packing Maxwell",
+      "claim": "C"
+    },
+    "residual_block_cap": {
+      "rank": 8,
+      "soft_related": "cap depth 4",
+      "claim": "C"
+    },
+    "spectroscopic_conversion": {
+      "class": "M",
+      "absolute_C": false
+    }
+  },
+  "verdict": "Atomic spectroscopic n\u2113 as dual-route C is false/killed. Residual shell ranks (2,6,8) remain C structure; spectroscopic map is M.",
+  "claim_absolute_nl": "false_as_dual_route_C",
+  "claim_residual_ranks": "C",
+  "soft_spot_fix": "absolute spectroscopic ID no longer OPEN-as-maybe-C; killed as dual-route C",
+  "checks": {
+    "rank_sum_16": true,
+    "all_overclaims_killed": true,
+    "absolute_nl_not_C": true,
+    "residual_ranks_C": true,
+    "free_params_0": true,
+    "MeV_impossible": true
+  },
+  "all_ok": true
+}

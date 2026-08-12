@@ -1,0 +1,25 @@
+{
+  "section": "A343",
+  "path": "U",
+  "obstruction": {
+    "unique_packing_weight": "false (soft-free nonunique)",
+    "unique_soft_max_diameter": "false without multi-central H_cont residual package",
+    "absolute_Omega_recovery": "false as dual-route C",
+    "absolute_MeV": "IMPOSSIBLE",
+    "note": "Path U falsehood does not reduce Path R residual C layers"
+  },
+  "claim": "Path U energy budget dual-route recovery false/obstructed; MeV Impossible",
+  "test_id": "T-A343-energy-budget-path-U",
+  "checks": {
+    "soft_free_packing_not_unique": true,
+    "soft_max_not_unique_Path_U": true,
+    "Omega_not_C_Path_U": true,
+    "MeV_impossible": true,
+    "MeV_I": true,
+    "path_U_closed_as_nonrecovery": true,
+    "does_not_weaken_Path_R": true,
+    "free_params_0": true,
+    "unrestricted_false": true
+  },
+  "all_ok": true
+}

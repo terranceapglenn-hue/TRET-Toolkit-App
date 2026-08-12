@@ -1,0 +1,41 @@
+{
+  "section": "A333",
+  "layers": {
+    "L1": {
+      "lambda_V": 0.049787068367863944,
+      "lambda_dark": 0.950212931632136
+    },
+    "L2": {
+      "w_cl": 0.9525741268224334,
+      "w_op": 0.04742587317756679
+    },
+    "L3": {
+      "p6": 0.5205943929937957,
+      "Z_soft": 1.9208812339473613
+    }
+  },
+  "separation": {
+    "L1_vs_L3": 0.4708073246259318,
+    "L1_vs_L2_op": 0.0023611951902971565,
+    "L2_op_vs_L3": 0.4731685198162289
+  },
+  "assignment": {
+    "packing_force_channel": "L3_soft_only",
+    "throat_scale_channel": "L1_soft_max_unit",
+    "two_channel_free_energy": "L2_boltzmann_distinct",
+    "single_weight_for_all_channels": false,
+    "Omega_promotion": "CERTIFIED_OBSTRUCTION"
+  },
+  "claim": "C: multi-layer residual force-channel assignment under H_cont; single universal residual weight false; Omega dual-route C obstruction retained",
+  "checks": {
+    "layers_separated": true,
+    "assignment_packing_L3": true,
+    "assignment_throat_L1": true,
+    "no_single_weight": true,
+    "Omega_obstruction": true,
+    "free_params_0": true,
+    "p6_dom": true,
+    "lam_V_e3": true
+  },
+  "all_ok": true
+}

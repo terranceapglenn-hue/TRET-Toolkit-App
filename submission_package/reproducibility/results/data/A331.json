@@ -1,0 +1,29 @@
+{
+  "section": "A331",
+  "mathfrak_X_poly": [
+    "local",
+    "polyconvex_admissible",
+    "free_params_0",
+    "no_soft_rename",
+    "no_hardcode_n6"
+  ],
+  "theorem": {
+    "statement": "Local soft-free residual continuum energy with equal bulk energy on hex and square microstructures cannot uniquely select packing Maxwell n=6.",
+    "soft_free_nonunique": true,
+    "with_soft_unique": true,
+    "rename_ban": "encoding soft as bulk energy renames soft (fails X2)"
+  },
+  "claim": "false unrestricted packing Maxwell for soft-free local residual continuum (structural)",
+  "claim_class": "false unrestricted; C obstruction ledger",
+  "checks": {
+    "soft_free_equal_bulk": true,
+    "soft_free_not_unique": true,
+    "soft_ranks_hex": true,
+    "unrestricted_false": true,
+    "free_params_0": true,
+    "meta_structural": true,
+    "inventory_A311_0_success": true,
+    "soft_free_is_not_unique": true
+  },
+  "all_ok": true
+}

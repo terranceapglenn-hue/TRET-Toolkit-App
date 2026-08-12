@@ -1,0 +1,20 @@
+{
+  "section": "A326",
+  "EL": "\u03c6_dot = -\u03bb6 W_hex'(\u03c6) - \u03bc5\u00b2 \u03c6",
+  "mu5": 0.0007901151926307481,
+  "lam6": 0.8291796067500631,
+  "W_second_at_well": 18.0,
+  "m_res": 14.925233545783154,
+  "claim_structure": "C residual under H_cont",
+  "claim_particle_ID": "X",
+  "checks": {
+    "mu5_pos": true,
+    "lam6_pos": true,
+    "W_pp0_18": true,
+    "m_res_pos": true,
+    "H1_19": true,
+    "particle_ID_X": true,
+    "free_params_0": true
+  },
+  "all_ok": true
+}

@@ -1,0 +1,66 @@
+{
+  "section": "A350",
+  "dedup": [
+    {
+      "primary": "A5.3",
+      "secondary": [
+        "A16.4"
+      ],
+      "action": "A16.4 is corollary/pointer to A5.3 local MKG dynamics; do not maintain divergent proofs"
+    },
+    {
+      "primary": "A5.1 + A291/A330",
+      "secondary": [
+        "loose S15 wording in A16.1"
+      ],
+      "action": "Elementary S15 vs multi-central S15^(3) distinguished per A349"
+    },
+    {
+      "primary": "A93\u2013A97 single chain",
+      "secondary": [
+        "duplicate A93\u2013A95 heads if present in export"
+      ],
+      "action": "Keep one proof chain; duplicate heads are archival artifacts to ignore/remove in compile"
+    },
+    {
+      "primary": "A342\u2013A343 energy budget",
+      "secondary": [
+        "A11 absolute cosmology readings",
+        "early Omega-like prose"
+      ],
+      "action": "Early cosmology language is X/structure only; dual-route budget is A342 Path R + A343 Path U"
+    },
+    {
+      "primary": "A309/A334 chiral",
+      "secondary": [
+        "A16.3/A18/A19 particle ID tone"
+      ],
+      "action": "Residual structure C; particle ID X"
+    }
+  ],
+  "index_map": {
+    "A0.1\u2013A0.2": "foundation master equation + hybrid Hessian",
+    "A2\u2013A3": "positroid / residue \u03c9",
+    "A5": "S15 shell + MKG local dynamics (canonical)",
+    "A8\u2013A9": "multipoles + residual SGWB structure (M for lab/PTA)",
+    "A11": "hierarchical residual expansion (Omega ID X)",
+    "A16\u2013A21": "memory/Weingarten/ALP-structure/force continuum (ID X where particle)",
+    "A22\u2013A27": "plabic/Le/equi-coercivity/selection principles",
+    "A28": "residual nuclear multipoles structure",
+    "A29\u2013A84": "RESERVED / consolidated into later residual programmes (A85+ and A291+); not a dual-route hole",
+    "A85\u2013A100": "spectral floor, packing angles, soft-spot ledgers (refresh A351)",
+    "A291\u2013A346": "multi-central + dual-path completion spine",
+    "A347\u2013A351": "early-spine fortification + thin filtration"
+  },
+  "claim": "C packaging: dedup directives + early index map",
+  "test_id": "T-A350-dedup-index",
+  "checks": {
+    "n_dedup_ge_4": true,
+    "A29_A84_mapped": true,
+    "A53_primary": true,
+    "not_a_dual_route_hole": true,
+    "free_params_0": true,
+    "no_content_deletion_required": true
+  },
+  "all_ok": true
+}

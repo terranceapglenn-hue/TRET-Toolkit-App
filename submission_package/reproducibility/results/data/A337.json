@@ -1,0 +1,51 @@
+{
+  "section": "A337",
+  "gap": "G9",
+  "drop_one": {
+    "D1_H_cont": {
+      "full_recovery": false,
+      "reason": "unrestricted CM survive; Kirchhoff fails"
+    },
+    "D2_soft": {
+      "full_recovery": false,
+      "reason": "packing Maxwell combinatorial fails"
+    },
+    "D3_orientation_AF": {
+      "full_recovery": false,
+      "reason": "exchange not forced"
+    },
+    "D4_packing_max": {
+      "full_recovery": false,
+      "reason": "no covering selection"
+    },
+    "D5_P6_spectral": {
+      "full_recovery": false,
+      "reason": "hybrid-mode protection lost"
+    },
+    "D6_positivity": {
+      "full_recovery": false,
+      "reason": "signed residual cells allow non-physical packing branches; uniqueness fails"
+    },
+    "D7_P5_rank_sat": {
+      "full_recovery": false,
+      "reason": "equi-coercivity/Gamma residual fails without rank saturation"
+    },
+    "D8_P7_causal_memory": {
+      "full_recovery": false,
+      "reason": "causal completely monotone memory lost; single-gap kernel not fixed"
+    }
+  },
+  "claim": "C ledger: among expanded inventoried weakenings D1\u2013D8, each drop fails full residual dual-route recovery; conjunction needed for residual C under H_cont package",
+  "test_id": "T-A337-expanded-drop-one",
+  "checks": {
+    "n_drops_8": true,
+    "all_fail_full_recovery": true,
+    "D6_fails": true,
+    "D7_fails": true,
+    "D8_fails": true,
+    "H_cont_still_necessary": true,
+    "free_params_0": true,
+    "inventoried_not_universal_math": true
+  },
+  "all_ok": true
+}

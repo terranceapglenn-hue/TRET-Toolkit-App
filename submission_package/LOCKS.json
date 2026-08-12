@@ -1,0 +1,15 @@
+{
+  "version": "v12.77.0_SUBMISSION_READY_20260811",
+  "free_params_primary": 0,
+  "H_cont_open_system_closed": true,
+  "packing_Maxwell_under_H_cont": "recovered_C",
+  "unrestricted_open_system_closed": false,
+  "absolute_closed": false,
+  "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+  "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+  "path_R_U_separation": "mandatory",
+  "Tate_program": "not_main_track",
+  "spine": "SN-A0.1--A351",
+  "expanded": "SN-A1--A20",
+  "technical_notes": "TN"
+}

@@ -1,0 +1,161 @@
+%==============================================================================
+% TN --- Technical Notes (Submission Companion)
+% Dual-path protocol, claim taxonomy, reproducibility, package inventory
+% Supports Unified SN-A0.1--A351 + Expanded A1--A20
+% Version: v12.77.0_TN_20260811
+%==============================================================================
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,enumitem,microtype,hyperref,longtable}
+\title{Technical Notes (TN)\\TRET Submission Companion}
+\author{Dual-Path Residual Framework\\SN-A0.1--A351 $\cdot$ Expanded A1--A20}
+\date{11 August 2026 (v12.77.0)}
+\begin{document}
+\maketitle
+\begin{abstract}
+Technical Notes for PRD-oriented submission of the residual dual-path framework.
+Defines claim taxonomy, Path~R/U separation, absolute firewalls, reproducibility
+protocol, package inventory, and certificate map through SN-A351.
+No absolute MeV; no $\Omega_b\equiv\lambda_V$ as dual-route C; unrestricted packing Maxwell false.
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{TN-1 --- Claim Taxonomy}
+\begin{center}
+\begin{tabular}{@{}clp{8.2cm}@{}}
+\toprule
+Code & Name & Meaning \\
+\midrule
+\textbf{C} & Certified residual & Dual-route residual theorem under Path~R package; free\_params${=}0$ \\
+\textbf{M} & Interface / engineering & SI-Recover, lab protocols; not free dual-route zero-anchor \\
+\textbf{X} & Dictionary only & Structural contact without dual-route species/$\Omega$ ID \\
+\textbf{O} & Open & Residual programme not yet dual-route closed \\
+\textbf{I} & Impossible & Absolute MeV zero-anchor dual-route recovery \\
+\textbf{false} & Closed negative & Unrestricted unique packing Maxwell; free-$\mathcal{A}_0$ absolute Maxwell \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{TN-2 --- Dual Paths}
+\begin{definition}[Path R]
+Residual under $H_{\rm cont}$ + soft geometry $\mathrm{soft}(n)=|n/2-3|$ + multi-central axioms + P1--P7.
+\end{definition}
+\begin{definition}[Path U]
+Unrestricted local continuum / free $\mathcal{A}_0$ without soft rename and without $H_{\rm cont}$ packing package.
+\end{definition}
+\paragraph{Separation rule.}
+Path R class C does not imply Path U class C.
+Path U falsehood does not weaken Path R residual C.
+Mixing without reclassification is forbidden (SN-A341).
+
+\section{TN-3 --- Absolute Firewalls}
+\begin{enumerate}[label=(\roman*)]
+\item Absolute MeV zero-anchor: \textbf{IMPOSSIBLE}.
+\item $\Omega_b\equiv\lambda_V$ as dual-route C: \textbf{CERTIFIED OBSTRUCTION}.
+\item Unrestricted packing Maxwell free-$\mathcal{A}_0$: \textbf{false}.
+\item Absolute $G_N$ dual-route without M: \textbf{false}.
+\item Particle species ID ($\nu$/ALP/PQ) as dual-route C: \textbf{X}.
+\end{enumerate}
+
+\section{TN-4 --- Core Residual Objects (Path R C)}
+\begin{center}
+\begin{tabular}{@{}llp{5.5cm}@{}}
+\toprule
+Object & Value / formula & Class \\
+\midrule
+$\mathrm{soft}(n)$ & $|n/2-3|$ (even $n$) & C \\
+soft-zero & $n=6$ & C unique in $\mathcal{S}$ \\
+$\lambda_V$ & $e^{-3}\approx 4.9787\%$ & C residual scale \\
+$p_6$ soft-only & $\approx 52.06\%$ & C ecology (distinct from $\lambda_V$) \\
+Three-band & $(e^{-3},\,e^{-1}-e^{-3},\,1-e^{-1})$ & C structure; Planck ID X \\
+$I_W$ & $1/\sqrt{5}$ & C residual \\
+$H_1(\mathrm{S}_{15}^{(3)})$ & $19$ & C \\
+$H_1(\mathrm{S}_{29})$ & $59$ & C \\
+$H_1(\mathrm{S}_{29}^{\mathrm{thr}})$ & $63$ & C \\
+Open flux (single class) & $1$ & C under $H_{\rm cont}$ \\
+Filtration gr $H_1$ & $(19,40,4)$ & C thin residual SS \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{TN-5 --- Document Map}
+\begin{center}
+\begin{tabular}{@{}p{5.2cm}p{7.0cm}@{}}
+\toprule
+Document & Role \\
+\midrule
+Unified SN PRD v2.6 & Complete archive SN-A0.1--A351 \\
+Expanded SN-A1--A20 & Self-contained residual foundations \\
+Technical Notes (this file) & Taxonomy, firewalls, reproducibility \\
+Executive SN v2.5 & Short PRD-facing spine \\
+Master Read Me v12.77.0 & Read order + locks \\
+Claim boards A338/A346 & Machine claim ledgers \\
+Word inserts A319--A351 & Incremental SN packages \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{TN-6 --- Reproducibility Protocol}
+\begin{enumerate}[label=(\arabic*)]
+\item Install Python $\ge 3.10$ with \texttt{numpy}.
+\item From package root:
+\begin{verbatim}
+python3 reproducibility/scripts/run_all_certificates.py
+\end{verbatim}
+\item Expect \texttt{all\_ok: true} for every master certificate A303--A351.
+\item No network required; no free dual-route parameters.
+\item Certificates written under \texttt{reproducibility/results/certificates/}.
+\end{enumerate}
+
+\section{TN-7 --- Certificate Map}
+\begin{center}
+\begin{tabular}{@{}llp{5.5cm}@{}}
+\toprule
+Package & Script & Content \\
+\midrule
+A303--A310 & \texttt{run\_A303\_A310\_gap\_closure.py} & Gap board NP1--NP7 \\
+A311--A318 & \texttt{run\_A311\_A318\_strengthening.py} & Strengthening \\
+A319--A328 & \texttt{run\_A319\_A328\_verification.py} & Residual uniqueness spine \\
+A329--A333 & \texttt{run\_A329\_A333\_verification.py} & Residual sector completion \\
+A334--A338 & \texttt{run\_A334\_A338\_verification.py} & Residual depth G6--G10 \\
+A339--A346 & \texttt{run\_A339\_A346\_verification.py} & Dual-path + energy budget \\
+A347--A351 & \texttt{run\_A347\_A351\_verification.py} & Early-spine fortification \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{TN-8 --- Nomenclature}
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Symbol & Meaning \\
+\midrule
+$\mathcal{S}_{15}$ & Elementary 15-kernel residual unit \\
+$\mathrm{S}_{15}^{(3)}$ & Multi-central 3-core + dodecagon flat grid \\
+$\mathrm{S}_{29}$ & Vertical residual stack \\
+$\mathrm{S}_{29}^{\mathrm{thr}}$ & Single-open-class throat completion \\
+MKG & Local residual dynamics (A5.3 canonical) \\
+$H_{\rm cont}$ & Residual open continuity / Kirchhoff \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{TN-9 --- What Is Not Claimed}
+\begin{itemize}
+\item Absolute MeV dual-route recovery.
+\item $\Omega_b=\lambda_V$ as dual-route C theorem.
+\item Unrestricted packing Maxwell uniqueness.
+\item Classical Serre spectral sequence of continuous $\mathrm{S}_{29}$ fibrations (only thin residual filtration).
+\item Tate cohomology main programme (AF $C_6$ residual lemma only).
+\item Particle species dual-route C identification.
+\end{itemize}
+
+\section{TN-10 --- Submission Integrity Statement}
+All residual dual-route C claims in this package are stated under Path~R with
+\texttt{free\_params\_primary}${=}0$. Absolute track is blocked where required by the obstruction theorems.
+Expanded A1--A20 and Unified SN-A0--A351 are mutually supportive; where historical early prose
+overclaims, the A348 register and these Technical Notes govern.
+
+\end{document}

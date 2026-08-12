@@ -1,0 +1,39 @@
+{
+  "section": "A347",
+  "filtration": [
+    "S15^(3)",
+    "S29",
+    "S29^thr"
+  ],
+  "H1": {
+    "X0_S15_3": 19,
+    "X1_S29": 59,
+    "X2_S29_thr": 63
+  },
+  "graded": {
+    "gr0": 19,
+    "gr1": 40,
+    "gr2": 4
+  },
+  "E1": {
+    "E1_0": 19,
+    "E1_1": 40,
+    "E1_2": 4,
+    "collapses_at_E1": true,
+    "abutment_H1_X2": 63
+  },
+  "claim": "C Path R thin residual filtration SS (pair LES / graded H1); not classical Serre",
+  "test_id": "T-A347-residual-filtration-ss",
+  "checks": {
+    "H0_19": true,
+    "H1_59": true,
+    "H2_63": true,
+    "gr1_40": true,
+    "gr2_4": true,
+    "abutment_63": true,
+    "not_classical_Serre": true,
+    "free_params_0": true,
+    "path_R": true
+  },
+  "all_ok": true
+}

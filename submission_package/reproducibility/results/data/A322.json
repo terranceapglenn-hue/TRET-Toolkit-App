@@ -1,0 +1,49 @@
+{
+  "section": "A322",
+  "drop_one": {
+    "D1_drop_H_cont": {
+      "packing_Maxwell_unique": false,
+      "reason": "unrestricted continuum CM1/CM2 survive; A304/A311",
+      "residual_force_Kirchhoff": false
+    },
+    "D2_drop_soft": {
+      "packing_Maxwell_unique": false,
+      "reason": "without soft, n=4,8 not penalized; abundance undefined dual-route",
+      "soft_zero_unique": false
+    },
+    "D3_drop_orientation_AF": {
+      "packing_Maxwell_unique": false,
+      "reason": "ferromagnetic residual allows non-hex sign patterns; exchange B_eq not forced",
+      "orientation_unique": false
+    },
+    "D4_drop_packing_max": {
+      "packing_Maxwell_unique": false,
+      "reason": "no selection among even coverings"
+    },
+    "D5_drop_P6": {
+      "packing_Maxwell_combinatorial": true,
+      "spectral_protection": false,
+      "reason": "soft uniqueness may hold; hybrid-mode protection lost \u2014 not full residual recovery",
+      "full_residual_recovery": false
+    }
+  },
+  "necessary": {
+    "H_cont_necessary_for_open_Kirchhoff_and_unrestricted_kill": true,
+    "soft_necessary_for_combinatorial_packing_Maxwell": true,
+    "orientation_necessary_for_AF_exchange": true,
+    "conjunction_for_full_residual_C": true
+  },
+  "claim": "C ledger: among inventoried weakenings, H_cont is necessary for open-system Kirchhoff residual recovery and unrestricted kill; soft necessary for combinatorial packing Maxwell; full residual C needs conjunction.",
+  "checks": {
+    "D1_fails_unique": true,
+    "D2_fails_unique": true,
+    "D3_fails_unique": true,
+    "D4_fails_unique": true,
+    "D5_not_full_recovery": true,
+    "H_cont_necessary": true,
+    "soft_necessary": true,
+    "free_params_0": true,
+    "unrestricted_still_false": true
+  },
+  "all_ok": true
+}

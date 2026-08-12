@@ -1,0 +1,43 @@
+{
+  "section": "A321",
+  "partition": {
+    "soft_max_unit": {
+      "lambda_V": 0.049787068367863944,
+      "lambda_dark": 0.950212931632136,
+      "R_oc": 19.085536923187668
+    },
+    "two_channel_boltzmann": {
+      "w_closed": 0.9525741268224334,
+      "w_open": 0.04742587317756679,
+      "Z2": 1.0497870683678638
+    },
+    "soft_only_ecology": {
+      "p6": 0.5205943929937957,
+      "Z_soft": 1.9208812339473613
+    },
+    "category_separation": {
+      "lambda_V_equals_p6": false,
+      "lambda_V_equals_w_op": false,
+      "note": "three residual layers remain distinct objects"
+    }
+  },
+  "firewall": {
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+    "residual_lambda_V": "C",
+    "residual_two_channel_weights": "C under H_cont soft unit",
+    "alpha_packing_to_Omega": "not dual-route C"
+  },
+  "claim_residual_partition": "C under H_cont (soft_max unit + two-channel)",
+  "claim_Omega": "obstruction",
+  "checks": {
+    "R_oc_e3m1": true,
+    "lam_V_e3": true,
+    "w_sum_1": true,
+    "layers_distinct_p6": true,
+    "w_op_lt_lam_dark": true,
+    "firewall_obstruction": true,
+    "free_params_0": true,
+    "no_planck_fit": true
+  },
+  "all_ok": true
+}

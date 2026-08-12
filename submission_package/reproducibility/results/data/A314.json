@@ -1,0 +1,56 @@
+{
+  "section": "A314",
+  "absolute_claim_class_A": {
+    "absolute_MeV_zero_anchor": {
+      "status": "IMPOSSIBLE",
+      "obstruction": "lock absolute_MeV_zero_anchor"
+    },
+    "unrestricted_packing_Maxwell_free_A0": {
+      "status": "false",
+      "obstruction": "A311 kill inventory completeness + A284 U1-U8"
+    },
+    "Omega_b_equals_lambda_V_dual_route_C": {
+      "status": "CERTIFIED_OBSTRUCTION",
+      "obstruction": "A303 free-energy homogeneity + MeV impossible"
+    },
+    "G_N_dual_route_absolute_C": {
+      "status": "false_without_M",
+      "obstruction": "A305 kill matrix all-fail"
+    },
+    "atomic_nl_dual_route_C": {
+      "status": "killed_false",
+      "obstruction": "A307 spectroscopic overclaim kill"
+    },
+    "absolute_confinement_free_A0": {
+      "status": "false",
+      "obstruction": "A308"
+    },
+    "exact_alpha_dual_route_monomial": {
+      "status": "IMPOSSIBLE_or_false",
+      "obstruction": "no dual-route monomial; MeV/\u03b1 external"
+    },
+    "LQCD_continuum_eq_free_A0": {
+      "status": "false_I",
+      "obstruction": "A284/A306 continuum \u2262 free A0"
+    }
+  },
+  "exhaustiveness": "Every claim in defined absolute class A is blocked as IMPOSSIBLE, false, killed, or certified obstruction under residual dual-route locks. Exhaustiveness is relative to class A (not a claim about all future mathematics).",
+  "residual_scales_preserved": {
+    "lambda_V": "C",
+    "R_oc": "C",
+    "three_band_structure": "C",
+    "soft_only_abundance": "C structure",
+    "packing_Maxwell_H_cont": "C",
+    "mapping_sectors": "C"
+  },
+  "claim": "C obstruction exhaustiveness on class A",
+  "checks": {
+    "n_absolute_claims_8": true,
+    "all_blocked": true,
+    "no_absolute_C_in_A": true,
+    "lambda_V_still_C": true,
+    "free_params_0": true,
+    "MeV_impossible": true
+  },
+  "all_ok": true
+}

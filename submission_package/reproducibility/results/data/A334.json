@@ -1,0 +1,34 @@
+{
+  "section": "A334",
+  "gap": "G6",
+  "spectrum": {
+    "lam2": 1.1535713718812775,
+    "multiplet": 2,
+    "lam_min_pos": 1.1535713718812775,
+    "lam3": 1.153571371881282
+  },
+  "el": {
+    "field": "orientation theta(x)",
+    "EL": "partial_t theta = lam6 * div(grad theta) - lam6 * W_hex'(theta) - mu5^2 theta",
+    "linearization_at_hex": "partial_t delta = lam6 Delta delta - (lam6*W''(0)+mu5^2) delta",
+    "graph_proxy_gap": 1.1535713718812775,
+    "spectral_mass": 14.925233545783154
+  },
+  "mu5": 0.0007901151926307481,
+  "m_res": 14.925233545783154,
+  "claim_structure": "C residual under H_cont",
+  "claim_particle_ID": "X",
+  "test_id": "T-A334-chiral-continuum-lambda2",
+  "checks": {
+    "lam2_pos": true,
+    "multiplet_ge1": true,
+    "mu5_pos": true,
+    "m_res_pos": true,
+    "W_pp0_18": true,
+    "H1_19": true,
+    "particle_ID_X": true,
+    "free_params_0": true,
+    "continuum_EL_structure": true
+  },
+  "all_ok": true
+}

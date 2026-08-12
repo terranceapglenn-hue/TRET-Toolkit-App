@@ -24,7 +24,7 @@ DEPTHS = {"pack": 0, "eq": 2, "cap": 4}
 MUT_CLASS = 12000
 N_STAR_PACKING = 6  # packing-Maxwell unique even covering
 
-VERSION = "v7.7.0_A347_A351_toolkit_20260811"
+VERSION = "v7.8.0_SUBMISSION_v12.77.0_20260811"
 
 LOCKS = {
     "free_params_primary": 0,

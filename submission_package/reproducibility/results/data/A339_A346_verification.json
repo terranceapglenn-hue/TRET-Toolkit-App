@@ -1,0 +1,594 @@
+{
+  "package": "TRET_A339_A346_DUAL_PATH_COMPLETION",
+  "version": "v12.75.0_A339_A346_20260811",
+  "locks": {
+    "free_params_primary": 0,
+    "H_cont_open_system_closed": true,
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "unrestricted_open_system_closed": false,
+    "absolute_closed": false,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+    "path_R_U_separation": "mandatory"
+  },
+  "results": {
+    "A339": {
+      "section": "A339",
+      "graphs": {
+        "S15_3": {
+          "nV": 15,
+          "nE": 33,
+          "n_comp": 1,
+          "dim_H0": 1,
+          "dim_H1": 19,
+          "rank_B": 14,
+          "dim_ker_B": 19,
+          "rank_nullity_ok": true
+        },
+        "S29": {
+          "nV": 29,
+          "nE": 87,
+          "n_comp": 1,
+          "dim_H0": 1,
+          "dim_H1": 59,
+          "rank_B": 28,
+          "dim_ker_B": 59,
+          "rank_nullity_ok": true
+        },
+        "S29_thr": {
+          "nV": 30,
+          "nE": 92,
+          "n_comp": 1,
+          "dim_H0": 1,
+          "dim_H1": 63,
+          "rank_B": 29,
+          "dim_ker_B": 63,
+          "rank_nullity_ok": true
+        }
+      },
+      "les": {
+        "absolute_H1_S29": 59,
+        "absolute_H1_S29_thr": 63,
+        "delta_H1_add_thr": 4,
+        "expected_delta": 4,
+        "open_flux_dim_single_T": 1,
+        "H_cont_statement": "\u03b4J=0 on V\\T; \u03b4J=J_ext on T"
+      },
+      "claim": "C residual cohomology under H_cont (absolute H1 + relative open flux)",
+      "test_id": "T-A339-Hcont-cohomology",
+      "checks": {
+        "S15_H1_19": true,
+        "S29_H1_59": true,
+        "S29thr_H1_63": true,
+        "rank_nullity_S15": true,
+        "rank_nullity_S29": true,
+        "rank_nullity_thr": true,
+        "delta_H1_4": true,
+        "open_flux_1": true,
+        "free_params_0": true,
+        "H_cont_defined": true
+      },
+      "all_ok": true
+    },
+    "A340": {
+      "section": "A340",
+      "class_k1": {
+        "core3": {
+          "attach": [
+            0,
+            1,
+            2
+          ],
+          "nV": 30,
+          "nE": 90,
+          "H1": 61,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 3
+        },
+        "core3_apex_top": {
+          "attach": [
+            0,
+            1,
+            2,
+            15
+          ],
+          "nV": 30,
+          "nE": 91,
+          "H1": 62,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 4
+        },
+        "core3_both_apices": {
+          "attach": [
+            0,
+            1,
+            2,
+            15,
+            22
+          ],
+          "nV": 30,
+          "nE": 92,
+          "H1": 63,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 5
+        },
+        "apices_only": {
+          "attach": [
+            15,
+            22
+          ],
+          "nV": 30,
+          "nE": 89,
+          "H1": 60,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 2
+        },
+        "core1": {
+          "attach": [
+            0
+          ],
+          "nV": 30,
+          "nE": 88,
+          "H1": 59,
+          "connected": true,
+          "open_flux_dim": 1,
+          "deg_T": 1
+        }
+      },
+      "k2": {
+        "nV": 31,
+        "nE": 93,
+        "H1": 63,
+        "open_flux_dim": 2,
+        "connected": true
+      },
+      "H1_formula": "H1(S29_comp) = 59 + |attach| - 1 for single throat connected completion",
+      "claim": "C classification of residual S29 open completions under H_cont",
+      "test_id": "T-A340-S29-completions",
+      "checks": {
+        "all_k1_flux1": true,
+        "all_k1_connected": true,
+        "k2_flux2": true,
+        "H1_formula_k1": true,
+        "canonical_H1_63": true,
+        "n_patterns_ge5": true,
+        "single_open_class_selects_k1": true,
+        "free_params_0": true,
+        "DE_ID_X": true
+      },
+      "all_ok": true
+    },
+    "A341": {
+      "section": "A341",
+      "path_R": {
+        "name": "Path R \u2014 residual under H_cont",
+        "domain": "selection principles P1\u2013P7 + H_cont + soft geometry",
+        "status": "structurally complete for inventoried residual C claims A319\u2013A345",
+        "packing_Maxwell": "C",
+        "energy_budget_residual": "C multi-layer structure",
+        "absolute_Omega": "CERTIFIED_OBSTRUCTION as dual-route C"
+      },
+      "path_U": {
+        "name": "Path U \u2014 unrestricted",
+        "domain": "local continuum without soft/H_cont free-param-free",
+        "status": "closed as false for packing Maxwell uniqueness and absolute budget recovery",
+        "packing_Maxwell": "false",
+        "energy_budget_absolute": "false / obstructed",
+        "free_A0_unique": "false"
+      },
+      "separation": {
+        "rule": "Path R C does not imply Path U C; Path U false does not weaken Path R C",
+        "forbidden": "promoting residual lambda_V to Omega as dual-route C",
+        "mandatory_labels": [
+          "Path R",
+          "Path U",
+          "M",
+          "X",
+          "I"
+        ]
+      },
+      "claim": "C architecture: dual-path separation with honest Path U falsehood",
+      "test_id": "T-A341-dual-path",
+      "checks": {
+        "path_R_defined": true,
+        "path_U_defined": true,
+        "U_packing_false": true,
+        "R_packing_C": true,
+        "separation_mandatory": true,
+        "Omega_obstruction": true,
+        "free_params_0": true,
+        "MeV_I": true
+      },
+      "all_ok": true
+    },
+    "A342": {
+      "section": "A342",
+      "path": "R",
+      "layers": {
+        "L1": {
+          "lambda_V": 0.049787068367863944,
+          "lambda_dark": 0.950212931632136,
+          "R_oc": 19.085536923187668
+        },
+        "L2": {
+          "w_cl": 0.9525741268224334,
+          "w_op": 0.04742587317756679
+        },
+        "L3": {
+          "p": {
+            "4": 0.19151597437154383,
+            "6": 0.5205943929937957,
+            "8": 0.19151597437154383,
+            "10": 0.07045478962720782,
+            "12": 0.02591886863590874
+          },
+          "Z_soft": 1.9208812339473613
+        }
+      },
+      "three_band": {
+        "rho_V": 0.049787068367863944,
+        "rho_DM": 0.3180923728035784,
+        "rho_DE": 0.6321205588285577,
+        "sum": 1.0
+      },
+      "channels": {
+        "packing_L3": 0.5205943929937957,
+        "throat_scale_L1": 0.049787068367863944,
+        "two_channel_L2_op": 0.04742587317756679,
+        "F_closed": -0.6527840567566681,
+        "F_open_unit": 0.051069180942701596,
+        "F_chiral_scale": 0.8047189562170503,
+        "F_elastic_scale": 0.8291796067500631
+      },
+      "firewall": {
+        "lambda_V_Path_R_C": true,
+        "three_band_Path_R_structure_C": true,
+        "three_band_equals_Planck_Omega_Path_R_C": false,
+        "Omega_b_equals_lambda_V_Path_R_C": false,
+        "Omega_status": "CERTIFIED_OBSTRUCTION as dual-route C; dictionary X only",
+        "open_energy_recovery_Path_R": "C residual multi-channel",
+        "MeV_absolute": "IMPOSSIBLE"
+      },
+      "claim": "C Path R residual energy budget multi-layer + open recovery; Omega dual-route C obstruction",
+      "test_id": "T-A342-energy-budget-path-R",
+      "checks": {
+        "three_band_sum_1": true,
+        "lam_V_e3": true,
+        "R_oc_e3m1": true,
+        "p6_dom": true,
+        "layers_distinct": true,
+        "firewall_no_Omega_C": true,
+        "firewall_obstruction": true,
+        "F_closed_finite": true,
+        "free_params_0": true,
+        "path_R_only": true
+      },
+      "all_ok": true
+    },
+    "A343": {
+      "section": "A343",
+      "path": "U",
+      "obstruction": {
+        "unique_packing_weight": "false (soft-free nonunique)",
+        "unique_soft_max_diameter": "false without multi-central H_cont residual package",
+        "absolute_Omega_recovery": "false as dual-route C",
+        "absolute_MeV": "IMPOSSIBLE",
+        "note": "Path U falsehood does not reduce Path R residual C layers"
+      },
+      "claim": "Path U energy budget dual-route recovery false/obstructed; MeV Impossible",
+      "test_id": "T-A343-energy-budget-path-U",
+      "checks": {
+        "soft_free_packing_not_unique": true,
+        "soft_max_not_unique_Path_U": true,
+        "Omega_not_C_Path_U": true,
+        "MeV_impossible": true,
+        "MeV_I": true,
+        "path_U_closed_as_nonrecovery": true,
+        "does_not_weaken_Path_R": true,
+        "free_params_0": true,
+        "unrestricted_false": true
+      },
+      "all_ok": true
+    },
+    "A344": {
+      "section": "A344",
+      "links": [
+        {
+          "from": "G-AF+G-PM+G-RU",
+          "to": "soft(n)=|n/2-3|",
+          "path": "R",
+          "class": "C"
+        },
+        {
+          "from": "soft",
+          "to": "Z_soft, p_n, F_closed",
+          "path": "R",
+          "class": "C"
+        },
+        {
+          "from": "S15^(3)/S29 soft_max",
+          "to": "lambda_V=e^{-3}",
+          "path": "R",
+          "class": "C"
+        },
+        {
+          "from": "H_cont relative cohomology",
+          "to": "open_flux_dim, F_open",
+          "path": "R",
+          "class": "C"
+        },
+        {
+          "from": "L3 vs L1 assignment",
+          "to": "packing force vs throat scale",
+          "path": "R",
+          "class": "C structure"
+        },
+        {
+          "from": "three-band ladder",
+          "to": "residual unit partition",
+          "path": "R",
+          "class": "C structure"
+        },
+        {
+          "from": "three-band ladder",
+          "to": "Planck Omega ID",
+          "path": "R/U",
+          "class": "X / obstruction"
+        },
+        {
+          "from": "soft-free continuum",
+          "to": "unique packing Maxwell",
+          "path": "U",
+          "class": "false"
+        },
+        {
+          "from": "free A0",
+          "to": "absolute MeV budget",
+          "path": "U",
+          "class": "I / false"
+        },
+        {
+          "from": "I_W, kappa_R",
+          "to": "F_chiral, F_elastic",
+          "path": "R",
+          "class": "C"
+        }
+      ],
+      "claim": "C linkage dictionary with Path R/U separation",
+      "test_id": "T-A344-linkages",
+      "checks": {
+        "n_links_ge_8": true,
+        "has_Omega_X": true,
+        "has_U_false": true,
+        "has_R_C": true,
+        "free_params_0": true,
+        "separation_clean": true
+      },
+      "all_ok": true
+    },
+    "A345": {
+      "section": "A345",
+      "soft_spots": [
+        {
+          "id": "H_cont_cohomology_thin",
+          "was": "soft",
+          "now": "C closed A339"
+        },
+        {
+          "id": "S29_completions_unclassified",
+          "was": "soft",
+          "now": "C closed A340"
+        },
+        {
+          "id": "dual_path_mixable",
+          "was": "soft",
+          "now": "C architecture A341 separation mandatory"
+        },
+        {
+          "id": "energy_budget_weak",
+          "was": "soft",
+          "now": "Path R C multi-layer A342; Path U obstructed A343"
+        },
+        {
+          "id": "linkages_implicit",
+          "was": "soft",
+          "now": "C dictionary A344"
+        },
+        {
+          "id": "Omega_as_maybe_C",
+          "was": "risk",
+          "now": "CERTIFIED_OBSTRUCTION retained"
+        },
+        {
+          "id": "unrestricted_maybe_later_C",
+          "was": "risk",
+          "now": "false Path U retained"
+        }
+      ],
+      "completion": {
+        "path_R_residual_complete_inventoried": true,
+        "path_U_closed_as_nonrecovery": true,
+        "absolute_not_closed": true,
+        "energy_budget_Path_R_strengthened": true,
+        "energy_budget_Path_U_nonrecovery": true,
+        "cohomology_H_cont_detailed": true,
+        "S29_completions_classified": true
+      },
+      "claim": "C dual-path completion board after A339\u2013A344",
+      "test_id": "T-A345-dual-path-completion",
+      "checks": {
+        "all_prev_ok": true,
+        "n_soft_spots_closed": true,
+        "path_R_complete_flag": true,
+        "path_U_nonrecovery": true,
+        "absolute_not_closed": true,
+        "Omega_obstruction": true,
+        "free_params_0": true,
+        "MeV_I": true
+      },
+      "all_ok": true
+    },
+    "A346": {
+      "section": "A346",
+      "board": [
+        {
+          "id": "H_cont_cohomology",
+          "section": "A339",
+          "path": "R",
+          "class": "C"
+        },
+        {
+          "id": "S29_completions",
+          "section": "A340",
+          "path": "R",
+          "class": "C"
+        },
+        {
+          "id": "dual_path_architecture",
+          "section": "A341",
+          "path": "R/U",
+          "class": "C architecture"
+        },
+        {
+          "id": "energy_budget_residual",
+          "section": "A342",
+          "path": "R",
+          "class": "C multi-layer"
+        },
+        {
+          "id": "energy_budget_unrestricted",
+          "section": "A343",
+          "path": "U",
+          "class": "false/obstructed"
+        },
+        {
+          "id": "linkages",
+          "section": "A344",
+          "path": "R/U",
+          "class": "C dictionary"
+        },
+        {
+          "id": "dual_path_completion",
+          "section": "A345",
+          "path": "R/U",
+          "class": "C board"
+        },
+        {
+          "id": "lambda_V",
+          "section": "A342",
+          "path": "R",
+          "class": "C residual scale"
+        },
+        {
+          "id": "Omega_dual_route",
+          "section": "A342/A343",
+          "path": "R/U",
+          "class": "CERTIFIED_OBSTRUCTION"
+        },
+        {
+          "id": "MeV",
+          "section": "locks",
+          "path": "R/U",
+          "class": "IMPOSSIBLE"
+        },
+        {
+          "id": "packing_Maxwell_H_cont",
+          "section": "prior",
+          "path": "R",
+          "class": "C"
+        },
+        {
+          "id": "packing_Maxwell_unrestricted",
+          "section": "prior/A343",
+          "path": "U",
+          "class": "false"
+        },
+        {
+          "id": "three_band_residual",
+          "section": "A342",
+          "path": "R",
+          "class": "C structure"
+        },
+        {
+          "id": "three_band_Planck_ID",
+          "section": "A342",
+          "path": "R/U",
+          "class": "X"
+        }
+      ],
+      "theorem_test_map": [
+        {
+          "theorem": "A339 H_cont residual cohomology",
+          "test_id": "T-A339-Hcont-cohomology"
+        },
+        {
+          "theorem": "A340 S29 residual completions",
+          "test_id": "T-A340-S29-completions"
+        },
+        {
+          "theorem": "A341 dual-path architecture",
+          "test_id": "T-A341-dual-path"
+        },
+        {
+          "theorem": "A342 Path R energy budget",
+          "test_id": "T-A342-energy-budget-path-R"
+        },
+        {
+          "theorem": "A343 Path U energy budget nonrecovery",
+          "test_id": "T-A343-energy-budget-path-U"
+        },
+        {
+          "theorem": "A344 linkage dictionary",
+          "test_id": "T-A344-linkages"
+        },
+        {
+          "theorem": "A345 dual-path completion",
+          "test_id": "T-A345-dual-path-completion"
+        }
+      ],
+      "locks": {
+        "free_params_primary": 0,
+        "H_cont_open_system_closed": true,
+        "packing_Maxwell_under_H_cont": "recovered_C",
+        "unrestricted_open_system_closed": false,
+        "absolute_closed": false,
+        "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+        "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+        "path_R_U_separation": "mandatory"
+      },
+      "version": "v12.75.0_A339_A346_20260811",
+      "claim": "Master dual-path claim board through A346",
+      "test_id": "T-A346-master-board",
+      "checks": {
+        "board_ge_12": true,
+        "tmap_ge_7": true,
+        "prev_all": true,
+        "has_path_R_C": true,
+        "has_path_U_false": true,
+        "Omega_obs": true,
+        "free_params_0": true,
+        "locks_MeV": true
+      },
+      "all_ok": true
+    }
+  },
+  "checks": {
+    "A339_ok": true,
+    "A340_ok": true,
+    "A341_ok": true,
+    "A342_ok": true,
+    "A343_ok": true,
+    "A344_ok": true,
+    "A345_ok": true,
+    "A346_ok": true,
+    "locks_ok": true,
+    "path_separation": true,
+    "S29_formula": true,
+    "three_band_sum": true
+  },
+  "all_ok": true
+}

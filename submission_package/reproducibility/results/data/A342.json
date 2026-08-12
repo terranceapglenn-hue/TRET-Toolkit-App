@@ -1,0 +1,64 @@
+{
+  "section": "A342",
+  "path": "R",
+  "layers": {
+    "L1": {
+      "lambda_V": 0.049787068367863944,
+      "lambda_dark": 0.950212931632136,
+      "R_oc": 19.085536923187668
+    },
+    "L2": {
+      "w_cl": 0.9525741268224334,
+      "w_op": 0.04742587317756679
+    },
+    "L3": {
+      "p": {
+        "4": 0.19151597437154383,
+        "6": 0.5205943929937957,
+        "8": 0.19151597437154383,
+        "10": 0.07045478962720782,
+        "12": 0.02591886863590874
+      },
+      "Z_soft": 1.9208812339473613
+    }
+  },
+  "three_band": {
+    "rho_V": 0.049787068367863944,
+    "rho_DM": 0.3180923728035784,
+    "rho_DE": 0.6321205588285577,
+    "sum": 1.0
+  },
+  "channels": {
+    "packing_L3": 0.5205943929937957,
+    "throat_scale_L1": 0.049787068367863944,
+    "two_channel_L2_op": 0.04742587317756679,
+    "F_closed": -0.6527840567566681,
+    "F_open_unit": 0.051069180942701596,
+    "F_chiral_scale": 0.8047189562170503,
+    "F_elastic_scale": 0.8291796067500631
+  },
+  "firewall": {
+    "lambda_V_Path_R_C": true,
+    "three_band_Path_R_structure_C": true,
+    "three_band_equals_Planck_Omega_Path_R_C": false,
+    "Omega_b_equals_lambda_V_Path_R_C": false,
+    "Omega_status": "CERTIFIED_OBSTRUCTION as dual-route C; dictionary X only",
+    "open_energy_recovery_Path_R": "C residual multi-channel",
+    "MeV_absolute": "IMPOSSIBLE"
+  },
+  "claim": "C Path R residual energy budget multi-layer + open recovery; Omega dual-route C obstruction",
+  "test_id": "T-A342-energy-budget-path-R",
+  "checks": {
+    "three_band_sum_1": true,
+    "lam_V_e3": true,
+    "R_oc_e3m1": true,
+    "p6_dom": true,
+    "layers_distinct": true,
+    "firewall_no_Omega_C": true,
+    "firewall_obstruction": true,
+    "F_closed_finite": true,
+    "free_params_0": true,
+    "path_R_only": true
+  },
+  "all_ok": true
+}

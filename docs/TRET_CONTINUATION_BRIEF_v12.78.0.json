@@ -1,0 +1,65 @@
+{
+  "version": "v12.78.0_CONTINUATION_20260811",
+  "package": "TRET_SUBMISSION_READY_v12.78.0_FULL_FRAMEWORK_COMPLETE.zip",
+  "release": "v12.78.0-full-framework-submission",
+  "toolkit_tag": "v7.9.0",
+  "locks": {
+    "free_params_primary": 0,
+    "absolute_MeV_zero_anchor": "IMPOSSIBLE",
+    "unrestricted_open_system_closed": false,
+    "Omega_b_equals_lambda_V_dual_route_C": "CERTIFIED_OBSTRUCTION",
+    "path_R_U_separation": "mandatory",
+    "packing_Maxwell_under_H_cont": "recovered_C",
+    "Tate_program": "not_main_track"
+  },
+  "closed_through": "A351",
+  "unified_sn": "PRD_v2.7",
+  "residual_sector_complete": true,
+  "absolute_closed": false,
+  "next_tiers": {
+    "A_residual_depth_optional": [
+      "G-A1",
+      "G-A2",
+      "G-A3",
+      "G-A4"
+    ],
+    "B_unrestricted_honesty": [
+      "G-B1",
+      "G-B2"
+    ],
+    "C_absolute_blocked": [
+      "G-C1",
+      "G-C2",
+      "G-C3"
+    ],
+    "D_PRD_packaging_high_ROI": [
+      "G-D1",
+      "G-D2",
+      "G-D3",
+      "G-D4",
+      "G-D5",
+      "G-D6",
+      "G-D7"
+    ],
+    "E_toolkit": [
+      "G-E1",
+      "G-E2",
+      "G-E3"
+    ]
+  },
+  "recommended_first": [
+    "G-D3",
+    "G-D4",
+    "G-D5",
+    "G-D7"
+  ],
+  "forbidden_as_dual_route_C": [
+    "absolute_MeV",
+    "Omega_b_equals_lambda_V",
+    "unrestricted_packing_Maxwell",
+    "particle_species_ID",
+    "classical_Serre_SS",
+    "Tate_main_programme"
+  ],
+  "resume_prompt": "Continue TRET from v12.78.0 full-framework package and CONTINUATION_BRIEF: keep locks (free_params=0, MeV I, unrestricted false, Omega dual-route C obstruction, Path R/U separation); residual dual-route sector through A351 is closed; next do Tier D PRD packaging and optional Tier A residual depth only; no Tate/Serre/Omega-as-C/MeV-as-C."
+}
